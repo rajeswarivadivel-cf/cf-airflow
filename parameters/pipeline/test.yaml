@@ -1,0 +1,5 @@
+variables:
+  agent_pool: Cashflows Test Control RHEL8 Pool
+  targetADOEnvironment: TEST
+  region: eu-west-1
+  EnvType: test
