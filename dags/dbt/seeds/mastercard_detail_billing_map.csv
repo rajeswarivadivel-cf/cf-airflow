@@ -1,0 +1,609 @@
+﻿scheme,line_id_event_id,service_code,service_code_description,cf_fee_id_,description,billing_cycle,uom,recovery,product,rate_currency,rate,invoice_type,comment_or_actions,edit_table,2022_recovery
+MC,2PN2201,A8,Anti-Money Laundering,AML ADMIN,AML ComplianceAnnual Admin,0,Fixed,TO REVIEW,ALL, USD ,300,Stand-Alone,,,Not in use
+MC,2A8000V,A8,Anti-Money Laundering,AML ADMIN Adjust,IMPLM-PROJ,Annual,Fixed,TO REVIEW,ALL, USD ,-150,Stand-Alone,Adjustment of 2PN2201,,Scheme B~
+MC,TAE49405NLD,AE,Acquirer Assessment,ACQ ADF,ACQ Acceptance Development Fee POS Netherland Dom,Quarterly,Per Tx (%) ,B,ACQ, EUR ,0.0001,Scheme,Coverred under2L32000&2L322000&2L32000S&2L32200S,SCHEME,Not in use
+MC,TADMCMSCS,AE,Acquirer Assessment,ACQ VOL,Acq Debit MC and Maestro/Cirrus Volume Fee,0,Per Tx (%) ,A,ACQ&ATM, EUR ,0.0001,,,,Not in use
+MC,2AE9091,AE,Acquirer Assessment,REPRT TRX Adjust,Acq Reported Transaction Fee Adjustment - Central Acq - Intra,Quarterly,Per Tx (PPT) ,A,ACQ, EUR ,-0.0008,Scheme,Adjustment of TAEINTRA2  - from previous or specified Quarter fee,SCHEME,Scheme A~
+MC,TAEINTRA2,AE,Acquirer Assessment,REPRT TRX,Acq Reported Transaction Fee Dom&Intra,0,Per Tx (PPT) ,A,ACQ, EUR ,0.002,Scheme,,SCHEME,Scheme B~
+MC,TAEINTER,AE,Acquirer Assessment,REPRT TRX,Acq Reported Transaction Fee Inter,0,Per Tx (PPT) ,A,ACQ, EUR ,0.102,Scheme,,SCHEME,Scheme B~
+MC,TCC39675,AE,Acquirer Assessment,ACQ VOL,ACQ Volume,0,Vol Tier (%),A,ACQ, EUR ,0.0002,Scheme,,SCHEME,Scheme B~
+MC,TCC39715,AE,Acquirer Assessment,MSI ACQ VOL,Acquirer Maestro/Cirrus Volume Fee Tier,Quarterly,Vol Tier (%),A,ACQ, EUR ,0.0003,Scheme,Coverred under TCC39675,SCHEME,Scheme B~
+MC,2AE000S,AE,Acquirer Assessment,ACQ VOL Adjust,Adjustment for Service Code AE,Quarterly,Vol Tier (%),A,ACQ, EUR ,0.09,,Adjustment of TCC39675 - from previous or specified Quarter fee,SCHEME,Adj
+MC,2AE9000,AE,Acquirer Assessment,ACQ ADF,Central Acquirer Acceptance Development Fee Germany,Quarterly,Per Tx (%) ,B,ACQ, EUR ,0.0002,Scheme,Manual TAE49405DEU,SCHEME,Scheme A~
+MC,PQC9121,AE,Acquirer Assessment,REPRT TRX,Domestic Interchange Maestro Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,,,Scheme,,SCHEME,Not in use
+MC,PQC4121,AE,Acquirer Assessment,MSI ACQ VOL,Domestic Interchange Maestro Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PCB9121,AE,Acquirer Assessment,REPRT TRX,Domestic MasterCard Processed Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,, -   ,Scheme,,SCHEME,Not in use
+MC,PCD9121,AE,Acquirer Assessment,REPRT TRX,Domestic MasterCard Processed Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,, -   ,Scheme,,SCHEME,Not in use
+MC,PCB4120,AE,Acquirer Assessment,ACQ VOL,Domestic MasterCard Processed Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PCD4120,AE,Acquirer Assessment,ACQ VOL,Domestic MasterCard Processed Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PCB4130,AE,Acquirer Assessment,ACQ VOL,Domestic MasterCard Processed Credit Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,PCD4130,AE,Acquirer Assessment,ACQ VOL,Domestic MasterCard Processed Credit Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,PCB4111,AE,Acquirer Assessment,ACQ VOL,Domestic MasterCard Processed Purchase Volume,Quarterly,Vol Tier (%),A,ACQ,, -   ,,,,Not in use
+MC,PCD4111,AE,Acquirer Assessment,ACQ VOL,Domestic MasterCard Processed Purchase Volume,Quarterly,Vol Tier (%),A,ACQ,, -   ,,,,Not in use
+MC,PCB9220,AE,Acquirer Assessment,REPRT TRX,International MasterCard Processed Europe Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,, -   ,Scheme,,SCHEME,Not in use
+MC,PCD9220,AE,Acquirer Assessment,REPRT TRX,International MasterCard Processed Europe Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,, -   ,Scheme,,SCHEME,Not in use
+MC,PQC9221,AE,Acquirer Assessment,REPRT TRX,International MasterCard Processed Europe Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,,,Scheme,,SCHEME,Not in use
+MC,PCB4220,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Europe Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PCD4220,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Europe Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PQC4221,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Europe Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PCB4230,AE,Acquirer Assessment,ACQ VOL,International Mastercard Processed Europe Credit Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,PCD4230,AE,Acquirer Assessment,ACQ VOL,International Mastercard Processed Europe Credit Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,PCB4211,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Europe Purchase Volume,Quarterly,Vol Tier (%),A,ACQ,, -   ,,,,Not in use
+MC,PCD4211,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Europe Purchase Volume,Quarterly,Vol Tier (%),A,ACQ,, -   ,,,,Not in use
+MC,PCB9360,AE,Acquirer Assessment,REPRT TRX,International MasterCard Processed Non-Europe Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,, -   ,Scheme,,SCHEME,Not in use
+MC,PCD9360,AE,Acquirer Assessment,REPRT TRX,International MasterCard Processed Non-Europe Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,, -   ,Scheme,,SCHEME,Not in use
+MC,PQC9361,AE,Acquirer Assessment,REPRT TRX,International MasterCard Processed Non-Europe Cash Transactions,Quarterly,Per Tx (PPT) ,A,ATM,,,Scheme,,SCHEME,Not in use
+MC,PCB4360,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Non-Europe Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PCD4360,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Non-Europe Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PQC4361,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Non-Europe Cash Volume,Quarterly,Vol Tier (%),A,ATM,, -   ,,,,Not in use
+MC,PCB4370,AE,Acquirer Assessment,ACQ VOL,International Mastercard Processed Non-Europe Credit Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,PCD4370,AE,Acquirer Assessment,ACQ VOL,International Mastercard Processed Non-Europe Credit Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,PCB4351,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Non-Europe Purchase Volume,Quarterly,Vol Tier (%),A,ACQ,, -   ,,,,Not in use
+MC,PCD4351,AE,Acquirer Assessment,ACQ VOL,International MasterCard Processed Non-Europe Purchase Volume,Quarterly,Vol Tier (%),A,ACQ,, -   ,,,,Not in use
+MC,TAE4940MMVF,AE,Acquirer Assessment,MIN VOL,MasterCard  Acquring Purchase and Cash Minimum Volume Tier,0,Vol Tier (%),A,ACQ, EUR ,0,Scheme,,SCHEME,Scheme B~
+MC,PAE49403MCC,AE,Acquirer Assessment,MIN VOL,MasterCard Acquirer Domestic Purchase and Cash Minimum Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,PAE49402MCC,AE,Acquirer Assessment,MIN VOL,MasterCard Acquirer Inter-regional Purchase and Cash Minimum Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,PAE49401MCC,AE,Acquirer Assessment,MIN VOL,MasterCard Acquirer Intra-regional Purchase and Cash Minimum Volume,Quarterly,Vol Tier (%),A,ACQ&ATM,, -   ,,,,Not in use
+MC,2AE9093,AE,Acquirer Assessment,REPRT TRX Adjust,MSI Reported Transaction Fee Adjustment - Central Acq - Dom,Quarterly,Per Tx (PPT) ,A,ACQ, EUR ,-0.002,Scheme,Adjustment of TAEINTRA2  - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9095,AE,Acquirer Assessment,REPRT TRX Adjust,MSI Reported Transaction Fee Adjustment - Central Acq - Inter,Quarterly,Per Tx (PPT) ,A,ACQ, EUR ,0.0236,Scheme,Adjustment of TAEINTER  - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9094,AE,Acquirer Assessment,REPRT TRX Adjust,MSI Reported Transaction Fee Adjustment - Central Acq - Intra,Quarterly,Per Tx (PPT) ,A,ACQ, EUR ,-0.002,Scheme,Adjustment of TAEINTRA2  - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9007,AE,Acquirer Assessment,ACQ VOL Adjust,MSI Volume Fee Adjustment - Central Acq - Dom Purchase,Quarterly,Vol Tier (%),A,ACQ, EUR ,0.0001,Scheme,Adjustment of TCC39675 - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9011,AE,Acquirer Assessment,ACQ VOL Adjust,MSI Volume Fee Adjustment - Central Acq - Inter Purchase,Quarterly,Vol Tier (%),A,ACQ, EUR ,0.0002,Scheme,Adjustment of TCC39675 - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9009,AE,Acquirer Assessment,ACQ VOL Adjust,MSI Volume Fee Adjustment - Central Acq - Intra Purchase,Quarterly,Vol Tier (%),A,ACQ, EUR ,0.0001,Scheme,Adjustment of TCC39675 - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9090,AE,Acquirer Assessment,REPRT TRX Adjust,Reported Transaction Fee Adjustment - Central Acq - Dom,Quarterly,Per Tx (PPT) ,A,ACQ, EUR ,-0.0008,Scheme,Adjustment of TAEINTER  - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9092,AE,Acquirer Assessment,REPRT TRX Adjust,Reported Transaction Fee Adjustment - Central Acq - Inter,Quarterly,Per Tx (PPT) ,A,ACQ, EUR ,-0.02,Scheme,Adjustment of TAEINTRA2  - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9001,AE,Acquirer Assessment,ACQ VOL Adjust,Volume Fee Adjustment - Central Acq - Dom POS,Quarterly,Vol Tier (%),A,ACQ, EUR ,-0.0003,Scheme,Adjustment of TCC39675 - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9005,AE,Acquirer Assessment,ACQ VOL Adjust,Volume Fee Adjustment - Central Acq - Inter POS,Quarterly,Vol Tier (%),A,ACQ, EUR ,-0.0001,Scheme,Adjustment of TCC39675 - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2AE9003,AE,Acquirer Assessment,ACQ VOL Adjust,Volume Fee Adjustment - Central Acq - intra POS,Quarterly,Vol Tier (%),A,ACQ, EUR ,-0.0001,Scheme,Adjustment of TCC39675 - from previous or specified Quarter fee,SCHEME,Not in use
+MC,2BK0013,BK,Software,AUTH SIMULATOR,Authorization Simulator Professional Maintenance,0,Fixed,PrincipalOther,ALL, EUR ,345,Stand-Alone,,SCHEME,Scheme A~
+MC,2BK0033,BK,Software,DB PROF MAINTNCE,Debit Professional Maintenance,0,Fixed,PrincipalOther,ALL, EUR ,345,Stand-Alone,,SCHEME,Scheme B
+MC,2BK0022,BK,Software,CLEAR SIMULATOR,Mastercard Clearing Presentment Simulator Maintenance Fee,0,Fixed,PrincipalOther,ACQ, EUR ,210,Stand-Alone,,SCHEME,Scheme B
+MC,TBU6609,BU,Automated Billing Updater,ABU Update trx,ABU ACQ API Update,Monthly,Per Tx (PPT) ,Pass-through ABU,ACQ, EUR ,0.125,Stand-Alone,Manually calculated and invoice by Solomon - no action from Scheme Invoice Analysis,,Scheme A~
+MC,2BU6501,BU,Automated Billing Updater,ABU ENROL,Account updater per enrolment manual,Ad Hoc,Fixed,TO REVIEW,ACQ, EUR ,350,Stand-Alone,Registration Fee:  review with Jay if we agreed to cover this cost or passthrough,,Scheme A~
+MC,TBU6600,BU,Automated Billing Updater,ABU ISS Record,BU  - ABU Issuer Record Fee,0,Q,B,ISS, EUR , -   ,,,,Scheme B~
+MC,2CR000S,CR,Issuer Call Referral,ISS CallRefr ,CR ISS CallRefr - Adjustment for Service Code CR,Weekly,Q,B,ISS, EUR ,2.5,,,,Not in use
+MC,2CR2032,CR,Issuer Call Referral,ISS CallRefr ,CR ISS CallRefr - Member Issued Call Referral,0,Q,B,ISS, EUR ,2.5,,,,Scheme B~
+MC,2DL1501,DL,Issuer Cross Border,ISS CRSS-BORD,DL ISS CRX-BORD - Iss Cross Border Mastercard ATM Intra & Inter - GBR,0,Per Tx (%) ,B,ISS, EUR ,0.0008,,,,Scheme B~
+MC,2DL1500,DL,Issuer Cross Border,ISS CRSS-BORD,DL ISS CRX-BORD - Iss Cross Border Mastercard POS Intra & Inter - GBR/DEU/NLD,0,Per Tx (%) ,B,ISS, EUR ,0.0008,,,,Scheme B~
+MC,2DN1001,DN,Acquirer Cross Border,CRSS-BORD,Acq Cross Border Maestro/Cirrus ATM Intra & Inter -GBR & IRL,0,Per Tx (%) ,A,ATM, EUR ,0.0005,,,,Scheme B~
+MC,2DN1401,DN,Acquirer Cross Border,CRSS-BORD,Acq Cross Border Maestro/Cirrus ATM Intra & Inter -GBR & IRL,0,Per Tx (%) ,A,ATM, EUR ,0.0005,,,,Scheme B~
+MC,2DN1501,DN,Acquirer Cross Border,CRSS-BORD,Acq Cross Border Mastercard ATM Intra & Inter -GBR & IRL,0,Per Tx (%) ,A,ATM, EUR ,0.0005,,,,Scheme B~
+MC,2DN1801,DN,Acquirer Cross Border,CRSS-BORD,Acq Cross Border Mastercard ATM Intra & Inter -GBR & IRL,0,Per Tx (%) ,A,ATM, EUR ,0.0005,,,,Scheme B~
+MC,2DN2500,DN,Acquirer Cross Border,CRSS-BORD,CRSS-BORD POS Debit Intra&Inter,Weekly,Per Tx (%) ,A,ACQ, EUR ,0.001,Scheme,Coverred under 2DN1500 & 2DN1800,SCHEME,Scheme B~
+MC,2DN2800,DN,Acquirer Cross Border,CRSS-BORD,CRSS-BORD POS Debit Intra&Inter,Weekly,Per Tx (%) ,A,ACQ, EUR ,0.001,Scheme,Coverred under 2DN1500 & 2DN1800,SCHEME,Scheme A~
+MC,2DN1800,DN,Acquirer Cross Border,CRSS-BORD,CRSS-BORD POS Inter,0,Per Tx (%) ,A,ACQ, EUR ,0.0006,Scheme,,SCHEME,Scheme A~
+MC,2DN1500,DN,Acquirer Cross Border,CRSS-BORD,CRSS-BORD POS Intra,0,Per Tx (%) ,A,ACQ, EUR ,0.0008,Scheme,,SCHEME,Scheme A~
+MC,2DN1000,DN,Acquirer Cross Border,CRSS-BORD,CRSS-BORD POS Maestro Intra&Inter,Weekly,Per Tx (%) ,A,ACQ, EUR ,0.0008,Scheme,Coverred under 2DN1500 & 2DN1800,SCHEME,Scheme A~
+MC,2DN1400,DN,Acquirer Cross Border,CRSS-BORD,CRSS-BORD POS Maestro Intra&Inter,Weekly,Per Tx (%) ,A,ACQ, EUR ,0.0005,Scheme,Coverred under 2DN1500 & 2DN1800,SCHEME,Scheme A~
+MC,2EL45141HF,E0,Clearing - Acquirer,CHB ADMIN ARB,Acquirer Arbitration Chargeback Dispute Administration Fee,Ad Hoc,Fixed,Non-Sale,ACQ, EUR ,45,Stand-Alone,Chargeback related,NON_SALE_FEES,Not in use
+MC,2EL45141RHF,E0,Clearing - Acquirer,CHB ADMIN ARB REV,Acquirer Arbitration Chargeback Dispute Administration Fee Reversal,Ad Hoc,Fixed,Non-Sale,ACQ, EUR ,-45,Stand-Alone,Chargeback related,NON_SALE_FEES,Not in use
+MC,2EL45031HF,E0,Clearing - Acquirer,CHB ADMIN,Acquirer Chargeback Dispute Administration Fee,Weekly,Fixed,Non-Sale,ACQ, EUR ,15,Stand-Alone,Chargeback related,NON_SALE_FEES,Non Sales
+MC,2EL45031RHF,E0,Clearing - Acquirer,CHB ADMIN REV,Acquirer Chargeback Dispute Administration Fee Reversal,Weekly,Fixed,Non-Sale,ACQ, EUR ,-15,Stand-Alone,Chargeback related,NON_SALE_FEES,Non Sales
+MC,2EL12401HF,E0,Clearing - Acquirer,CHB-RRSNT ADMIN Fee,Acquirer Second Presentment Administration Fee,Weekly,Fixed,Non-Sale,ACQ, EUR ,-30,Stand-Alone,Chargeback related,NON_SALE_FEES,Non Sales
+MC,2EL12401RHF,E0,Clearing - Acquirer,CHB-RRSNT ADMIN RVS Fee,Acquirer Second Presentment Administration Fee Reversal,Ad Hoc,Q,Non-Sale,ACQ&ATM, EUR ,30,,Chargeback related,,Scheme B~
+MC,2EL12401PF,E0,Clearing - Acquirer,CHB-RRSNT Proc Fee,Acquirer Second Presentment Administration Processing Fee,Weekly,Fixed,Non-Sale,ACQ, EUR ,0.9,Stand-Alone,Chargeback related,NON_SALE_FEES,Non Sales
+MC,2EL45032HF,E1,Clearing - Issuer,CLR ISS CHB Admin,E1 CLR-ISS - Issuer Chargeback Dispute Administration Fee,Ad Hoc,Q,B,ISS, EUR ,-15,,Dispute Fee to pass on to merchant: Contact Gosian in Dispute team for Merchant ID with Case ID in invoice,,Not in use
+MC,2EL45032PF,E1,Clearing - Issuer,CLR ISS CHB Admin Procs,E1 CLR-ISS - Issuer Chargeback Dispute Administration Processing Fee,Ad Hoc,Q,B,ISS, EUR ,0.9,,Dispute Fee to pass on to merchant: Contact Gosian in Dispute team for Merchant ID with Case ID in invoice,,Not in use
+MC,2EL12402HF,E1,Clearing - Issuer,CLR ISS 2ND Presmt Admin,E1 CLR-ISS - Issuer Second Presentment Administration Fee,Ad Hoc,Q,B,ISS, EUR ,30,,Chargeback related,,Not in use
+MC,2EL60021,E2,Clearing Acquirer MasterCard POS,CLEARING UNIQ,"Clearing fee for Unique trx (Money transfer, Quasi cash, Gambling etc- Not sure within scope)",Weekly,Vol Tier (PPT),EXCLUDED,ACQ, EUR ,0.05,Switching,Specific fees not in Cost Matrix - currently low cost,,Not in use
+MC,2EL60031,E2,Clearing Acquirer MasterCard POS,CLEARING RFN,CLEARING RFN,0,Per Tx (PPT) ,A,ACQ, EUR ,0.05,Switching,,SCHEME,Scheme A~
+MC,2EL60032,E3,Clearing Issuer MasterCard POS,CLR ISS,E3 CLR-ISS - Clearing Dom/Intra/Inter  MasterCard Issuer - Credit/Refund,0,Q,B,ISS, EUR ,0.05,,,,Not in use
+MC,2EL60022,E3,Clearing Issuer MasterCard POS,CLR ISS,E3 CLR-ISS - Clearing Dom/Intra/Inter MasterCard Issuer POS - Unique Transaction,Weekly,Q,B,ISS, EUR ,0.05,,,,Not in use
+MC,2EA2291,E8,Authorization MasterCard ATM,AUTHOR - ATM PIN Change,Authorization Intra-Europe ATM PIN Change MasterCard,Weekly,Q,B,ISS, EUR ,0.025,,,,Not in use
+MC,2E8000P,E8,Authorization MasterCard ATM,AUTHOR - Adjust,E8 Auth - Adjustment for Service Code E8,Weekly,Q,A,ISS, EUR ,0.025,,,,Not in use
+MC,2EA1531,E8,Authorization MasterCard ATM,AUTHOR - Advise,E8 Auth - Authorization Advise Dom/Intra/Inter  MasterCard,Weekly,Q,B,ISS, EUR ,0.025,,,,Not in use
+MC,2EA2241,E8,Authorization MasterCard ATM,AUTHOR - Decline,E8 Auth - Authorization Declined Dom/Intra/Inter MasterCard,0,Q,B,ISS, EUR ,0.025,,,,Scheme B~
+MC,2EA2251,E8,Authorization MasterCard ATM,AUTHOR - ATM Balance,E8 Auth - Authorization Dom/Intra/Inter ATM Balance Inquiry MasterCard,Weekly,Q,B,ISS, EUR ,0.025,,,,Not in use
+MC,2EA1741,EA,Authorization Maestro / Cirrus POS,ACCHOLD AUTH VAL,EA Auth - Account Holder Authentication Value,0,Per Tx (PPT) ,B,ALL, EUR ,0.01,,,,Scheme B~
+MC,TEAT589R,EA,Authorization Maestro / Cirrus POS,AUTHOR ATM Macro,EA Auth - Auth Domestic and Intra ATM Macro Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0045,,,,Not in use
+MC,TEAT589S,EA,Authorization Maestro / Cirrus POS,AUTHOR ATM Max,EA Auth - Auth Domestic and Intra ATM Max Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0045,,,,Not in use
+MC,TEAT589P,EA,Authorization Maestro / Cirrus POS,AUTHOR ATM Micro,EA Auth - Auth Domestic and Intra ATM Micro Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0045,,,,Not in use
+MC,TEAT589Q,EA,Authorization Maestro / Cirrus POS,AUTHOR ATM Mid,EA Auth - Auth Domestic and Intra ATM Mid Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0045,,,,Not in use
+MC,TEAT579R,EA,Authorization Maestro / Cirrus POS,AUTHOR Macro,EA Auth - Auth Domestic and Intra POS Macro Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0085,,,,Not in use
+MC,TEAT579S,EA,Authorization Maestro / Cirrus POS,AUTHOR Max,EA Auth - Auth Domestic and Intra POS Max Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.03,,,,Not in use
+MC,TEAT579P,EA,Authorization Maestro / Cirrus POS,AUTHOR Micro,EA Auth - Auth Domestic and Intra POS Micro Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0005,,,,Not in use
+MC,TEAT579Q,EA,Authorization Maestro / Cirrus POS,AUTHOR Mid,EA Auth - Auth Domestic and Intra POS Mid Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0023,,,,Not in use
+MC,TEAT599CR,EA,Authorization Maestro / Cirrus POS,AUTHOR Macro,EA Auth - Auth Domestic and Intra POS/ATM Macro Tier,0,Per Tx (PPT) ,A,ALL, EUR ,0.0149,,,,Scheme B~
+MC,TEAT599CS,EA,Authorization Maestro / Cirrus POS,AUTHOR Max,EA Auth - Auth Domestic and Intra POS/ATM Max Tier,0,Per Tx (PPT) ,A,ALL, EUR ,0.0242,,,,Scheme B~
+MC,TEAT599CP,EA,Authorization Maestro / Cirrus POS,AUTHOR Micro,EA Auth - Auth Domestic and Intra POS/ATM Micro Tier,0,Per Tx (PPT) ,A,ALL, EUR ,0.005,,,,Scheme B~
+MC,TEAT569CP,EA,Authorization Maestro / Cirrus POS,AUTHOR Micro,EA Auth - Auth Domestic and Intra POS/ATM Micro Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0011,,,,Not in use
+MC,TEAT599CQ,EA,Authorization Maestro / Cirrus POS,AUTHOR Mid,EA Auth - Auth Domestic and Intra POS/ATM Mid Tier,0,Per Tx (PPT) ,A,ALL, EUR ,0.0069,,,,Scheme B~
+MC,TEAT7695,EA,Authorization Maestro / Cirrus POS,AUTHOR,EA Auth - Auth Inter-Regional Maestro/Cirrus/DMC POS / ATM Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.008,,,,Not in use
+MC,TEAT7995,EA,Authorization Maestro / Cirrus POS,AUTHOR,EA Auth - Auth Inter-Regional POS / ATM Tier,0,Per Tx (PPT) ,A,ALL, EUR ,0.005,,,,Scheme B~
+MC,TEAT569CR,EA,Authorization Maestro / Cirrus POS,AUTHOR MSI,EA Auth - Auth Intra Maestro/Cirrus/DMC POS/ATM Macro Tier,0,Per Tx (PPT) ,A,ALL, EUR ,0.0075,,,,Not in use
+MC,TEAT569CS,EA,Authorization Maestro / Cirrus POS,AUTHOR MSI,EA Auth - Auth Intra Maestro/Cirrus/DMC POS/ATM Max Tier,0,Per Tx (PPT) ,A,ALL, EUR ,0.0105,,,,Not in use
+MC,TEAT569CQ,EA,Authorization Maestro / Cirrus POS,AUTHOR MSI,EA Auth - Auth Intra Maestro/Cirrus/DMC POS/ATM Mid Tier,0,Per Tx (PPT) ,A,ALL, EUR ,0.0053,,,,Scheme B~
+MC,TEAT519CR,EA,Authorization Maestro / Cirrus POS,AUTHOR,EA Auth - Auth Intra MasterCard POS/ATM Macro Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0045,,,,Not in use
+MC,TEAT519CS,EA,Authorization Maestro / Cirrus POS,AUTHOR,EA Auth - Auth Intra MasterCard POS/ATM Max Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0075,,,,Not in use
+MC,TEAT519CP,EA,Authorization Maestro / Cirrus POS,AUTHOR,EA Auth - Auth Intra MasterCard POS/ATM Micro Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0005,,,,Not in use
+MC,TEAT519CQ,EA,Authorization Maestro / Cirrus POS,AUTHOR,EA Auth - Auth Intra MasterCard POS/ATM Mid Tier,Weekly,Per Tx (PPT) ,A,ALL, EUR ,0.0025,,,,Not in use
+MC,TEA5012,EA,Authorization Maestro / Cirrus POS,AUTH CALL-REFR,EA Auth - Authorization Call Referral Non-Compliance,0,Per Tx (PPT) ,B,ALL, EUR ,5.25,,,,Not in use
+MC,2EA2488,EA,Authorization Maestro / Cirrus POS,ECOM FRD ALERT ISS,EA Auth - eCommerce Fraud Alert for Issuers - Issuer Fee,Weekly,Per Tx (PPT) ,B,ISS, EUR ,0.04,,,,Not in use
+MC,2WA1905,EA,Authorization Maestro / Cirrus POS,STND-IN TRX FEE,EA Auth - Stand-In Transaction Fee,0,Per Tx (PPT) ,B,ISS, EUR ,0.15,,,,Scheme B~
+MC,2GC1035,EE,Clearing Acquirer MasterCard ATM,ATM-PROG SUPPORT,ATM Program Support Fee MasterCard Domestic,0,Q,B,ATM, EUR ,0.12,,,,Scheme B~
+MC,2GC1033,EE,Clearing Acquirer MasterCard ATM,ATM-PROG SUPPORT,ATM Program Support Fee MasterCard Intra,0,Q,B,ATM, EUR ,0.2,,,,Scheme B~
+MC,2EL60012,EF,Clearing Issuer MasterCard ATM,CLR ISS,EF CLR-ISS - Clearing Inter-Regional MasterCard Issuer ATM - Manual Cash,Weekly,Q,B,ISS, EUR ,0.2,,,,Not in use
+MC,2GC1034,EK,Clearing Acquirer Maestro/Cirrus ATM,ATM-PROG SUPPORT,ATM Program Support Fee Maestro/Cirrus Domestic,0,Q,B,ATM, EUR ,0.2,,,,Scheme B~
+MC,2GC1034WVR,EK,Clearing Acquirer Maestro/Cirrus ATM,ATM-PROG SUPPORT,ATM Program Support Fee Maestro/Cirrus Domestic Waiver,0,Q,B,ATM, EUR ,-0.2,,,,Scheme B~
+MC,2GC1032,EK,Clearing Acquirer Maestro/Cirrus ATM,ATM-PROG SUPPORT,ATM Program Support Fee Maestro/Cirrus Intra,0,Q,B,ATM, EUR ,0.2,,,,Scheme B~
+MC,TELMCC145R,ET,Clearing - Acquirer,CLEARING CR,Clearing Acq Credit  Dom&Intra Macro - CY/MT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0052,Switching,Coverred under TEL00145CR,SCHEME,Scheme A~
+MC,TELMCC145S,ET,Clearing - Acquirer,CLEARING CR,Clearing Acq Credit  Dom&Intra Max - CY/MT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0083,Switching,Coverred under TEL00145CS,SCHEME,Scheme A~
+MC,TELMCC145P,ET,Clearing - Acquirer,CLEARING CR,Clearing Acq Credit  Dom&Intra Micro - CY/MT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0017,Switching,Coverred under TEL00145CP,SCHEME,Scheme A~
+MC,TELMCC145Q,ET,Clearing - Acquirer,CLEARING CR,Clearing Acq Credit  Dom&Intra Mid - CY/MT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0034,Switching,Coverred under TEL00145CQ,SCHEME,Scheme A~
+MC,TELMCC145H,ET,Clearing - Acquirer,CLEARING CR,Clearing Acq Credit  Inter - CY/MT,Weekly,Per Tx (PPT) ,A,ACQ, EUR ,0.006,Switching,Coverred under TEL00125,SCHEME,Scheme A~
+MC,TELCMD145H,ET,Clearing - Acquirer,CLEARING DB,Clearing Acq Debit Mastercard/Maestro/Cirrus Inter - CY/MT,Weekly,Per Tx (PPT) ,A,ACQ, EUR ,0.006,Switching,Coverred under TEL00125,SCHEME,Scheme A~
+MC,TELCMD145CQ,ET,Clearing - Acquirer,CLEARING DB,Clearing Acq Debit Mastercard/Maestro/Cirrus Intra Mid Tier GREECE,0,Q,A,ACQ&ATM, EUR ,0.004,,,,Scheme A~
+MC,TELCMD145R,ET,Clearing - Acquirer,CLEARING DB,Clearing Acq Debit Mastercard/Maestro/Cirrus Macro Intra - CY/MT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.003,Switching,Coverred under TEL00145CR,SCHEME,Scheme A~
+MC,TELCMD145S,ET,Clearing - Acquirer,CLEARING DB,Clearing Acq Debit Mastercard/Maestro/Cirrus Max Intra - CY/MT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0048,Switching,Coverred under TEL00145CS,SCHEME,Scheme A~
+MC,TELCMD145P,ET,Clearing - Acquirer,CLEARING DB,Clearing Acq Debit Mastercard/Maestro/Cirrus Micro Intra - CY/MT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0009,Switching,Coverred under TEL00145CP,SCHEME,Scheme A~
+MC,TELCMD145Q,ET,Clearing - Acquirer,CLEARING DB,Clearing Acq Debit Mastercard/Maestro/Cirrus Mid Intra - CY/MT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.002,Switching,Coverred under TEL00145CQ,SCHEME,Scheme A~
+MC,TEL0P1457R,ET,Clearing - Acquirer,CLEARING,Clearing Acq Dom&Intra Macro  BG/CZ/HU/PL,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.005,Switching,Coverred under TEL00145CR,SCHEME,Not in use
+MC,TEL0P1457S,ET,Clearing - Acquirer,CLEARING,Clearing Acq Dom&Intra Max  BG/CZ/HU/PL,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.025,Switching,Coverred under TEL00145CS,SCHEME,Not in use
+MC,TEL0P1457P,ET,Clearing - Acquirer,CLEARING,Clearing Acq Dom&Intra Micro  BG/CZ/HU/PL,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0014,,,,Not in use
+MC,TEL0P1457Q,ET,Clearing - Acquirer,CLEARING,Clearing Acq Dom&Intra Mid  BG/CZ/HU/PL,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0023,Switching,Coverred under TEL00145CQ,SCHEME,Not in use
+MC,TEL001457H,ET,Clearing - Acquirer,CLEARING,Clearing Acq Inter  BG/CZ/HU/PL,Weekly,Per Tx (PPT) ,A,ACQ, EUR ,0.005,Switching,Coverred under TEL00125,SCHEME,Scheme A~
+MC,TELMCD125,ET,Clearing - Acquirer,CLEARING,Clearing Acq Inter IT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.006,Switching,Coverred under TEL00125,SCHEME,Not in use
+MC,TELMCD145CR,ET,Clearing - Acquirer,CLEARING,Clearing Acq Macro Dom&Intra IT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.01,Switching,Coverred under TEL00145CR,SCHEME,Not in use
+MC,TELMCD145CS,ET,Clearing - Acquirer,CLEARING,Clearing Acq Max Dom&Intra IT,Weekly,Vol Tier (PPT),A,ACQ, EUR ,0.0167,Switching,Coverred under TEL00145CS,SCHEME,Scheme A~
+MC,TELMCD145CQ,ET,Clearing - Acquirer,CLEARING,Clearing Acq Mid Dom&Intra IT,0,Vol Tier (PPT),A,ACQ, EUR ,0.0066,,,,Not in use
+MC,TELA00145CR,ET,Clearing - Acquirer,CLEARING DISC,Clearing Dom&Intra Macro Discount GB/IE,Weekly,Vol Tier (PPT),A,ACQ, EUR ,-0.0028,Switching,Discount of TEL00145CR,SCHEME,Scheme A~
+MC,TELA00145CS,ET,Clearing - Acquirer,CLEARING DISC,Clearing Dom&Intra Max Discount GB/IE,Weekly,Vol Tier (PPT),A,ACQ, EUR ,-0.0045,Switching,Discount of TEL00145CS,SCHEME,Scheme A~
+MC,TELA00145CP,ET,Clearing - Acquirer,CLEARING DISC,Clearing Dom&Intra Micro Discount GB/IE,Weekly,Vol Tier (PPT),A,ACQ, EUR ,-0.0012,Switching,Discount of TEL00145CP,SCHEME,Scheme A~
+MC,TELA00145CQ,ET,Clearing - Acquirer,CLEARING DISC,Clearing Dom&Intra Mid Discount GB/IE,Weekly,Vol Tier (PPT),A,ACQ, EUR ,-0.0021,Switching,Discount of TEL00145CQ,SCHEME,Scheme A~
+MC,TEL00125,ET,Clearing - Acquirer,CLEARING,CLEARING Inter,0,Per Tx (PPT) ,A,ACQ, EUR ,0.005,Switching,,SCHEME,Scheme A~
+MC,TELA00125,ET,Clearing - Acquirer,CLEARING DISC,Clearing Inter Discount GB/IE,Weekly,Per Tx (PPT) ,A,ACQ, EUR ,-0.0015,Switching,Discount of TEL00125,SCHEME,Scheme A~
+MC,TEL00145CR,ET,Clearing - Acquirer,CLEARING,CLEARING Macro Dom&Intra,0,Vol Tier (PPT),A,ACQ, EUR ,0.0094,Switching,,SCHEME,Scheme A~
+MC,TEL00145CS,ET,Clearing - Acquirer,CLEARING,CLEARING Max Dom&Intra,0,Vol Tier (PPT),A,ACQ, EUR ,0.015,Switching,,SCHEME,Scheme A~
+MC,TEL00145CP,ET,Clearing - Acquirer,CLEARING,CLEARING Micro Dom&Intra,0,Vol Tier (PPT),A,ACQ, EUR ,0.001,Switching,,SCHEME,Scheme A~
+MC,TEL00145CQ,ET,Clearing - Acquirer,CLEARING,CLEARING Mid Dom&Intra,0,Vol Tier (PPT),A,ACQ, EUR ,0.0071,Switching,,SCHEME,Scheme A~
+MC,TELCMD245P,EU,Clearing - Issuer,CLEARING ISS,Clearing Iss Debit Mastercard/Maestro/Cirrus Intra Micro Tier MLT,Weekly,Q,A,ISS,,0,,,,Not in use
+MC,TEL00245CR,EU,Clearing - Issuer,CLEARING ISS,Clearing Iss Dom and Intra Macro Tier GBR,0,Q,A,ISS, EUR ,0.013,,,,Ignore
+MC,TEL00245CS,EU,Clearing - Issuer,CLEARING ISS,Clearing Iss Dom and Intra Max Tier GBR,0,Q,A,ISS, EUR ,0.0235,,,,Ignore
+MC,TEL00225,EU,Clearing - Issuer,CLEARING now,Clearing Iss Inter Tier GBR,0,Vol Tier (PPT),A,ISS, EUR ,0.005,Switching,,,Scheme A~
+MC,TEL0A2457R,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss ATM Dom and Intra Macro Tier CZE,Weekly,Q,B,ISS, EUR ,0.0045,,,,Not in use
+MC,TEL0A2457S,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss ATM Dom and Intra Max Tier CZE,Weekly,Q,B,ISS, EUR ,0.0045,,,,Not in use
+MC,TEL0A2457P,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss ATM Dom and Intra Micro Tier CZE,Weekly,Q,B,ISS, EUR ,0.0045,,,,Not in use
+MC,TEL0A2457Q,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss ATM Dom and Intra Mid Tier CZE,Weekly,Q,B,ISS, EUR ,0.0045,,,,Not in use
+MC,TELCMD245H,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Debit Mastercard/Maestro/Cirrus Inter Tier MLT,Weekly,Q,B,ISS, EUR ,0.007,,,,Not in use
+MC,TELCMD245R,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Debit Mastercard/Maestro/Cirrus Intra Macro Tier MLT,0,Q,B,ISS, EUR ,0.0075,,,,Ignore
+MC,TELCMD245S,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Debit Mastercard/Maestro/Cirrus Intra Max Tier MLT,0,Q,B,ISS, EUR ,0.0105,,,,Ignore
+MC,TELCMD245Q,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Debit Mastercard/Maestro/Cirrus Intra Mid Tier MLT,0,Q,B,ISS, EUR ,0.0053,,,,Ignore
+MC,TEL00245CP,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Dom and Intra Micro Tier GBR,0,Q,B,ISS, EUR ,0.0054,,,,Ignore
+MC,TEL00245CQ,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Dom and Intra Mid Tier GBR/NLD,0,Q,B,ISS, EUR ,0.007,,,,Ignore
+MC,TEL002457H,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Inter Tier CZE,Weekly,Q,B,ISS, EUR ,0.005,,,,Not in use
+MC,TELMCC245CR,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Mastercard Credit Dom and Intra Macro Tier DEU,Weekly,Q,B,ISS, EUR ,0.004,,,,Not in use
+MC,TELMCC245CS,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Mastercard Credit Dom and Intra Max Tier DEU,Weekly,Q,B,ISS, EUR ,0.0065,,,,Not in use
+MC,TELMCC245CP,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Mastercard Credit Dom and Intra Micro Tier DEU,Weekly,Q,B,ISS, EUR ,0.0005,,,,Not in use
+MC,TELMCC245CQ,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss Mastercard Credit Dom and Intra Mid Tier DEU,Weekly,Q,B,ISS, EUR ,0.002,,,,Not in use
+MC,TEL0P2457R,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss POS Dom and Intra Macro Tier CZE,Weekly,Q,B,ISS, EUR ,0.0085,,,,Not in use
+MC,TEL0P2457S,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss POS Dom and Intra Max Tier CZE,Weekly,Q,B,ISS, EUR ,0.03,,,,Not in use
+MC,TEL0P2457P,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss POS Dom and Intra Micro Tier CZE,Weekly,Q,B,ISS, EUR ,0.0005,,,,Not in use
+MC,TEL0P2457Q,EU,Clearing - Issuer,CLR ISS,EU CLR-ISS - Clearing Iss POS Dom and Intra Mid Tier CZE,Weekly,Q,B,ISS, EUR ,0.0023,,,,Not in use
+MC,2AB5031,EZ,International Authorization Fees,INT AUTH X-Code,EZ INT AUTH - X-Code Transaction Fee,0,Q,B,ALL, EUR ,0.005,,,,Scheme B~
+MC,TF15001P,F1,Issuer Decision Management Services,ISS MANGMT SERV,F1 ISS - Decision Intelligence Fee--Card Not Present,Monthly,Per Tx (%) ,B,ISS, EUR ,0.0002,,,,Not in use
+MC,TF15001Q,F1,Issuer Decision Management Services,ISS MANGMT SERV,F1 ISS - Decision Intelligence Fee--Card Not Present,Monthly,Q,B,ISS, EUR ,0.375,,,,Not in use
+MC,TF15002P,F1,Issuer Decision Management Services,ISS MANGMT SERV,F1 ISS - Decision Intelligence Fee--Card Present,Monthly,Per Tx (%) ,B,ISS, EUR ,0,,,,Not in use
+MC,TF15002Q,F1,Issuer Decision Management Services,ISS MANGMT SERV,F1 ISS - Decision Intelligence Fee--Card Present,Monthly,Q,B,ISS, EUR ,0.0375,,,,Not in use
+MC,TF11000,F1,Issuer Decision Management Services,ISS MANGMT SERV,F1 ISS - MasterCard Safety Net Service Fee,Monthly,Q,B,ISS, EUR ,0.2907,,,,Not in use
+MC,TF11693,F1,Issuer Decision Management Services,ISS MANGMT SERV,F1 ISS - Prepaid Monitoring Fee,0,Q,B,ISS, EUR ,200,,,,Scheme B~
+MC,2MK5050,F9,Funding,STRATEGY FD (new),Strategy Program (Second 150 Members)  Current ID  2EC5050  efft until 28Nov20 New and same as 2F9800,Annual,Vol Tier (PPT),PrincipalOther,ALL, EUR ,"9,000",Scheme,Annual - November fee - Advance Nov-Oct,SCHEME,Not in use
+MC,TACQLICVOLE,FA,License,LICNS RCURR,2AQLCMCPOS Recurring License Fee - Acquirer -Based on previous QTLY vol,0,Vol Tier (PPT),B,ACQ, EUR ,"2,700",Scheme,,SCHEME,Scheme A~
+MC,2FA0000,FA,License,LICNS RCURR Adjust ACQ&ISS,LICENSE RECUR ACQ Adjustment,Monthly,Vol Tier (PPT),EXCLUDED,ACQ, EUR ,0.01,Scheme,Adjustment of TACQLICVOL,SCHEME,Not in use
+MC,TISSLICVOLE,FA,License,LICNS RCURR ISS ,Recurring License Fee-Issuer,0,Vol Tier (PPT),A,ISS, EUR ,"1,700",Scheme,,,Scheme B
+MC,2FB1000,FB,Service Provider,Service Pro Reg,Service Provider Registration/Renewal Fee,Annual,Fixed,Pass-through SerReg,ALL, EUR ,"3,500",Scheme,Registration Fee: Investigate which progam and passthrough to partner or CF pay the cost- ,Pass-through,Scheme B
+MC,2FM0000,FM,File Maintenance,FILE MAINT Adjust,Adjustment for Service Code FM,Ad Hoc,,TO REVIEW,,,"20,000",,,,Not in use
+MC,2FM1620,FM,File Maintenance,ISS FILE LISTING,Authorization File Premium Listing Residency Fee,Weekly,Per Tx (PPT) ,TO REVIEW,ISS, EUR ,0.05,,,,Not in use
+MC,2FM000V,FM,File Maintenance,FILE MAINT,FM FILE MAINT - Adjustment for Service Code FM,Weekly,Per Data point,B,ALL, EUR ,100,,,,Adj
+MC,2FM1680,FM,File Maintenance,FILE MAINT,FM FILE MAINT - Authorization Secure Bin Set Up Fee,Weekly,Per Data point,B,ALL, EUR ,100,,,,Not in use
+MC,2FM1670,FM,File Maintenance,FILE MAINT,FM FILE MAINT - Magnetic Chip Cryptogram Set Up Fee,Weekly,Per Data point,B,ALL, EUR ,"1,000",,,,Not in use
+MC,2FM1653,FM,File Maintenance,FILE MAINT,FM FILE MAINT - Stand-In Range Blocking and Custom Rules Residency,0,Per Data point,B,ALL, EUR ,20,,,,Scheme B~
+MC,2FM1650,FM,File Maintenance,FILE MAINT,FM FILE MAINT - Stand-In Transaction Limit Parameter Set Up,Weekly,Per Data point,B,ALL, EUR ,500,,,,Not in use
+MC,TFM1665,FM,File Maintenance,FILE MAINT,FM FILE MAINT - Transaction Blocking Residency,0,Per Data point,B,ALL, EUR ,5.7143,,,,Scheme B~
+MC,2FM1658,FM,File Maintenance,MIP TRX BLOCKING,MIP Transaction Blocking-Full BIN Block-Maintenance,Ad Hoc,Fixed,Implemt-Proj,ISS, EUR ,300,Stand-Alone,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2FM1642,FO,File Maintenance,FO-NETWK CONNT TEST,File Maintenance-Network Connections Status Echo Test,Weekly,Per Data point,Implemt-Proj,ATM, EUR ,0.005,,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2FM1611,FO,File Maintenance,FO-SIINGIN PROC TEST,File Maintenance-Sign-In Issuer Processing Fee,Weekly,Per Data point,Implemt-Proj,ATM, EUR ,0.01,,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2FM1612,FO,File Maintenance,FO-SIGNOUT PROC TEST,File Maintenance-Sign-Out Issuer Processing Fee,Ad Hoc,Per Data point,Implemt-Proj,ATM, EUR ,0.01,,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2FT14421,FS,File Transmission - Acquirer,CHB FILE TRX,File Transmission Fee Chargebacks,Weekly,Per Data point,Non-Sale,ACQ, EUR ,0,Switching,Chargeback related,NON_SALE_FEES,Scheme B
+MC,2FT2001,FS,File Transmission - Acquirer,FILE TRANS,File Transmission Fee First Presentments,0,Per Data point,A,ACQ, EUR ,0,Switching,,SCHEME,Scheme B
+MC,2FT6031,FS,File Transmission - Acquirer,CHB FILE TRX COPY,File Transmission Fee Retrieval Request,Ad Hoc,Per Data point,Non-Sale,ACQ, EUR ,0,Switching,Chargeback related,NON_SALE_FEES,Scheme B
+MC,2FT12401,FS,File Transmission - Acquirer,CHB FILE TRX RPSNT,File Transmission Fee Second Presentments,Weekly,Per Data point,Non-Sale,ACQ, EUR ,0,Switching,Chargeback related,NON_SALE_FEES,Scheme B
+MC,2FT14422,FT,File Transmission - Issuer,CHB FILE MAINT,FT FILE MAINT - File Transmission Fee Chargebacks,Ad Hoc,Per Data point,B,ALL, EUR ,0,,Chargeback related,,Not in use
+MC,2FT6962,FT,File Transmission - Issuer,CHB FILE MAINT,FT FILE MAINT - File Transmission Fee Financial Detail Addendum,Ad Hoc,Per Data point,B,ALL, EUR ,0,,Chargeback related,,Non Sales
+MC,2FT2002,FT,File Transmission - Issuer,CHB FILE MAINT,FT FILE MAINT - File Transmission Fee First Presentments,Weekly,Per Data point,B,ALL, EUR ,0,,Chargeback related,,Non Sales
+MC,2FT17402,FU,File Transmission - Customer,FILE TRANS COLL-Rec,File Transm Fee Collection - Receiver,0,Per Data point,A,ALL, EUR ,0,Switching,,,Scheme B~
+MC,2FT6802,FU,File Transmission - Customer,FILE TRANS CURR sum-Rec,File Transm Fee Currency sum - Receiver,0,Per Data point,A,ALL, EUR ,0,Switching,,,Scheme B~
+MC,2FT6852,FU,File Transmission - Customer,FILE TRANS FIN-Rec,File Transm Fee File FIN Positon - Receiver,0,Per Data point,A,ALL, EUR ,0,Switching,,,Scheme B~
+MC,2FT6972,FU,File Transmission - Customer,FILE TRANS HD-Rec,File Transm Fee File Header - Receiver,0,Per Data point,A,ALL, EUR ,0,Switching,,,Scheme B~
+MC,2FT6952,FU,File Transmission - Customer,FILE TRANS HD-Rec,File Transm Fee File Header - Receiver,0,Per Data point,A,ALL, EUR ,0,Switching,,,Scheme B~
+MC,2FT6912,FU,File Transmission - Customer,FILE TRANS Except-Rec,File Transm Fee File Mess Excpt - Receiver,0,Per Data point,A,ALL, EUR ,0,Switching,,,Scheme A~
+MC,2FT6882,FU,File Transmission - Customer,FILE TRANS Sett-Rec,File Transm Fee Sett - Receiver,0,Per Data point,A,ALL, EUR ,0,Switching,,,Scheme B~
+MC,2FT17401,FU,File Transmission - Customer,FILE TRANS COLL-Send,File Transmission Fee Collection - Sender,0,Per Data point,A,ALL, EUR ,0,Switching,,,Scheme B
+MC,2FT6402,FU,File Transmission - Customer,FILE TRANS CURR upd-Rec,File Transmission Fee File Currency Update - Receiver,0,Per Data point,A,ALL, EUR ,0,,,,Scheme B~
+MC,2GC1030,GF,IPM Acquirer,ATM-PROG SUPPORT,ATM Program Support Fee Maestro/Cirrus,0,Q,B,ATM, USD ,0.25,,,,Ignore
+MC,2GC1031,GF,IPM Acquirer,ATM-PROG SUPPORT,ATM Program Support Fee MCC/DMC,0,Q,B,ATM, USD ,0.25,,,,Ignore
+MC,2GC1422,GF,IPM Acquirer,DATA ELEMT GCMS ATM,Data Element Fee GCMS ATM -where DE54s2 contain Surcharge info,0,Q,B,ATM, USD ,0.2,,,,Ignore
+MC,2GC5532,GH,Global Clearing Acquirer,DE-MCC VOL,ACQ clearing Germany MCC Specific CNP Vol fee AN1481,Weekly,Vol Tier (PPT),A,ACQ, EUR ,  ,Scheme,Coverred under CLEARING (all),SCHEME,Not in use
+MC,2GC8025,GH,Global Clearing Acquirer,CURR MATCH CNP,Acquirer Currency Matching Fee - CNP - have CHP equivalent AN2412,0,Per Tx (%) ,A,ACQ, EUR ,0.0005,Stand-Alone,,,Not in use
+MC,2GC8015,GH,Global Clearing Acquirer,CURR MATCH CHP,Acquirer Currency Matching Fee - CP have CNP equivalent AN2412,0,Per Tx (%) ,A,ACQ&ATM, EUR ,0.002,,,,Scheme B~
+MC,2GC69121FNS,GH,Global Clearing Acquirer,CHB Blocking,Acquirer Ineligible Chargeback Blocking Fees,Ad Hoc,Fixed,Non-Sale Excluded,ACQ, EUR ,3,Stand-Alone,Chargeback related,,Non Sales
+MC,2GC1901,GH,Global Clearing Acquirer,CNP,CNP,0,Per Tx (%) ,A,ACQ, EUR ,0.0003,Scheme,AN 1487 ,SCHEME,Scheme A~
+MC,2GC1911,GH,Global Clearing Acquirer,CNP-MOTO,CNP-MOTO,0,Per Tx (%) ,A,ACQ, EUR ,0.0003,Scheme,AN 1487 ,SCHEME,Scheme A~
+MC,2GC1902,GI,Global Clearing Issuer,ISS CNP,GI GLB CLR ISS - Card Not Present Fee,0,Per Tx (%) ,B,ISS, EUR ,0.0003,,,,Scheme B~
+MC,2GC1912,GI,Global Clearing Issuer,ISS MOTO,GI GLB CLR ISS - Mail Order-Telephone Order Fee,0,Per Tx (%) ,B,ISS, EUR ,0.0003,,AN 1487,,Scheme B~
+MC,2GS30232A,GS,Global Service,GLB SERV ACC INQR,GS GLB SERV - Account Inquiry,Ad Hoc,Q,B,ALL, EUR ,7.75,,,,Not in use
+MC,2GS19002A,GS,Global Service,GLB SERV TELECOM,GS GLB SERV - Telecom Fixed,Ad Hoc,Q,B,ALL, EUR ,2.25,,,,Scheme B~
+MC,2GB2001,GY,GY - Global Wholesale Program - Acquirer,GLB WHOLS B2B,Global Wholesale Travel Transaction Program B2B,Weekly,Per Tx (PPT) ,EXCLUDED,ACQ, EUR ,0.0005,Switching,Specific fees not in Cost Matrix - currently low cost,,Scheme A~
+MC,2GB2001S,GY,GY - Global Wholesale Program - Acquirer,GLB WHOLS B2B,Global Wholesale Travel Transaction Program B2B - not part of scope,Weekly,Per Tx (PPT) ,EXCLUDED,ACQ, EUR ,0.0055,Scheme,Specific fees not in Cost Matrix - currently low cost,,Scheme A~
+MC,2GZ000P,GZ,GCMS Rejects Weekly,GCMS PROCS REJCT Adjust,GCMS Processed Message Reject Fee,Weekly,Vol Tier (PPT),TO REVIEW,ACQ, EUR ,-3,Switching,,,Not in use
+MC,TGC5001,GZ,GCMS Rejects Weekly,GCMS PROCS REJCT,GCMS Processed Message Rejects *NOT Billed if <70 rejections in the week,0,Vol Tier (PPT),C,ALL, EUR ,0.5,Switching,,SCHEME,Scheme B~
+MC,2EA1116,HN,Acquirer Authorization,ACC STAT INQRY,Account Status Inquiry Service Fee,Weekly,Per Tx (PPT) ,A,ACQ, EUR ,0.025,Processing,"Not included in Non-Sale, similar to verify. €2100 Jan-May",,Scheme A~
+MC,2EA1009Q,HN,Acquirer Authorization,AUTHOR,Acquirer Authorization Domestic/Intra-Europe Reversal Vol value >€10K -  Efft from 05/10/20,Weekly,Per Tx (PPT) ,A,ACQ, EUR ,0.9,Switching,New Fee effective from 05/10/2020,SCHEME,Scheme A~
+MC,2EA1156,HN,Acquirer Authorization,AUTHOR MSI,Acquirer Authorization Maestro/Cirrus,Weekly,Per Tx (%) ,A,ACQ, EUR ,0.0001,Switching,Coverred under 2EA1166,SCHEME,Scheme A
+MC,2EA1166Q,HN,Acquirer Authorization,AUTHOR,Acquirer Authorization Mastercard Vol value >€10K Efft from 05/10/20,Weekly,Per Tx (PPT) ,A,ACQ, EUR ,0.9,Switching,New Fee effective from 05/10/2020,SCHEME,Scheme B~
+MC,2EA3006,HN,Acquirer Authorization,AVS,Address Verification Service,0,Per Tx (PPT) ,B,ACQ, EUR ,0.005,Stand-Alone,AN 5312 ,SCHEME,Scheme A~
+MC,2EA1009M,HN,Acquirer Authorization,AUTHOR,Authorisation Reversal Dom&Intra all value - Efft until 04/10/20,0,Per Tx (PPT) ,A,ACQ, EUR ,0.0001,Switching,,SCHEME,Scheme B~
+MC,2EA2009M,HN,Acquirer Authorization,AUTHOR,Authorisation Reversal Inter Trx <€10K Efft from 05/10/20,Weekly,Per Tx (%) ,A,ACQ, EUR ,0.0001,Switching,New Fee effective from 05/10/2020,SCHEME,Scheme B~
+MC,2EA2009Q,HN,Acquirer Authorization,AUTHOR,Authorisation Reversal Inter Vol value >€10K Efft from 05/10/20,Weekly,Per Tx (PPT) ,A,ACQ,#N/A,#N/A,Switching,New Fee effective from 05/10/2020,SCHEME,Not in use
+MC,2EA1166,HN,Acquirer Authorization,AUTHOR,Authorisation Trx value <€10K -  Efft from 05/10/20 - 2EA1166,Weekly,Per Tx (%) ,A,ACQ, EUR ,0.0001,Switching,New Fee effective from 05/10/2020,SCHEME,Scheme B~
+MC,2EA1246,HN,Acquirer Authorization,ACQ AUTH EXEMP INDICT,Authorization Acquirer Exemption Indicator Fee,Weekly,Per Tx (PPT) ,A,ACQ, EUR ,0.02,,New Fee effective from 05/10/2020 not on Matrix - transaction criteria specific,,Scheme A
+MC,2EA1126P,HN,Acquirer Authorization,PRE-AUTH,PreAuth Transaction Fee,Weekly,Per Tx (PPT) ,EXCLUDED,ACQ, EUR ,0.01,Switching,Specific fees not in Cost Matrix - currently low cost,,Scheme A~
+MC,2EA1126,HN,Acquirer Authorization,PRE-AUTH GBR,PreAuth Volume Fee,Weekly,Per Tx (PPT) ,EXCLUDED,ACQ, EUR ,0.0002,Switching,Specific fees not in Cost Matrix - currently low cost,,Scheme A~
+MC,PHZ8120,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - Domestic MasterCard Processed Cash Transactions,Quarterly,Q,A,ISS, EUR ,2.84,,,,Not in use
+MC,PHZ3120,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - Domestic MasterCard Processed Cash Volume,Quarterly,Per Tx (%) ,A,ISS, EUR , Vary ,,,,Not in use
+MC,PHZ8130,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - Domestic MasterCard Processed Credit Transactions,Quarterly,Q,A,ISS, EUR ,0.01,,,,Not in use
+MC,PHZ3130,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - Domestic MasterCard Processed Credit Volume,Quarterly,Per Tx (%) ,A,ISS, EUR ,0.46,,,,Not in use
+MC,PHZ8111,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - Domestic MasterCard Processed Purchase Transactions,Quarterly,Q,A,ISS, EUR ,42.99,,,,Not in use
+MC,PHZ3111,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - Domestic MasterCard Processed Purchase Volume,Quarterly,Per Tx (%) ,A,ISS, EUR ,592.68,,,,Not in use
+MC,2IA3955L3,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation  Financial Inclusion Fund-MC ATM Dom-Issuer Fee,Quarterly,Per Tx (%) ,B,ISS, EUR ,0.0001,,,,Not in use
+MC,2IA3955L2,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation  Financial Inclusion Fund-MC ATM Inter-Issuer Fee,Quarterly,Per Tx (%) ,B,ISS, EUR ,0.0001,,,,Not in use
+MC,2IA3955L1,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation  Financial Inclusion Fund-MC ATM Intra-Issuer Fee,Quarterly,Per Tx (%) ,B,ISS, EUR ,0.0001,,,,Not in use
+MC,2IA3945L3,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation  Financial Inclusion Fund-MC POS Dom-Issuer Fee,Quarterly,Per Tx (%) ,B,ISS, EUR ,0.0001,,,,Not in use
+MC,2IA3945L2,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation  Financial Inclusion Fund-MC POS Inter-Issuer Fee,Quarterly,Per Tx (%) ,B,ISS, EUR ,0.0001,,,,Not in use
+MC,2IA3945L1,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation  Financial Inclusion Fund-MC POS Intra-Issuer Fee,Quarterly,Per Tx (%) ,B,ISS, EUR ,0.0001,,,,Not in use
+MC,PIA3955L3,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation Fund-Mastercard Domestic ATM-ISS,Quarterly,Per Tx (%) ,B,ISS, EUR ,27.49,,,,Not in use
+MC,PIA3945L3,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation Fund-Mastercard Domestic POS-ISS,Quarterly,Per Tx (%) ,B,ISS, EUR , Vary ,,,,Not in use
+MC,PIA3955L1,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation Fund-Mastercard Intra ATM-ISS,Quarterly,Per Tx (%) ,B,ISS, EUR , Vary ,,,,Not in use
+MC,PIA3945L1,IA,Issuer Assessment,ISS INV FND,IA ISS ASSESS - Innovation Fund-Mastercard Intra POS-ISS,Quarterly,Per Tx (%) ,B,ISS, EUR , Vary ,,,,Not in use
+MC,PHZ8220,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - International MasterCard Processed Europe Cash Transaction,Quarterly,Q,A,ISS, EUR ,-2.84,,,,Not in use
+MC,PHZ3220,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - International MasterCard Processed Europe Cash Volume,Quarterly,Per Tx (%) ,A,ISS, EUR , Vary ,,,,Not in use
+MC,PHZ8230,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - International Mastercard Processed Europe Credit Transactions,Quarterly,Q,A,ISS, EUR ,-0.02,,,,Not in use
+MC,PHZ3230,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - International Mastercard Processed Europe Credit Volume,Quarterly,Per Tx (%) ,A,ISS, EUR ,-7.66,,,,Not in use
+MC,PHZ8211,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - International MasterCard Processed Europe Purchase Transactions,Quarterly,Q,A,ISS, EUR , Vary ,,,,Not in use
+MC,PHZ3211,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - International MasterCard Processed Europe Purchase Volume,Quarterly,Per Tx (%) ,A,ISS, EUR , Vary ,,,,Not in use
+MC,PHZ3360,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - International MasterCard Processed Non-Europe Cash Volume,Quarterly,Per Tx (%) ,A,ISS, EUR ,-0.02,,,,Not in use
+MC,PHZ3351,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - International MasterCard Processed Non-Europe Purchase Volume,Quarterly,Per Tx (%) ,A,ISS, EUR ,-0.01,,,,Not in use
+MC,TIAINTRAPOS,IA,Issuer Assessment,ISS REPRT TRX,IA ISS ASSESS - Iss Reported Tran Fee MC  Maestro POS - Dom  Intra,Quarterly,Q,A,ISS, EUR ,0.0003,,,,Not in use
+MC,TIAINTRA,IA,Issuer Assessment,ISS REPRT TRX,IA ISS ASSESS - Iss Reported Transaction Fee - Dom  Intra,0,Q,A,ISS, EUR ,0.01,,,,Scheme B~
+MC,TIAINTER,IA,Issuer Assessment,ISS REPRT TRX,IA ISS ASSESS - Iss Reported Transaction Fee - Inter,0,Q,A,ISS, EUR ,0.42,,,,Scheme B~
+MC,TIAINTRAATM,IA,Issuer Assessment,ISS REPRT TRX,IA ISS ASSESS - Iss Reported Transaction Fee MC  Maestro ATM - Dom  Intra,Quarterly,Q,A,ISS, EUR ,0.0013,,,,Not in use
+MC,TIAINTERPOS,IA,Issuer Assessment,ISS REPRT TRX,IA ISS ASSESS - Iss Reported Transaction Fee MC  Maestro POS - Inter,Quarterly,Q,A,ISS, EUR ,0.27,,,,Not in use
+MC,TIAINTERATM,IA,Issuer Assessment,ISS REPRT TRX,IA ISS ASSESS - Iss Reported Transaction Fee MC ATM - Inter,Quarterly,Q,A,ISS, EUR ,0.27,,,,Not in use
+MC,TCC39695,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - Issuer Mastercard Volume Fee Tier,0,Per Tx (%) ,A,ISS, EUR ,0.0003,,,,Scheme B~
+MC,TIDMMCMSC,IA,Issuer Assessment,ISS VOL,IA ISS ASSESS - Issuing Debit MC MC prepaid and MC debit Volume Fee,Quarterly,Per Tx (%) ,A,ISS, EUR ,0.0007,,,,Not in use
+MC,TIA5343MCA,IA,Issuer Assessment,ISS MC ALERT,IA ISS ASSESS - Mastercard Alerts,Quarterly,Q,B,ISS, EUR ,300,,Discontinued event ,,Not in use
+MC,TCC39755,IA,Issuer Assessment,ISS CARD FEE,IA ISS ASSESS - MasterCard Card Fees Tier,0,Q,B,ISS, EUR ,0.04,,,,Scheme B~
+MC,TCC3975H,IA,Issuer Assessment,ISS CARD FEE,IA ISS ASSESS - MasterCard Card Fees Tier,Quarterly,Q,B,ISS, EUR ,0.03,,,,Not in use
+MC,TIA3940MMVF,IA,Issuer Assessment,ISS MIN VOL,IA ISS ASSESS - MasterCard Issuing Purchase and Cash Minimum Volume Tier,0,Per Tx (%) ,A,ISS, EUR ,0,,,,Not in use
+MC,PIA3911D3,IA,Issuer Assessment,ISS ASSESS,IA ISS ASSESS - MDF-MasterCard Debit POS Dom-ISS,Quarterly,Per Tx (%) ,A,ISS, EUR ,43.91,,,,Not in use
+MC,PIA3911D1,IA,Issuer Assessment,ISS ASSESS,IA ISS ASSESS - MDF-MasterCard Debit POS Intra-ISS,Quarterly,Per Tx (%) ,A,ISS, EUR , Vary ,,,,Not in use
+MC,2IA3911D3,IA,Issuer Assessment,ISS ASSESS,IA ISS ASSESS - MDF-MC Debit  Prepaid incl. DMC  MSI/CIR POS Dom-ISS,Quarterly,Per Tx (%) ,A,ISS, EUR ,0.0001,,,,Not in use
+MC,2IA3911D2,IA,Issuer Assessment,ISS ASSESS,IA ISS ASSESS - MDF-MC Debit  Prepaid incl. DMC  MSI/CIR POS Inter-ISS,Quarterly,Per Tx (%) ,A,ISS, EUR ,0.0001,,,,Not in use
+MC,2IA3911D1,IA,Issuer Assessment,ISS ASSESS,IA ISS ASSESS - MDF-MC Debit  Prepaid incl. DMC  MSI/CIR POS Intra-ISS,Quarterly,Per Tx (%) ,A,ISS, EUR ,0.0001,,,,Not in use
+MC,2K01000,K3,Compliance,RISK ADMIN,Risk Management Administrative Fee,Annual,Fixed,FINE,ALL, EUR ,"2,500",Scheme,Compliance: We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,FINE
+MC,2KC4043,KC,E-Commerce,CHIP WAIVER,Chip Waiver Fee EUR,0,Fixed,TO REVIEW,ACQ, EUR ,1,Stand-Alone,,,Scheme B
+MC,2KE3010,KE,Implementation Service,AUTH SYS CONCT BACKUP,Acquirer Back-Up Connectivity Fee Tier 4,Weekly,Vol Tier (PPT),A,ACQ&ATM-NorPassThr, EUR ,"1,700",,Ad-hoc as a backup for a set period - to split between ATM and ACQ,,Scheme C
+MC,2KE2010,KE,Implementation Service,AUTH SYS CONCT,"Acquirer Connectivity Fee Tier 4 - 10,000,001–50,000,000 clearing records previous year",0,Vol Tier (PPT),B,ALL, EUR ,"1,700",Switching,,SCHEME,Scheme B~
+MC,2KE0000,KE,Implementation Service,ADJUSTMENT FOR KE,Adjustment for Service Code KE,Ad Hoc,Variable,Implemt-Proj,ALL, EUR ,"1,125",,Investigate which progam and passthrough or allocate to correct product,,Adj
+MC,2EQ5602,KE,Implementation Service,IMPLM-PROJ,Implementation - Hardware Site Move Parallel,Ad Hoc,Variable,Implemt-Proj,ALL, EUR ,"10,000",Switching,Investigate which progam and passthrough or allocate to correct product,,Not in use
+MC,2EQ5117,KE,Implementation Service,IMPLM-PROJ,Implementation Fee,Ad Hoc,Variable,Implemt-Proj,ALL, EUR ,"10,000",Stand-Alone,Investigate which progam and passthrough or allocate to correct product,Pass-through,Scheme B~
+MC,2KE3002,KE,Implementation Service,AUTH SYS CONCT BACKUP - ISS fee,Issuer Back-Up Connectivity Fee Tier 1,Weekly,Vol Tier (PPT),A,ISS, EUR ,450,,Ad-hoc as a backup for a set period,,Scheme B~
+MC,2KE2002,KE,Implementation Service,AUTH SYS CONCT - ISS fee,Issuer Connectivity Fee Tier 1,0,Vol Tier (PPT),A,ISS, EUR ,450,Switching,,,Scheme B~
+MC,2KE6000,KE,Implementation Service,MDES PROJECT,Mastercard Digital Enablement Services (MDES),Monthly,Variable,Implemt-Proj,ACQ, EUR ,"15,000",Stand-Alone,Investigate which progam and passthrough or allocate to correct product,Pass-through,Not in use
+MC,2EQ5600,KE,Implementation Service,IMPLM-PROJ,New Hardware Installation,Ad Hoc,Variable,Implemt-Proj,ALL, EUR ,"60,000",Switching,Investigate which progam and passthrough or allocate to correct product,,Not in use
+MC,2MK5045,KF,Funding,ACQ MDF,ACQ Market Dev Fund Germany,0,Per Tx (%) ,B,ACQ, EUR ,0.0001,Scheme,,SCHEME,Scheme A~
+MC,2KF1100,KF,Funding,ACQ MDF,ECOM FUNDING,0,Per Tx (%) ,B,ACQ, EUR ,0.001,Scheme,,SCHEME,Scheme A~
+MC,2KF000S,KF,Funding,ACQ MDF,MRK-INN DEV FUND Adjustment,Quarterly,Per Tx (%) ,B,ACQ, EUR , Vary ,Scheme,Adjustment of 2KF1100,SCHEME,Not in use
+MC,2KF1022,KF,Funding,MIN MRK-INN DEV BG,MRK-INN DEV FUND Minimum Contribution for Bulgaria Min €10K,Annual,Fixed,Scheme B Partial,ACQ, EUR ,"9,969.42",Scheme,,,Not in use
+MC,2EC5050,KF,Funding,STRATEGY FD,Strategy Program (Second 150 Members)  Current ID  2EC5050  efft until 28Nov20,Annual,Vol Tier (PPT),PrincipalOther,ALL, EUR ,"9,000",,Annual - November fee - Advance Nov-Oct,,Not in use
+MC,2FL5001,KL,License,ADD-BIN ASSIGNMT,Additional BIN Assignment,Ad Hoc,Fixed,TO REVIEW,ALL, EUR ,"2,000",,Investigate which progam and passthrough or allocate to correct product,,Not in use
+MC,2FL5002,KL,License,ADD-ICA ASSIGNMT,Additional ICA Assignment,Ad Hoc,Fixed,A,ALL, EUR ,"5,000",,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2KL000S,KL,License,Licn App fee 2 parts,Adjustment for Service Code KL - 2KL2000,Ad Hoc,Variable,Implemt-Proj,ALL, EUR ,"25,000",Scheme,Investigate which progam and passthrough or allocate to correct product,,Not in use
+MC,2FL5026,KL,License,ISS LICENSE,KL LICENSE - Variance Request Fee,Ad Hoc,Fixed,TO REVIEW,ISS, EUR ,"1,500",,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2FL5003,KL,License,MTHLY BIN - ISS Fee,Monthly BIN Management Fee,Monthly,Fixed,A,ISS, EUR ,25,Scheme,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2FL5072,KL,License,ICA/BIN Transfer,Portfolio Sale Fee,Ad Hoc,Variable,Implemt-Proj,ALL, EUR ,"1,800",,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2FL5503,KL,License,QTLY LOW USE - ISS Fee,Quarterly BIN Low Usage Fee,Quarterly,Fixed,TO REVIEW,ISS, EUR ,"2,500",Scheme,Investigate which progam and passthrough or allocate to correct product,,Scheme B~
+MC,2EQ5400,KN,Key Management Services,KEY MANGMT,KN KEY Mang - Key Management Services Residency,Weekly,Q,B,ALL, EUR ,7.5,,,,Not in use
+MC,2EQ5001,KN,Key Management Services,KEY MANGMT,KN KEY Mang - Stand-In Integrity Fee,Ad Hoc,Q,Behavr-Integrity,ALL, EUR ,"2,500",,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2KY2100,KY,Academy,ACADEMY ON WEB,ACADEMY ON WEB,0,Fixed,PrincipalOther,ALL, EUR ,950,Stand-Alone,,SCHEME,Scheme C
+MC,2L12000S,L1,Settlement - Acquirer Maestro/Cirrus POS,CA-MRK FND Adjust,CA- Local Marketing Funds  Development Fees- Maestro/Cirrus Dom,Quarterly,Per Tx (PPT) ,B,ACQ, EUR ,0.0001,Scheme,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Scheme A~
+MC,2L12200S,L1,Settlement - Acquirer Maestro/Cirrus POS,CA-MRK FND Adjust,CA- Local Marketing Funds  Development Fees- Maestro/Cirrus Inter,Quarterly,Per Tx (PPT) ,B,ACQ, EUR ,0.0002,Scheme,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Not in use
+MC,2L12100,L1,Settlement - Acquirer Maestro/Cirrus POS,CA-MRK FND Adjust,CA- Local Marketing Funds  Development Fees- Maestro/Cirrus Intl,Quarterly,Per Tx (PPT) ,B,ACQ, EUR ,0.0005,Scheme,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Scheme B~
+MC,2L12100S,L1,Settlement - Acquirer Maestro/Cirrus POS,CA-MRK FND Adjust,CA- Local Marketing Funds  Development Fees- Maestro/Cirrus Intra,Quarterly,Per Tx (PPT) ,B,ACQ, EUR ,0,Scheme,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Scheme A~
+MC,2L32200S,L3,Settlement - Acquirer MasterCard,ACQ CP-PROMOF,ACQ Innovation Fund - Various,Quarterly,Per Tx (%) ,B,ACQ, EUR ,0,Scheme,2L32200S,SCHEME,Scheme A~
+MC,2L32100,L3,Settlement - Acquirer MasterCard,ACQ CP-PROMOF,ACQ Innovation Fund - Various,Quarterly,Per Tx (%) ,B,ACQ, EUR ,0.0001,Scheme,2L32100,SCHEME,Scheme A~
+MC,2L32000,L3,Settlement - Acquirer MasterCard,ACQ INNVF,ACQ Innovation Fund - Various,Quarterly,Per Tx (%) ,B,ACQ, EUR ,0.0001,Scheme,2L32000,SCHEME,Scheme A~
+MC,2AE49113PMC ,L3,Settlement - Acquirer MasterCard,ACQ INNVF,ACQ Innovation Fund- Poland,Quarterly,Per Tx (%) ,B,ACQ,#N/A,#N/A,Scheme,2AE49113PMC ,SCHEME,Not in use
+MC,TAE4911015 ,L3,Settlement - Acquirer MasterCard,ACQ MDF,ACQ Market Dev fund - PL,Quarterly,Per Tx (%) ,B,ACQ,#N/A,#N/A,Scheme,TAE4911015 ,SCHEME,Not in use
+MC,2L32000S,L3,Settlement - Acquirer MasterCard,CA-MRK FND Adjust,CA- Local Marketing Funds  Development Fees- MasterCard Dom,Quarterly,Per Tx (PPT) ,B,ACQ, EUR ,0,Scheme,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Scheme A~
+MC,2L32100S,L3,Settlement - Acquirer MasterCard,CA-MRK FND Adjust,CA- Local Marketing Funds  Development Fees- MasterCard Inter,Quarterly,Per Tx (PPT) ,B,ACQ, EUR ,0,Scheme,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Scheme B~
+MC,2LG501INF,LG,Funds - Acquirer,ACQ INNVF,ACQ Innovation Fund - ES/LU/HU/FR,0,Per Tx (%) ,B,ACQ, EUR ,0.0001,Scheme,,SCHEME,Scheme A~
+MC,2LG501BLR,LG,Funds - Acquirer,ACQ MDF,ACQ Market Dev Fund Dom Bulgaria/Portugal,Monthly,Per Tx (%) ,B,ACQ, EUR ,0.0015,Scheme,Coverred under2L32000&2L322000&2L32000S&2L32200S,SCHEME,Not in use
+MC,2LG701BLR2,LG,Funds - Acquirer,ACQ MDF,ACQ Market Dev Fund Dom POS Cyprus,Monthly,Per Tx (%) ,B,ACQ, EUR ,0.0004,Scheme,,SCHEME,Not in use
+MC,2LG701CS2,LG,Funds - Acquirer,ACQ MDF,ACQ Market Dev Fund Inter POS Cyprus,0,Per Tx (%) ,B,ACQ, EUR ,0.0004,Scheme,,SCHEME,Ignore
+MC,2LG501CS,LG,Funds - Acquirer,ACQ MDF,ACQ Market Dev Fund Inter POS HU/PT/BG,Monthly,Per Tx (%) ,B,ACQ, EUR ,0.0015,Scheme,,SCHEME,Not in use
+MC,2LG701INTR2,LG,Funds - Acquirer,ACQ MDF,ACQ Market Dev Fund Intra POS Cyprus,0,Per Tx (%) ,B,ACQ, EUR ,0.0004,Scheme,,SCHEME,Ignore
+MC,2LG501INTRA,LG,Funds - Acquirer,ACQ MDF,ACQ Market Dev fund POS Bulgaria Intra,0,Per Tx (%) ,B,ACQ, EUR ,0.0015,Scheme,,SCHEME,Not in use
+MC,TLN1001,LN,Location Services,LOCTN SRV,Location Services Program Fee,0,Fixed,B,ACQ, USD ,600,Stand-Alone,,SCHEME,Scheme B
+MC,2LY61061,LY,Clearing Other - Acquirer,CHB CLEAR ARB,CHB Intra&Inter Arbitration Clearing,Ad Hoc,Vol Tier (PPT),Non-Sale,ACQ, EUR ,0.0025,Switching,Chargeback related,NON_SALE_FEES,Not in use
+MC,2LY61051,LY,Clearing Other - Acquirer,CHB CLEAR,Clearing Acq POS - First Chargeback Intra&Inter,Weekly,Vol Tier (PPT),Non-Sale,ACQ, EUR ,0.0025,Switching,Chargeback related,NON_SALE_FEES,Scheme A~
+MC,2LY61071,LY,Clearing Other - Acquirer,CHB CLEAR RPSNT,Clearing Acq POS - Second Presentment Intra&Inter,Weekly,Vol Tier (PPT),Non-Sale,ACQ, EUR ,0.0075,Switching,Chargeback related,NON_SALE_FEES,Scheme A~
+MC,2LY81051,LY,Clearing Other - Acquirer,CHB CLEAR,Clearing Inter-Regional Maestro/Cirrus Acquirer POS - First Chargeback,Ad Hoc,Fixed,Non-Sale,ACQ, EUR ,0.0025,,Chargeback related,NON_SALE_FEES,Not in use
+MC,2LY2600,LY,Clearing Other - Acquirer,ACQ NO UCAF,"E-Commerce Development Fee—Acquiring No UCAF Domestic excl UK,Gi and IE",0,Per Tx (%) ,B,ACQ, EUR ,0.0005,Scheme,Accruals will stop for the E-Commerce Development Fee (EDF) Billing Events as of 1 July 2022,SCHEME,Scheme A~
+MC,2LY7102,LY,Clearing Other - Acquirer,MULTI-CCY SETTMT Non-Regnl,Multi-Ccy Settl Inter Txns w/ non Regional Ccys,0,Per Tx (%) ,B,ACQ&ATM, EUR ,0.0013,,,,Scheme B~
+MC,2LY7104,LY,Clearing Other - Acquirer,MULTI-CCY SETTMT Non-Regnl,Multi-Ccy Settl Intra  Dom Txns w/ non Regional Ccys,0,Per Tx (%) ,B,ACQ&ATM, EUR ,0.0003,,,,Scheme B~
+MC,2LZ61052,LZ,Clearing Other - Issuer,CLR ISS 1st CHB,LZ CLR-ISS - Clearing Dom/Intra/Inter MasterCard Issuer POS - First Chargeback,Ad Hoc,Per Tx (%) ,B,ISS, EUR ,0.003,,Chargeback related,NON_SALE_FEES,Not in use
+MC,2LZ4500,LZ,Clearing Other - Issuer,ECOM DEV ISS MRCH UCAF,LZ CLR-ISS - E-Commerce Development Fee - Issuing Merchant UCAF Dom/Intra/Inter,Weekly,Per Tx (%) ,B,ISS, EUR ,0.0001,,Accruals will stop for the E-Commerce Development Fee (EDF) Billing Events as of 1 July 2022,,Not in use
+MC,2MC1801,MC,Member Card Program,EXCEPT PROCS,MC CardProg - MasterCard Exception Processing Fee,Ad Hoc,Q,Implemt-Proj,ALL, USD ,"5,000",,Investigate which progam and passthrough or allocate to correct product,,Not in use
+MC,TNB0015,ML,MasterCard On-Line,MATCH INQRY QTLY ,MATCH Inquiry Fee,0,Vol Tier (PPT),B,ACQ, USD ,0.25,Scheme,,SCHEME,Scheme B
+MC,2NB00011,ML,MasterCard On-Line,MATCH-MOST,Member Alert To Control High-Risk/MOST Quarterly Fee,Quarterly,Fixed,B,ACQ, USD ,"1,250",Scheme,Accrue:  Quarterly in arrears,SCHEME,Scheme B
+MC,2NB0016,ML,MasterCard On-Line,MATCH QTLY API,Quarterly API Fee,0,Fixed,C,ALL, USD ,500,Scheme,,SCHEME,Scheme B
+MC,2MS2420,MS,MasterCom,CHB - MASTERCOM ADMIN,Administrative Fee for case filling on MasterCom payable by party found responsible for fees,Ad Hoc,Fixed,Non-Sale,ALL, EUR ,250,Stand-Alone,Dispute Fee to pass on to merchant: Contact Gosia in Dispute team for Merchant ID with Case ID in invoice,,Non Sales
+MC,2MS2550,MS,MasterCom,CHB - Case Withdrawal,Case Withdrawal Fee,Ad Hoc,Fixed,Non-Sale Excluded,ALL, EUR ,150,Stand-Alone,Dispute Fee to pass on to merchant: Contact Gosia in Dispute team for Merchant ID with Case ID in invoice,,Non Sales
+MC,2MS2400,MS,MasterCom,CHB - FILLING,Filing Fee,Ad Hoc,Fixed,Non-Sale Excluded,ALL, EUR ,150,Stand-Alone,Dispute Fee to pass on to merchant: Contact Gosia in Dispute team for Merchant ID with Case ID in invoice,,Non Sales
+MC,2MS3501,MS,MasterCom,CHB Exces page,MasterCom Chargeback Excessive Page,Ad Hoc,Fixed,Non-Sale Excluded,ACQ, EUR ,1,Stand-Alone,Chargeback related,,Non Sales
+MC,2MS2430,MS,MasterCom,CHB-ARBIT PROCS,Mastercom Processing Fee - Arbitration,Ad Hoc,Fixed,Non-Sale,ALL, EUR ,20,Stand-Alone,Chargeback related,,Non Sales
+MC,2MS2610,MS,MasterCom,CHB-PREARB HOSTED,Pre-Arbitration Hosted Fee,Ad Hoc,Fixed,Non-Sale,ALL, EUR ,9.5,Stand-Alone,Chargeback related,,Non Sales
+MC,2MS2601,MS,MasterCom,CHB-PREARB REC,Pre-Arbitration-Receiver,Ad Hoc,Fixed,Non-Sale Excluded,ALL, EUR ,5,Stand-Alone,Chargeback related,,Non Sales
+MC,2MS2410,MS,MasterCom,CHB - TECHN Violation,Technical Violation Fee,Ad Hoc,Fixed,FINE,ALL, EUR ,100,Stand-Alone,Dispute Fee to pass on to merchant: Contact Gosia in Dispute team for Merchant ID with Case ID in invoice,,FINE
+MC,2MS2405,MS,MasterCom,CHB - UK FILLING,UK Domestic Filing Fee,Ad Hoc,Fixed,Non-Sale Excluded,ALL, EUR ,200,Stand-Alone,Dispute Fee to pass on to merchant: Contact Gosia in Dispute team for Merchant ID with Case ID in invoice,,Non Sales
+MC,2MS5341,MW,MasterCom,CHB Doc trx fee,Chargeback Support Documentation Transaction Fee,Ad Hoc,Per Tx (PPT) ,Non-Sale Excluded,ACQ, EUR ,0.45,Stand-Alone,Chargeback related,,Non Sales
+MC,TMS5331,MW,MasterCom,CHB Doc value fee,Chargeback Support Documentation Transaction Value Tier,Ad Hoc,Vol Tier (PPT),Non-Sale Excluded,ACQ, EUR ,0.0095,Stand-Alone,Chargeback related,,Non Sales
+MC,TMS2228,MW,MasterCom,CHB PROLICENSE,CHB - Pro License Tier CHB APP,0,Fixed,Non-Sale,ACQ, EUR ,"1,550",Stand-Alone,,NON_SALE_FEES,Scheme A~
+MC,TMS1999,MW,MasterCom,CHB - HOSTED PARTCIP,Hosted Participation Tier Fee,Ad Hoc,Q,Non-Sale,ALL, EUR ,25,,Dispute Fee to pass on to merchant: Contact Gosian in Dispute team for Merchant ID with Case ID in invoice,,Scheme B~
+MC,TMS2229,MW,MasterCom,MASTERCOM,MasterCom Claims Manager Tier,0,Vol Tier (PPT),Non-Sale,ACQ, EUR ,3.05,Stand-Alone,,NON_SALE_FEES,Non Sales
+MC,2MS1997,MW,MasterCom,CHB - MasterCom Hosted,MasterCom Hosted,Ad Hoc,Q,Non-Sale Excluded,ALL, EUR ,9.5,,Dispute Fee to pass on to merchant: Contact Gosian in Dispute team for Merchant ID with Case ID in invoice,,Scheme A~
+MC,2MS1311,MW,MasterCom,CHB - Copy Request,Retrieval Request Transaction Fee MasterCard,Ad Hoc,Fixed,Non-Sale,ACQ, EUR ,1.3,Stand-Alone,Chargeback related,NON_SALE_FEES,Non Sales
+MC,2MS2530,MZ,MasterCom - Dispute,CHB - DISPUTE DEBIT,Dispute Amount Debit,Ad Hoc,,Non-Sale,ALL, USD ,  ,,Dispute Fee to pass on to merchant: Contact Gosian in Dispute team for Merchant ID with Case ID in invoice,,Not in use
+MC,2NA1301,NC,Non-MasterCard Auth MasterCard ATM,ATM AUTH NON-MC pay later,Authorization Non-MasterCard Pay Later ATM Acquirer,0,Per Tx (PPT) ,TO REVIEW,ATM, EUR ,0.3,,,,Scheme B~
+MC,2MI3001,OS,Investment Fees,MERCH INVESTMT,OS Investm - Merchant Investment Fee Chargeback International,Weekly,Per Tx (%) ,B,ISS, EUR ,-0.0002,,,,Not in use
+MC,2MI1001,OS,Investment Fees,MERCH INVESTMT,OS Investm - Merchant Investment Fee Purchase International,0,Per Tx (%) ,B,ISS, EUR ,0.0002,,,,Scheme B~
+MC,2MI1050,OS,Investment Fees,MERCH INVESTMT,OS Investm - Merchant Investment Fee Unique International,0,Per Tx (%) ,B,ISS, EUR ,0.0002,,,,Scheme B~
+MC,2PI2001Q,P1,Acquirer Processing Integrity,FN AUTH INTGRT <€12,Final Authorization Not Meeting Necessary Requirement trx <€12 - Transaction,Weekly,Per Tx (PPT) ,Behavr-Integrity,ACQ, EUR ,0.03,Scheme,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2PI2001A,P1,Acquirer Processing Integrity,FN AUTH INTGRT >=€12,Final Authorization Not Meeting Necessary Requirement trx >=€12 Value,Weekly,Per Tx (%) ,Behavr-Integrity,ACQ, EUR ,0.0025,Scheme,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2PI2009,P4,Weekly,INTEGR-MESS ERROR,Acquirer Processing Integrity - MESSAGE ERROR ,Weekly,Per Tx (PPT) ,Behavr-Integrity,ACQ, EUR ,0.04,Scheme,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2PI2002Q,P4,Acquirer Processing Integrity,UNDEFINED with FIN AUTH INTGRT,Acquirer Processing Integrity - UNDEFINED FIN AUTH INTGRT,Weekly,Per Tx (PPT) ,Behavr-Integrity,ACQ, EUR ,0.01,Scheme,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2PI2003A,P4,Acquirer Processing Integrity,UNDEFINED without FIN AUTH INTGRT,Acquirer Processing Integrity - Undefined without Final Authorization Characteristics,Weekly,Per Tx (%) ,Behavr-Integrity,ACQ&ATM, EUR ,0.0025,,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2PI2003Q,P4,Acquirer Processing Integrity,UNDEFINED without FIN AUTH INTGRT,Acquirer Processing Integrity - Undefined without Final Authorization Characteristics,Weekly,Q,Behavr-Integrity,ACQ&ATM, EUR ,0.03,,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2PI2010,P4,Acquirer Processing Integrity,EXCESSIVE AUTH ATTEMPT,Transaction Processing Excellence-Excessive Authorization Attempts,Weekly,Q,Behavr-Integrity,ACQ&ATM, EUR ,0.5,,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2PI2011,P4,Acquirer Processing Integrity,NOMNL AMT AUTH,Transaction Processing Excellence-Nominal Amount Authorizations,Weekly,Per Tx (PPT) ,Behavr-Integrity,ACQ, EUR ,0.05,Scheme,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,PPB1002,PB,Global Publications,CTC PUBLICATION,CTC Online Manuals  Publications (discontinue end 2019),Annual,Fixed,TO REVIEW,ALL, EUR ,-0.01,Stand-Alone,,,Not in use
+MC,2PK0000,PK,Portfolio Analytics,PORTF INFO Adjust,Adjustment for Service Code PN 2PK1000/TPK1000,Monthly,Vol Tier (PPT),C,ALL, EUR ,16.05,Switching,Adjustment of 2PK1000/TPK1000 - PORTF INFO,SCHEME,Not in use
+MC,TPK5001,PK,Portfolio Analytics,PORTF ACQ PAK RP,Portfolio Analytics Acquirer Pack Reports Optional fee to review,Monthly,Fixed,TO REVIEW,ACQ, EUR ,"1,875",Switching,Requested to be removed. Need to follow up AGAIN. ,,Not in use
+MC,TPK5001S,PK,Portfolio Analytics,PORTF ACQ PAK RP REV,Portfolio Analytics Acquirer Pack Reports Reversal,Monthly,Fixed,TO REVIEW,ACQ, EUR , Vary ,Switching,Requested to be removed. Need to follow up AGAIN. ,,Not in use
+MC,TPK1000,PK,Portfolio Analytics,PORTF INFO,Portfolio Analytics Info Pack,0,Vol Tier (PPT),PrincipalOther,ALL, EUR ,921,Stand-Alone,,SCHEME,Scheme B~
+MC,2PN1013,PN,Non-Compliance Fees,NON-COM SETTL,Fine - Multi Local Next Day Fails,Ad Hoc,Variable,FINE,ALL, USD ,"15,000",Stand-Alone,Settlement fails - Raise issue with Ruth and Jay - To review (if our fault or else),Fine,FINE
+MC,2PN7181,PN,Non-Compliance Fees,INTREST-FAILED SETTL,Interest on Failed Settlement,Ad Hoc,Variable,FINE,ALL, USD ,6,Stand-Alone,Settlement fails - Raise issue with Ruth and Jay - To review (if our fault or else),Fine,FINE
+MC,2PN7171,PN,Non-Compliance Fees,SETTL FAIL,Settlement Failure Fee,Ad Hoc,Variable,FINE,ALL, USD ,"3,750",Stand-Alone,Settlement fails - Raise issue with Ruth and Jay - To review (if our fault or else),Fine,FINE
+MC,2EURMVFD,QI,Minimum Fee,MIN VOL DIFF,MVF Differential *eff until 01/01/2021,0,Variable,TO REVIEW,ALL, EUR ,1,Scheme,,,Scheme A~
+MC,2QL0000,QL,License Fee,YEARLY LICNS Adjust,Adjustment for Service Code QL,Ad Hoc,,TO REVIEW,ALL,,,,Reviewed and allocate where applicable,,Scheme B
+MC,TQL49OEEA,QL,License Fee,ACQ - YEARLY LICNS,Yearly License Fee - ACQ - discontinued fee,Annual,Vol Tier (PPT),TO REVIEW,ACQ, EUR ,"25,000",,Discontinued fee - replaced by monthly fee TQL49OEEA (AN 2071)- need to investigate,,Scheme A~
+MC,TQL39OEEA,QL,License Fee,ISS - YEARLY LICNS,Yearly License Fee - ISS - discontinued fee,Annual,Vol Tier (PPT),TO REVIEW,ISS, EUR ,"12,500",,Discontinued fee - replaced by monthly fee TQL39OEEA (AN 2071)- need to investigate,,Scheme A~
+MC,TRP1012B,RP,Reports,ACQ IP75510 RP,Acquirer Clearing Detail Report IP755120 - Bulk,Weekly,Per Data point,B,ACQ, EUR ,0.017,Switching,Operational fee increase from fixed fee per report to fee per data point per transaction,SCHEME,Scheme B
+MC,TRP1011B,RP,Reports,ACQ INTCH Dtl - IP755020,Acquirer Interchange Detail Report IP755020 - Bulk,Weekly,Vol Tier (PPT),C,ACQ&ATM, EUR ,0.1786,,Tier fee with minimum of €10,,Scheme B
+MC,2RP000P,RP,Reports,RP Adjust,Adjustment for Service Code RP,Ad Hoc,Variable,TO REVIEW,ALL, EUR ,-3.77,ALL,Adjustment Report fee RP,,Not in use
+MC,TRP2332B,RP,Reports,CAT RP SI458010,Authorization Summary By CAT Level SI458010-AA - Bulk,0,Fixed,C,ALL, EUR ,50,Switching,,SCHEME,Scheme B
+MC,TRP2216B,RP,Reports,IP727010-AA CLRING-ACKW RP,Clearing Cycle Acknowledgement  IP727010-AA - Bulk,0,Per Data point,C,ALL, EUR ,0.0556,,,,Scheme B
+MC,TRP2217B,RP,Reports,IP727020-AA CLRING-NOTF RP,Clearing Cycle Notification  IP727020-AA - Bulk,0,Per Data point,C,ALL, EUR ,0.0417,,,,Scheme B
+MC,TRP2218B,RP,Reports,IP728010-AA CLRING-SUMM RP,Clearing Cycle Summary  IP728010-AA - Bulk,0,Per Data point,C,ALL, EUR ,0.0376,,,,Scheme B
+MC,TRP2227B,RP,Reports,IP776020-CC CHB-SUMM RP,GCMS Chargeback Activity Summary - Total IP776020-CC - Bulk,0,Fixed,C,ALL, EUR ,50,,,,Scheme B~
+MC,TRP2228B,RP,Reports,DOLLAR VOL SUM-IP776030-AA,GCMS Dollar/Volume Summary - Acquirer IP776030-AA - Bulk,0,Fixed,C,ALL, EUR ,50,,,,Scheme B~
+MC,TRP2230B,RP,Reports,IP776030-CC Dollar Vol SUMM RP,GCMS Dollar/Volume Summary - Total IP776030-CC - Bulk,0,Fixed,C,ALL, EUR ,50,,,,Scheme B
+MC,TRP2222B,RP,Reports,IP776010-AA TRX-CB ANLY RP,GCMS Trans/CB Life Cycle Vol Analysis - Acq IP776010-AA - Bulk,0,Fixed,C,ALL, EUR ,50,,,,Scheme B~
+MC,TRP2224B,RP,Reports,IP776010-CC TRX-CB ANLY RP,GCMS Trans/CB Life Cycle Vol Analysis - Tot IP776010-CC - Bulk,0,Fixed,C,ALL, EUR ,50,,,,Scheme B~
+MC,TRP2219B,RP,Reports,IP857010-AA ERR RP,Global Clearing Management System Report IP857010-AA - Bulk,0,Vol Tier (PPT),C,ACQ, EUR ,0.0493,Switching,We de-subscribed 2019,We de-subscribed 2020,Not in use
+MC,TRP1842B,RP,Reports,INT-COML FC210010,Interchange Compliance Acq Adjustment Summary FC210010-AA - Bulk,Weekly,Fixed,C,ALL, EUR ,50,Stand-Alone,2022 review: B,SCHEME,Scheme A
+MC,TRP1841B,RP,Reports,INTCH-ADJST,Interchange Fee Acq Adjustment Detail FC.ACQ.ADJUSTMENT—Bulk,Weekly,Fixed,C,ACQ, EUR ,1.6667,Stand-Alone,,SCHEME,Scheme A
+MC,2RP2676S,RP,Reports,MTHLY AFF ISS RP- SCH,Monthly Affiliates Report - Issuers/BINS Report Scheme,0,Fixed,A,ISS, EUR ,17.5,Stand-Alone,,,Scheme B
+MC,2RP2676,RP,Reports,MTHLY AFF ISS RP- STND,Monthly Affiliates Report - Issuers/BINS Standalone,0,Fixed,A,ISS, EUR ,2.5,Stand-Alone,,,Scheme B
+MC,2RP2676P,RP,Reports,MTHLY AFF ISS RP- SWIT,Monthly Affiliates Report -Issuers/BINS Report Switching,0,Fixed,A,ISS, EUR ,5,Stand-Alone,,,Scheme B
+MC,2RP1661,RP,Reports,RISK ACQ RP-High Risk warning,Risk Acquirer Loss Data,0,Per Tx (PPT) ,Non-Sale,ACQ, EUR ,0.03,Stand-Alone,,NON_SALE_FEES,Scheme B
+MC,TRP1767B,RP,Reports,SI737010-AA AUTH SUM,RP RP - Authorization Parameter Summary  SI737010-AA - Bulk,0,Fixed,C,ALL, EUR ,50,,,,Scheme B~
+MC,TRP2309B,RP,Reports,AB505010-AA AUTH SUM,RP RP - Authorization Summary  AB505010-AA - Bulk,0,Per Data point,B,ALL, EUR ,0.0495,,,,Scheme B~
+MC,TRP2216E,RP,Reports,IP727010-AA CLR ACK,RP RP - Clearing Cycle Acknowledgement  IP727010-AA - eService,0,Per Data point,B,ALL, EUR ,0.0214,,,,Scheme B~
+MC,TRP2217E,RP,Reports,IP727020-AA CLR NOTF,RP RP - Clearing Cycle Notification  IP727020-AA - eService,0,Per Data point,B,ALL, EUR ,0.017,,,,Scheme B~
+MC,TRP2218E,RP,Reports,IP728010-AA CLR SUM,RP RP - Clearing Cycle Summary  IP728010-AA - eService,Weekly,Per Data point,B,ALL, EUR ,0.017,,,,Not in use
+MC,TRP2223B,RP,Reports,ISS IP776010-BB VOL ANLY,RP RP - GCMS Trans/CBLife Cycle Vol Analysis - Iss IP776010-BB - Bulk,Weekly,Fixed,C,ALL, EUR ,50,,,,Not in use
+MC,TRP2653B,RP,Reports,IP142110-AA XML Data File,RP RP - Global Clearing Management System Report IP142110-AA XML Data File,Weekly,Per Data point,B,ALL, EUR ,0.0397,,,,Not in use
+MC,2RP1663B1,RP,Reports,RSKF ACQ DAILY - High risk warning,RSKF ACQUIRER DAILY,0,Per Tx (PPT) ,Non-Sale,ACQ, EUR ,0.15,Stand-Alone,,NON_SALE_FEES,Scheme B
+MC,2SC000V,SC,Security,Security SC Adjust,Adjustment for Service Code SC,Ad Hoc,Q,FINE,ALL, USD ,-125,,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,FINE
+MC,2SC1333,SC,Security,HIGH RISK REG,HIGH RISK REG,Ad Hoc,Fixed,Pass-through HR,ACQ, USD ,"2,000",Scheme,High Risk Registration to raise with Viktorija with details: To be debited from AMS Merchant ACC.,Pass-through,Scheme B~
+MC,2SC1907,SC,Security,FRD-LOSS,Monthly Acquirer Fraud and Loss Database Fee - SAFE fee *Tier cap based on number of merchants and ATM ICA,Monthly,Fixed,B,ACQ&ATM, USD ,  ,Stand-Alone,To get split from Fraud and Loss Billing Reports,SCHEME,Scheme B~
+MC,2SC1906,SC,Security,FRD-LOSS - ISS,Monthly Issuer Fraud and Loss Database Fee,Monthly,Fixed,A,ISS, USD ,  ,Stand-Alone,To get split from Fraud and Loss Billing Reports,,Scheme B~
+MC,2ST6114T,ST,Settlement,SETL ADMIN CURR Intra,Settlement Service Participation Fee - Intra Currency,Monthly,Fixed,B,ALL, EUR ,300,Switching,"Split cost ACQ:73%,ATM:7% & ISS:20%",SCHEME,Scheme B
+MC,2ST6118T,ST,Settlement,SETL ADMIN CURR Non-USD,Settlement Service Participation Fee - Non-USD Regional,Monthly,Fixed,B,ALL, EUR ,300,Switching,"Split cost ACQ:73%,ATM:7% & ISS:20%",SCHEME,Scheme B
+MC,2ST6117T,ST,Settlement,SETL ADMIN CURR USD,Settlement Service Participation Fee - USD Regional,Monthly,Fixed,B,ALL, EUR ,300,Switching,"Split cost ACQ:73%,ATM:7% & ISS:20%",SCHEME,Scheme B
+MC,2ST6113T,ST,Settlement,SETL ADVSM RP,Transfer Agent Advisement Fee -Fax/SWIFT/Email,Monthly,Fixed,B,ALL, EUR ,240,Switching,"Split cost ACQ:73%,ATM:7% & ISS:20%",SCHEME,Scheme B
+MC,TTR1041,TR,Transaction Investigator,TRX INVESTIG,TR  - Transaction Investigator Tier Level,Monthly,Vol Tier (PPT),TO REVIEW,ISS, EUR ,300,,,,Not in use
+MC,TTR1046,TR,Transaction Investigator,TRX INVESTG,Transaction Investigator - Acquirer Min fee,Monthly,Vol Tier (PPT),TO REVIEW,ACQ, EUR ,"1,333",Stand-Alone,Currently not Pass through,,Not in use
+MC,2UG5062,UG,MasterAssist,MasterAssist,UG MasterAssist - ATM - Locator Voice Response Unit - Cirrus,Ad Hoc,Q,B,ISS, EUR ,1.25,,,,Not in use
+MC,2UG5099,UG,MasterAssist,MasterAssist,UG MasterAssist - Fixed Telecom,Ad Hoc,Q,B,ISS, EUR ,2.25,,,,Not in use
+MC,2YA0000,YA,SecureCode Acquiring,AUTH3DS Adjust,Adjustment for Service Code YA,Monthly,Per Tx (PPT) ,A,ACQ, EUR ,833,,,,Adj
+MC,TYA2804,YA,SecureCode Acquiring,AUTH3DS-2,Authentication 3DS performed by 3DS service providers using the 3DS v2 specification,0,Per Tx (PPT) ,A,ACQ, EUR ,0.022,Scheme,,SCHEME,Scheme A~
+MC,TYA2801,YA,SecureCode Acquiring,AUTH3DS-1,Authentication 3DS performed by MPI providers using the 3DS v1 specification,0,Per Tx (PPT) ,A,ACQ, EUR ,0.022,Scheme,,SCHEME,Scheme A~
+MC,2YA2800,YA,SecureCode Acquiring,AUTH-MTHLY,3DS - Acquiring Program Fee,Monthly,Fixed,B,ACQ, EUR ,"2,500",Scheme,,SCHEME,Scheme A~
+MC,2YI0000,YI,SecureCode Issuing,ADJUSTMENT FOR YI,Fee,Monthly,Per Tx (PPT) ,TO REVIEW,ISS, EUR ,-0.02,Stand-Alone,,,Not in use
+MC,TYI2801,YI,SecureCode Issuing,AUTH MTHLY - ISS adjust,Authentication Monthly Fixed - Issuer *Frequency change from quarterly to monthly 1May20 - AN 4064,0,Fixed,A,ISS, EUR ,0.018,,,,Scheme A~
+MC,2YI2800,YI,SecureCode Issuing,AUTH MTHLY now,Authentication Monthly Fixed - Issuer *Frequency change from quarterly to monthly 1May20 - AN 4064,0,Fixed,A,ISS, EUR ,"2,500",Stand-Alone,,,Scheme A~
+MC,2YI2803,YI,SecureCode Issuing,STAND-IN AUTH now,Stand-In Authentication,0,Per Tx (PPT) ,A,ISS, EUR ,0.02,Stand-Alone,,,Scheme A~
+MC,2YI2802,YI,SecureCode Issuing,STAND-IN RISK now,Stand-In Risk Based Authentication,0,Per Tx (PPT) ,A,ISS, EUR ,0.03,Stand-Alone,,,Scheme B~
+MC,TYI2804,YI,SecureCode Issuing,SEC ISS 3DS2,YI SEC ISS - 3DS2 Issuer Transaction,0,Q,B,ISS, EUR ,0.008,,,,Scheme B~
+MC,2GS19002I,YI,SecureCode Issuing,SEC ISS 3DS2,YI SEC ISS - 3DS2 Issuer Transaction,0,Q,B,ISS, EUR ,0.008,,,,Scheme B~
+MC,2KE000P,YI,SecureCode Issuing,SEC ISS 3DS2,YI SEC ISS - 3DS2 Issuer Transaction,Monthly,Q,B,ISS, EUR ,0.008,,,,Scheme A~
+MC,2KN000V,YI,SecureCode Issuing,SEC ISS 3DS2,YI SEC ISS - 3DS2 Issuer Transaction,Monthly,Q,B,ISS, EUR ,0.008,,,,Not in use
+MC,2FM1659,YI,SecureCode Issuing,SEC ISS 3DS2,YI SEC ISS - 3DS2 Issuer Transaction,0,Q,B,ISS, EUR ,0.008,,,,Scheme B~
+MC,2EA3426,YI,SecureCode Issuing,SEC ISS 3DS2,YI SEC ISS - 3DS2 Issuer Transaction,0,Q,B,ISS, EUR ,0.008,,,,Not in use
+MC,2KE1800,YI,SecureCode Issuing,SEC ISS 3DS2,YI SEC ISS - 3DS2 Issuer Transaction,0,Q,B,ISS, EUR ,0.008,,,,Not in use
+MC,2GS30232I,YI,SecureCode Issuing,SEC ISS 3DS2,YI SEC ISS - 3DS2 Issuer Transaction,0,Q,B,ISS, EUR ,0.008,,,,Scheme B~
+MC,2GS000V,HN,Acquirer Authorization,TO REVIEW,Acquirer Authorization Maestro/Cirrus,Ad Hoc,Q,B,ALL,EUR,,,,,Scheme A
+MC,TELMCC145CQ,ET,Clearing - Acquirer,CLEARING,Clearing Acq Mastercard Credit Dom and Intra Mid Tier GRC,0,TO REVIEW,A,ACQ,EUR,TO REVIEW,TO REVIEW,,SCHEME,Scheme A~
+MC,TGC1501TFQ,GH,Global Clearing Acquirer,TO REVIEW,Acquirer Transaction Fee - Mid Dom  Intra,0,TO REVIEW,TO REVIEW,TO REVIEW,TO REVIEW,TO REVIEW,TO REVIEW,,,Not in use
+MC,2ST6113M,ST,Settlement,TO REVIEW,Member Advisement Fee - Fax/SWIFT/Email,0,TO REVIEW,TO REVIEW,TO REVIEW,TO REVIEW,TO REVIEW,TO REVIEW,,,Scheme B
+MC,2ST6119M,ST,Settlement,TO REVIEW,Member Advisement Fee -eService,0,TO REVIEW,A,TO REVIEW,TO REVIEW,TO REVIEW,TO REVIEW,,,Scheme B
+MC,2KE000V,KE,Implementation Service,TO REVIEW,Adjustment for Service Code KE,Ad Hoc,TO REVIEW,A,TO REVIEW,EUR,15000,TO REVIEW,Adjustment,,Adj
+MC,2EQ5314,KE,Implementation Service,TO REVIEW,Decommissioning per site,Ad Hoc,Variable,Implemt-Proj,ALL, EUR ,"10,000",Switching,,,Scheme B~
+MC,2VC8005,YD,COMPLIANCE TESTING,TO REVIEW,Compliance Testing Program Fee,Ad Hoc,Fixed,Behavioural Fee,ACQ,EUR,18000,,For use of the SecureCode Validation Facility for Compliance Testing,,Scheme B
+MC,2PN000S,PN,Non-Compliance Fees,TO REVIEW,Adjustment for Service Code PN,Ad Hoc,Variable,FINE,ALL,USD,82981,Stand-Alone,,Fine,FINE
+MC,PIA5343MCA,IA,Issuer Assessment,TO REVIEW,Mastercard Alerts Billing Automation,0,Q,B,ISS,EUR,-0.08,MCEINV,,,Scheme B~
+MC,TELMSI145CS,ET,Clearing - Acquirer,CLEARING,Clearing Acq Maestro/Cirrus Dom and Intra Max Tier ITA,0,Q,A,ACQ,EUR,0.020625,MCEINP,,SCHEME,Not in use
+MC,2YA2899,YA,SecureCode Acquiring,TO REVIEW,3DS1 Only Program Fee - Acquirer,0,Q,B,ISS,EUR,2000,MCEINS,,,Scheme A
+MC,2K3000S,K3,Compliance,TO REVIEW,Adjustment for Service Code RP,Monthly,Q,C,ALL,EUR,2500,MCECRS,,NON_SALE_FEES,Scheme B
+MC,2IE6185,PN,Non-Compliance Fees,TO REVIEW,Funds Transfer Reissue Fee,Ad Hoc,Q,A,ACQ,USD,100,MCEINV,,,Ignore
+MC,2AE4940L1NL,AE,Acquirer Assessment,TO REVIEW,Netherlands Marketing Fund MasterCard ACQ Intra Purchase,Quarterly,Per Tx (PPT) ,B,ACQ,EUR,0.0002,MCEINS,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Not in use
+MC,2AE4940L2NL,AE,Acquirer Assessment,TO REVIEW,Netherlands Marketing Fund MasterCard ACQ Inter Purchase,Quarterly,Per Tx (PPT) ,B,ACQ,EUR,0.0002,MCEINS,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Not in use
+MC,TAEINTERPOS,AE,Acquirer Assessment,TO REVIEW,Acq Reported Transaction Fee MC DMC and Maestro POS - Inter,0,Per Tx (PPT) ,A,ACQ,EUR,0.05,MCEINS,,,Not in use
+MC,TAEINTRADMM,AE,Acquirer Assessment,TO REVIEW,Acquirer Debit Mastercard  Maestro Cirrus Transaction Fee Dom  Intra,0,Per Tx (PPT) ,A,ACQ,EUR,0.0003,MCEINS,,,Not in use
+MC,TAEINTRAMCC,AE,Acquirer Assessment,TO REVIEW,Acq Mastercard CR Tran Fee - Dom Plus Intra,0,Per Tx (PPT) ,A,ACQ,EUR,0.0012,MCEINS,,,Not in use
+MC,TAMCC,AE,Acquirer Assessment,TO REVIEW,Acq Mastercard Credit Volume Fee,0,Per Tx (%) ,A,ACQ,EUR,0.000431,MCEINS,,,Not in use
+MC,2AE4940L3NL,AE,Acquirer Assessment,TO REVIEW,Netherlands Marketing Fund MasterCard ACQ Dom Purchase,Quarterly,Per Tx (PPT) ,B,ACQ,EUR,0.0002,MCEINS,"Adjust country specific to Central ACQ - Market Dev, Innv, Acceptance Funds, etc",SCHEME,Not in use
+MC,TS95640CS,S9,Early Detection Service,TO REVIEW,Cyber Secure Card Assessment Fee,0,TO REVIEW,A,ATM,EUR,900,MCEINS,,,Scheme B
+MC,TADMC,AE,Acquirer Assessment,TO REVIEW,Acquirer Mastercard Debit Volume Fee Tier,0,Vol Tier (%),A,ATM,EUR,0.000415,MCEINS,,,Not in use
+MC,TAE49405FRA,AE,Acquirer Assessment,TO REVIEW,FRA MasterCard Contactless Development Fee - ACQ,0,Per Tx (%) ,B,ATM,EUR,0.000015,MCEINS,,,Not in use
+MC,2AE9008,AE,Acquirer Assessment,TO REVIEW,Maestro/Cirrus Volume Fee Adjustment - Central Acq - Dom Cash,Quarterly,Vol Tier (%),A,ACQ,EUR,-0.000167,MCECRS,,,Not in use
+MC,2AE9010,AE,Acquirer Assessment,TO REVIEW,Maestro/Cirrus Volume Fee Adjustment - Central Acq - Intra Cash,Quarterly,Vol Tier (%),A,ACQ,EUR,-0.000167,MCECRS,,,Not in use
+MC,2MS0000,MS,MasterCom,TO REVIEW,Adjustment for the Service Code MS,Ad Hoc,Fixed,Non-Sale,ALL,EUR, -   ,MCEINV,Chargeback related,,Non Sales
+MC,2S90000,S9,Early Detection Service,TO REVIEW,Adjustment Event for S9 Service Code,Ad Hoc,TO REVIEW,A,ATM,EUR,900,MCEINV,,,Scheme B~
+MC,TRP2225B,RP,Reports,TO REVIEW,GCMS Chargeback Activity Summary - Acquirer IP776020-AA - Bulk,0,Fixed,C,ALL,EUR,50,MCEINP,,,Scheme A
+MC,TRP2499,RP,Reports,TO REVIEW,Auth Processing Integrity Acq Detail Rpt AB605010-AA via eService,0,Per Data point,B,ACQ,EUR,,MCEINS,,,Scheme B
+MC,TUG7300,UW,Weekly,TO REVIEW,ATM - Locator MasterCard Mobile,Ad Hoc,TO REVIEW,TO REVIEW,ATM,USD,0.25,MCEINV,,,Scheme B~
+MC,2EL80031,E4,Weekly,TO REVIEW,Clearing Intra-European Maestro/Cirrus Acquirer - Credit/Refund,Ad Hoc,,A,ACQ, EUR ,0.05,MCEINP,,,Not in use
+MC,2AE49401BWD,AE,Acquirer Assessment,TO REVIEW,Belgium Market Development Fund ACQ - Intra,0,A,B,ACQ,EUR,0.0001,MCEINS,,,Not in use
+MC,2AE49402BWD,AE,Acquirer Assessment,TO REVIEW,Belgium Market Development Fund ACQ - Inter,0,A,B,ACQ,EUR,0.0001,MCEINS,,,Not in use
+MC,2AE49403BWD,AE,Acquirer Assessment,TO REVIEW,Belgium Market Development  Fund ACQ - Domestic,0,A,B,ACQ,EUR,0.0001,MCEINS,,,Not in use
+MC,2P1000S,P1,Processing Integrity,TO REVIEW,Adjustment for Service Code P1,Quarterly,Q,B,ACQ,EUR,-0.03,MCECRS,,,Adj
+MC,2P4000S,P4,Acquirer Processing Integrity,TO REVIEW,Adjustment for Service Code P4,Quarterly,Q,B,ACQ,EUR,0.01,MCEINS,,,Scheme B
+MC,2S9NONRPT,S9,Early Detection Service,TO REVIEW,Cyber Secure Non-Reporting Fee,0,Q,B,ACQ,EUR,900,MCEINS,,,Scheme B
+MC,TAEINTERATM,AE,Acquirer Assessment,TO REVIEW,Acq Reported Transaction Fee MC Debit and Maestro ATM - Inter,Quarterly,Q,B,ACQ,EUR,0.15,MCEINS,,,Not in use
+MC,TS95073CS,S9,Early Detection Service,TO REVIEW,Cyber Secure Merchant Terminal Fee,Quarterly,Q,B,ACQ,EUR,2500,MCEINS,,,Scheme B
+MC,2AE9002,AE,Acquirer Assessment,TO REVIEW,MasterCard Volume Fee Adjustment - Central Acq - Dom Cash,Quarterly,Q,B,ATM,EUR,-0.000117,MCECRS,,,Not in use
+MC,2AE9004,AE,Acquirer Assessment,TO REVIEW,MasterCard Volume Fee Adjustment - Central Acq - Intra Cash,Quarterly,Q,B,ATM,EUR,-0.000117,MCECRS,,,Not in use
+MC,2AE9006,AE,Acquirer Assessment,TO REVIEW,MasterCard Volume Fee Adjustment - Central Acq - Inter Cash,Quarterly,Q,B,ATM,EUR,-0.000117,MCECRS,,,Not in use
+MC,2UT5164,UT,MasterAssist ATM,TO REVIEW,ATM - Locator Acquirer - Cirrus,Quarterly,Q,B,ATM,EUR,0.25,MCEINV,,,Scheme B~
+MC,2UT5199,UT,MasterAssist ATM,TO REVIEW,Fixed Telecom,Quarterly,Q,B,ATM,EUR,0.05,MCEINV,,,Scheme B~
+MC,2BL1000A,BL,General Billing,TO REVIEW,Service Provider Registration/Renewal Fee,Ad Hoc,Q,B,ATM,EUR,2000,MCEINS,Chargeback related,,Scheme B
+MC,2RP000S,RP,Reports,RP Adjust,Adjustment for Service Code RP,Ad Hoc,Variable,TO REVIEW,ALL,EUR,1999.99,MCEINS,Adjustment Report fee RP,,Scheme B
+MC,TAJ3008,AJ,Acquirer Assessment,TO REVIEW,DCC Performance Rewards Framework,Annual,Q,B,ATM,EUR,-48000,MCECRS,,,Scheme B~
+MC,2L12000,L1,Settlement - Acquirer Maestro/Cirrus POS,,CA- Local Marketing Funds  Development Fees- Maestro/Cirrus Domestic,Quarterly,Q,TO REVIEW,,EUR,-0.00005,MCECRS,,,Scheme B~
+MC,2A81000S,A8,Anti-Money Laundering,,MC ACAMS Risk Assmnt  Principal,Quarterly,Q,TO REVIEW,,EUR,2500,MCEINV,,,Scheme B
+MC,2A81050S,A8,Anti-Money Laundering,,Mastercard ACAMS Risk Assessment  Affiliate Fee,Quarterly,Q,TO REVIEW,,EUR,1125,MCEINV,,,Scheme B
+MC,TRP2676,RP,Reports,,Monthly Affiliates Report - Issuers/BINS,Monthly,Q,TO REVIEW,,EUR,200,MCEINV,,,Scheme B
+MC,2NA1101,NA,Non-MasterCard Auth Maestro/Cirrus ATM,,Authorization Non-MasterCard Pay Now ATM Acquirer,Monthly,,TO REVIEW,,EUR,0.3,MCEINP,,,Scheme B~
+MC,TEL0A1457Q,ET,Clearing - Acquirer,CLEARING,Clearing Acq ATM Dom and Intra Mid Tier SVK,Weekly,Q,A,ACQ,EUR,0.004,MCEINP,,,Scheme A
+MC,TEL0A1457R,ET,Clearing - Acquirer,CLEARING,Clearing Acq ATM Dom and Intra Macro Tier SVK,Weekly,Q,A,ACQ,EUR,0.004,MCEINP,,,Scheme A
+MC,TEL0A1457S,ET,Clearing - Acquirer,CLEARING,Clearing Acq ATM Dom and Intra Max Tier SVK,Weekly,Q,A,ACQ,EUR,0.004,MCEINP,,,Scheme A
+MC,2EA2306,HN,Acquirer Authorization,,Authorization Mastercard ATM On-behalf,Weekly,Q,TO REVIEW,,,0.05,MCEINP,,,Scheme A
+MC,TAJ3004,AJ,Acquirer Assessment,TO REVIEW,Enhanced DCC Compliance Program,Annual,Q,B,ATM,EUR,120000,MCEINS,,,Scheme B~
+MC,2PI2014,P4,Weekly,,Transaction Processing Excellence-Acquirer Merchant Advice Code,Weekly,Q,Behavr-Integrity,,,0.1,MCEINS,"To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel)
+As per bulletin AN 4810 we need to ensure MAC is being passed to merchant customers as well as educate merchant customers about proper MAC usage. This fee has increased from 398.70 EUR in October 2021 to 1434.80 EUR in December 2021. ",,Behavr-Integrity
+MC,2SC5007,KR,Ramp,,Franchise Management Program Customer Remote Review,Quarterly,Q,TO REVIEW,,,5000,MCEINV,,,Scheme B
+MC,TDC0100,DC,Non-Compliance Fees,,Data Integrity Monitoring Program,Monthly,Q,Behavr-Integrity,,,2500,MCEINV,,,Behavr-Integrity
+MC,2EA2206,HN,Acquirer Authorization,,Authorization Maestro/Cirrus ATM On-behalf,Weekly,Q,TO REVIEW,,,0.05,MCEINP,,,Scheme A
+MC,TAMCPAMDF,AE,Acquirer Assessment,TO REVIEW,Acquirer Mastercard Market Development Fund,Quarterly,A,B,ACQ&ATM,EUR,0.00005,MCEINS,,,Scheme B~
+MC,TAATMMDF,AE,Acquirer Assessment,TO REVIEW,Acquirer Mastercard  Maestro/Cirrus MDF - Dom  Intl ATM,Quarterly,A,B,ACQ&ATM,EUR,0.0001,MCEINS,,,Scheme A
+MC,TADMMCMSC,AE,Acquirer Assessment,TO REVIEW,Acquiring MC Debit MC and Maestro/Cirrus Volume Fee,Quarterly,A,B,ACQ&ATM,EUR,0.0008,MCEINS,,,Scheme A
+MC,TAEINTRAATM,AE,Acquirer Assessment,TO REVIEW,Acq Reported Transaction Fee MC DMC  Maestro ATM - Dom  Intra,Quarterly,Q,B,ACQ&ATM,EUR,0.0039,MCEINS,,,Scheme A
+MC,TAMSIPAMDF,AE,Acquirer Assessment,TO REVIEW,Acquirer Maestro/Cirrus Market Development Fund,Quarterly,A,B,ACQ&ATM,EUR,0.00005,MCEINS,,,Scheme B~
+MC,TYI2812,YI,Identity Check Issuing,,3DS2 Access Control Server Transaction,Monthly,Q,B,ISS,EUR,0.012,MCEINV,,,Scheme B~
+MC,2UG7000,UW,ATM Locator Internet,,ATM - Locator Internet Acquirer,Ad Hoc,Q,TO REVIEW,,USD,0.1,MCEINV,,,Scheme B~
+MC,2DC0100A,DC,Non-Compliance Fees,,Data Integrity Monitoring Program,Quarterly,Q,Behavr-Integrity,,EUR,-2500,MCECRS,,,Behavr-Integrity
+MC,2F98000,F9,Funding,,Strategy Program Next 150 Customers,Annual,A,PrincipalOther,ALL,EUR,9000,MCEINS,Annual - November fee - Advance Nov-Oct,,Scheme B
+MC,2PI2012,P4,Acquirer Transaction Processing Excellence,, Transaction Processing Excellence-PSD2 Keyed Card-Present Transaction ,Weekly, Q ,Behavr-Integrity,,EUR,0.1,MCEINS,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,Behavr-Integrity
+MC,2AB1000A,AB,International Authorization Fees,INT AUTH X-Code,EZ INT AUTH - X-Code Transaction Fee,Ad Hoc,Q,TO REVIEW,,,,,,,Scheme A~
+MC,TRP2464E,RP,,,MasterCom Chargeback Transactions  GB405010-AA - eService,,Q,TO REVIEW,,,,,2022 review: N/A,,Scheme A
+MC,TRP2462E,RP,,,MasterCom Retrieval Request Issuer Detail  GB403010-AA - eService,,Q,TO REVIEW,,,,,2022 review: N/A,,Scheme A
+MC,2MS40021,MW,,,Collaboration Resolution/Response Fee (Tier 1) ,Monthly,,TO REVIEW,,,,,"Includes any MCC not included in 2MS40022
+Mastercard assesses these fees through the Mastercard Consolidated Billing System (MCBS). Billing occurs on the last day of the month for that month's activity. ",,Not in use
+MC,2MS40022 ,MW,,,Collaboration Resolution/Response Fee (Tier 2),Monthly,,TO REVIEW,,,,,"Includes MCC 4816, 5122, 5912, 5962, 5964, 5966, 5967, 5968, 5969, 5993, 7273, 7995",,Not in use
+MC,2MS4003,MW,,,Mastercom Collaboration Acquirer Notification Fee,Monthly,,TO REVIEW,,,,,,,Not in use
+MC,2MS4000,MW,,,Collaboration Funds Movement Fee,Monthly,,TO REVIEW,,,,,,,Not in use
+MC,2MS4001,MW,,,Collaboration Non-Compliance Fee,Monthly,,TO REVIEW,,,,,,,Not in use
+MC,2YI2805,,,,EMV 3DS-Acquiring Authentication Fee-Non-recurring ,Monthly,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2YI2807,,,,EMV 3DS-Acquiring Authenitcation Fee-Non-recurring Cap,Monthly,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,SYA2835,,,,EMV 3DS-Acquiring Authenitcation Fee-Recurring ,Monthly,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2YA2837,,,,EMV 3DS-Acquiring Authenitcation Fee-Recurring Cap,Monthly,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2EA1723 ,,,,CVC 2- Acquiring Fee ,Monthly,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2GC5534,GH,Global Clearing Acquirer,,Acquirer POS Card Not Present MCC Transaction Fee,Weekly,Q,TO REVIEW,,,,,,,Not in use
+MC,2EA3803,,,,Acquirer Dynamic Linking Validation Service Fee,weekly ,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2EA3803Q,,,,Acquirer Dynamic Linking Validation Maximum Fee,weekly ,,TO REVIEW,,,,,,,Not in use
+MC,2YA2805,,,,EMV 3DS-Acquiring Authentication Fee - Non-recurring ,monthly,,TO REVIEW,,,,,,,Not in use
+MC,2YA2807,,,,EMV 3DS-Acquiring Authentication Fee - Non-recurring Cap ,monthly ,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2YA2841,,,,EMV 3DS-Acquiring Card Add Fee,monthly ,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2YA2835,,,,EMV 3DS-Acquiring Authentication Fee-Non-recurring ,monthly ,Per Tx (PPT) ,TO REVIEW,,,,,,,
+MC,2RP000V,RP,,,Adjustment for Service Code RP,Adjustment,Q,TO REVIEW,,,,,,,Adj
+MC,2EA1800,,,,Expired Card Blocking Set - Up Fee,,Q,TO REVIEW,,,,,,,Scheme B~
+MC,2EA1723,,,,CVC 2 - Acquirer Fee,Monthly,Q,TO REVIEW,,,,,,,Scheme A~
+MC,2QI0000,,,,Adjustment for Service Code QI,,Q,TO REVIEW,,,,,,,Scheme A~
+MC,2EA1805,EA,Authorization Maestro / Cirrus POS,,Expired Card Blocking Residency Fee,,Q,TO REVIEW,,,,,,,Not in use
+MC,TYA2805,YA,Identity Check Acquiring,,EMV 3DS - Acquiring Authentication Fee - Nonrecurring - Dom,Monthly,A,GCMS,YA,Identity Check Acquiring,,,,,Not in use
+MC,2P7BP10,,Acquirer Performance Development - Not tokenized COF,,Failure to tokenize credentials on files (COF),,,TO REVIEW,,,,,,,Not in use
+MC,2P7BP10C,,Acquirer Performance Development - Not tokenized COF,,Failure to tokenize credentials on files (COF) Transaction Cap ,,,TO REVIEW,,,,,,,Not in use
+MC,2P7BP09,,,,E-Commerce Excessive Fraud ,,,TO REVIEW,,,,,,,Not in use
+MC,2P7BP08A,,Acquirer Performance Development – No Authentication Approved,,No Authentication - Approved,,,TO REVIEW,,,,,,,Not in use
+MC,2P7BP08D,,Acquirer Performance Development – No Authentication Declined,,No Authentication -Declines,,,TO REVIEW,,,,,,,Not in use
+MC,2P7BP08AC,,Acquirer Performance Development – No Authentication Approved,,No Authentication - Approved Transaction Cap,,,TO REVIEW,,,,,,,Not in use
+MC,2P7BP08DC,,Acquirer Performance Development – No Authentication Declined,,No Authentication - Declined Transaction Cap,,,TO REVIEW,,,,,,,Not in use
+MC,TAPOSMDF,AE,Acquirer Assessment,TO REVIEW,"Domestic, intra-European and interregional purchase volumes",Quarterly,A,TO REVIEW,,,,,,,Not in use
+MC,2GN3000,GN,Merchant Advice Code 01,,,,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2GN3001,GN,Merchant Advice Code 03,,,,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2EA3200,GN,Merchant Advice Code 01,,,,Per Tx (PPT) ,TO REVIEW,,,,,,,Not in use
+MC,2TR1046,,,,Transaction Investigator Tool ,Monthly,,TO REVIEW,,USD,,,,,
+MC,2M41046,,,,Transaction Investigator Tool ,Monthly,,TO REVIEW,,USD,,,,,
+MC,2HN8341,HN,EMV Acquirer Enablement Fee,EMV fee - CHP,EMV Acquirer Enablement Fee,Weekly ,Per Tx (%) ,Terminal without EMV,ACQ,EUR,0.00026,Scheme,To review - We're currently not passing on but need to review if increase as merchants not compliant.  Email Compliance team (Paul Smith and Emanuel),,
+MC,2DC0400,,Excessive Fraud Merchant Violation Assessment,,,,,TO REVIEW,,,,,,,
+MC,2BK0011,BK,Software,,Mastercard Authorization Simulator Professional License,Ad Hoc,Q,TO REVIEW,,,,,,,
+MC,2BK0020,HN,Acquirer Authorization,,Mastercard Clearing Presentment Simulator MCPS License Fee,Ad Hoc,Q,TO REVIEW,,,,,,,
+MC,2EA3201Q,HN,Acquirer Authorization,,Dual Message Merchant Advice Code 01,Ad Hoc,Q,TO REVIEW,,,,,,,
+MC,2LY80051,LY,Clearing Other - Acquirer,,Clearing Intra-European Maestro/Cirrus Acquirer ATM - First Chargeback,Weekly,A,TO REVIEW,ACQ, EUR ,,,Chargeback related,NON_SALE_FEES,
+MC,2AE9012,AE,Acquirer Assessment,,Maestro/Cirrus Volume Fee Adjustment - Central Acq - Inter Cash,Adjustment,Q,TO REVIEW,,EUR,-0.000067,MCECRS,,,
+MC,2GH000S,GH,Global Clearing Acquirer,,Adjustment for Service Code GH,Adjustment,Q,TO REVIEW,,EUR,-0.16,MCECRS,,,
+MC,2FU000P,FU,File Transmission - Customer,,Adjustment for Service Code FU,Adjustment,Q,TO REVIEW,,EUR,-0.02,MCECRP,,,
+MC,2EE000P,EE,Clearing Acquirer MasterCard ATM,,Adjustment for Service Code EE,Adjustment,Q,TO REVIEW,,EUR,-0.03,MCECRP,,,
+MC,2EK000P,EK,Clearing Acquirer Maestro/Cirrus ATM,,Adjustment for Service Code EK,Adjustment,Q,TO REVIEW,,EUR,-0.01,MCECRP,,,
+MC,2FS000P,FS,File Transmission - Acquirer,,Adjustment for Service Code FS,Adjustment,Q,TO REVIEW,,EUR,-0.01,MCECRP,,,
+MC,2DC000V,DC,Non-Compliance Fees,,Adjustment for Service Code DC,Adjustment,Q,TO REVIEW,,EUR,2500,MCEINV,,,
+MC,2MS6341,MW,MasterCom,,Debit Chargeback Support Documentation Transaction Fee,Non Sales,Q,TO REVIEW,,EUR,0.45,MCEINV,,,
+MC,TMS6331,MW,,,Debit Chargeback Support Documentation Transaction Value Tier,Non Sales,A,TO REVIEW,,,0.0095,MCEINV,,,
+MC,2FB0000,FB,Service Provider,Service Pro Reg,Billing Adjustment for Service Code FB,Adjustment,Q,TO REVIEW,ALL,EUR,15000,MCEINS,,,
+MC,2PI2013,P4,,,Transaction Processing Excellence-Chip Transaction Without CVM,Weekly,Q,TO REVIEW,,,0.3,MCEINS,,,
+MC,2IL1000A,IL,,,Installment Program Fee Purchase - INSA,Weekly,Per Tx (PPT) ,TO REVIEW,,EUR,0.0127,,,,
+MC,2IL1000B,IL,,,Installment Program Fee Purchase - INSB,Weekly,Per Tx (PPT) ,TO REVIEW,,EUR,0.0127,,,,
+MC,2IL1000C,IL,,,Installment Program Fee Purchase - INSC,Weekly,Per Tx (PPT) ,TO REVIEW,,EUR,0.0127,,,,
+MC,TYI2805,YI,,,EMV 3DS - Issuing Authentication Fee - Nonrecurring - Inter,monthly,A,TO REVIEW,,EUR,,MCEINS,,,
+MC,2FB1001,FB,Service Provider,Service Pro Reg,Service Provider Discovery Fee,Annual,Fixed,Behavioural,ALL,,10500,Scheme,Registration Fee: Investigate which progam and why the partner wasn't registered,,Scheme C?
+MC,TPK8000,PK,Portfolio Analytics,, Mastercard Market Trends ,, Q ,,,EUR,352,MCEINV,,,
+MC,2MW000V,MW,MasterCom,, Adjustment Event for MW Service Code ,, Q ,,,EUR,0.45,MCECRD,,,
+MC,TRP4071S,RP,Reports,, Cyber Quant Insights ,, Q ,,,EUR,1608,MCEINV,,,
+MC,2LN0000,LN,Adjustments to LN,Location Services, Adjustment to Location Services ,Ad hoc, Q ,TO REVIEW,,EUR,,MCEINV,,,
+MC,2LY60051,LY,Clearing Other - Acquirer,,Clearing Intra-European MasterCard Acquirer ATM - First Chargeback,Weekly,A,Non-sale,ACQ, EUR ,0.001,,Chargeback related,NON_SALE_FEES,
+MC,TCF6500,CF,Connectivity Fees,,Mastercard Connectivity Fee,Weekly, Q ,Scheme B,,EUR,0.0000024,MCEINP,,,
+MC,TGC1240ER,GH,Global Clearing Acquirer,,Early Reconciliation Service Fee Tier 1,,Q,Behavioura Fees,,EUR,,MCEINP,,,
+MC,2EA3203Q,HN,Acquirer Authorization,,Dual Message Merchant Advice Code 03,,Q,,,EUR,0.004,MCEINP,,,
+MC,TPK2002,PK,Portfolio Analytics,,AIC Expert,,Q,,,EUR,200,MCEINV,,,
+MC,TPK6000,PK,Portfolio Analytics,,Start Path Base Membership,,Q,,,EUR,,MCEINV,,,
+MC,TPK8001,PK,Portfolio Analytics,,Mastercard Market Trends,,Q,,,EUR,352,MCEINV,,,
+MC,2VC8015,YD,COMPLIANCE TESTING,TO REVIEW,Compliance Testing Program Fee,Ad Hoc,Fixed,Behavioural Fee,ACQ,EUR,6000,,CashFlows Europe Limited 3DS SERVER Compliance Fee,,Scheme B
+MC,TRP2651E,RP,Reports,,IPM Messages Created On Behalf of a Member  IP142110-AA - eService,weekly,Q,Behavioural Fee,,EUR,0.095238095,MCEINP,,,
+MC,2P7BP10A,P7,Acquirer Performance Development Assessment,,Failure to tokenize credentials on files - Approved,weekly,A,Behavioural Fee,,EUR,0.0005,MCEINS,,,
+MC,2P7BP10D,P7,Acquirer Performance Development Assessment,,Failure to tokenize credentials on files - Declined,weekly,A,Behavioural Fee,,EUR,0.0005,MCEINS,,,
+MC,2RP0000,RP,Reports,,Adjustment for Service Code RP,Ad Hoc,Q,Behavioural Fee,,EUR,1608,MCECRD,,,
+MC,2CF0000,CF,Adjustment for Service Code CF,,Adjustment for Service Code CF,Ad Hoc,,Scheme A,,EUR,,MCECRD,,,
+MC,2MS2470,MS,Case File Hosted  Fee,,Case File Hosted  Fee,Weekly,,Scheme B,,EUR,,MCEINV,,,
+MC,TACQDOMPAF,AE,Acquirer Assessment,,Acquirer Mastercard  Maestro/Cirrus PAF Dom POS  ATM,Quarterly,,Scheme A,,EUR,,MCEINS,,,Scheme A
+MC,TACQINTLPAF,AE,Acquirer Assessment,,Acq Mastercard/Maestro/Cirrus PAF Intra/Inter POS  ATM,Quarterly,,Scheme A,,EUR,,MCEINS,,,Scheme A
+MC,TAEINTRAPOS,AE,Acquirer Assessment,,Acq Reported Transaction Fee MC DMC  Maestro POS - Dom  Intra,Quarterly,,Scheme A,,EUR,,MCEINS,,,Scheme A
+MC,2FB000S,FB,Service Provider,,Billing Adjustment for Service Code FB,Monthly,,Scheme B,,EUR,,MCEINV,,,
+MC,TRP1011ES,RP,Reports,,Acquirer Interchange Detail Report,Monthly,,Scheme B,,EUR,,MCEINV,,,
+MC,2LY60071,LY,Clearing Other - Acquirer,,Clearing Domestic MasterCard Acquirer ATM - Second Presentment,Monthly,,Scheme B,,EUR,,MCEINV,,,
+MC,2LY80071,LY,Clearing Other - Acquirer,,Clearing Domestic MasterCard Acquirer ATM - Second Presentment,Monthly,,Scheme B,,EUR,,MCEINV,,,
+MC,2CF000P,CF,Connectivity Fees,,Adjustment for Service Code CF,Ad Hoc,,Scheme A,,EUR,,MCEINP,,,
+MC,2RP1012ES,RP,Reports,,Acquirer Clearing Detail Report online,Monthly,,Scheme B,,EUR,,MCEINS,,,
+MC,2LI501INF,LI,Funds - Acquirer,,Innovation Fund - MasterCard ATM Domestic - ESP,Ad Hoc,,Ad Hoc,,EUR,,MCEINP,,,

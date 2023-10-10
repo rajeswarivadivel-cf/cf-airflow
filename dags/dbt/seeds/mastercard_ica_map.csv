@@ -1,0 +1,75 @@
+﻿ica,product,processor,program,payment_or_collection
+13747,Issuing,FIS,?,FIS
+14129,Issuing,FIS,Mayzus,FIS
+19573,ATM,Diebold NixDorf,Volksbank UK,Diebold NixDorf
+19676,Issuing,GPS,An Other,GPS
+19752,Issuing,i2c,Payfare,i2c
+20044,Issuing,Decta,Centizu,Decta
+20156,Issuing,GPS,Fundstar,GPS
+20319,Issuing,Decta,More2Save,Decta
+20433,Issuing,Paymentology,Limtz,Paymentology
+20472,Issuing,GPS,Zilch,GPS
+20473,Issuing,CARTA,HyperJar,CARTA
+20520,Issuing,Marqeta,Aplazame,Marqeta
+20521,Issuing,Wirecard Romania,Solidus,Wirecard Romania
+20757,Issuing,Compass Plus,Moneybase,Compass Plus
+20758,Issuing,Marqeta,Nufin,Marqeta
+20840,Issuing,Marqeta,Marqeta,Marqeta
+20841,Issuing,Marqeta,Marqeta,Marqeta
+20916,Issuing,Paymentology,Manigo,Paymentology
+20930,Issuing,Compass Plus,Moneybase,Compass Plus
+21599,Issuing,Marqeta,Marqeta,Marqeta
+21600,Issuing,Marqeta,Marqeta,Marqeta
+21625,Issuing,Enfuce,Enfuce - MaaS,Enfuce
+21626,Issuing,Enfuce,Enfuce - MaaS,Enfuce
+13456,ATM,Vocalink,MoneyCorp - UK,Vocalink
+14121,ATM,Vocalink,BankMachine (Cardtronics) - UK,Vocalink
+14225,ATM,Notemachine -closing,NoteMachine (TRM) - UK,Notemachine -closing
+14745,ATM,Vocalink,DC Payments / Infocash (Cardtronics) - UK,Vocalink
+17198,Issuing,Fintrax,Fintrax - Slovakia,Fintrax
+17201,ATM,Vocalink,Cardtronics - Ireland,Vocalink
+17202,Issuing,Fintrax,Fintrax - Hungary,Fintrax
+17203,ATM,Evry,IN2ATM - Netherlands,Evry
+17204,ATM,Evry,IN2ATM - Ireland,Evry
+19512,ATM,Vocalink,Cardtronics - UK,Vocalink
+19513,Issuing,Fintrax,Fintrax - Czech,Fintrax
+19572,ATM,Diebold NixDorf,Volksbank Netherlands,Diebold NixDorf
+20045,ATM,Chipcard,Bancomat,CashFlows
+20155,ATM,PayCorp,PayCorp,PayCorp
+20759,ATM,CompassPlus,CompassPlus,CompassPlus
+21445,ATM,Chipcard,Bancomat,CashFlows
+21468,ATM,Compass Plus,RCBG,Compass Plus
+21469,ATM,Compass Plus,RCBG,Compass Plus
+21470,ATM,Compass Plus,RCBG,Compass Plus
+21471,ATM,Compass Plus,RCBG,Compass Plus
+21472,ATM,Compass Plus,RCBG,Compass Plus
+21578,ATM,Chipcard,Bancomat,CashFlows
+21579,ATM,BPC,GCP,BPC
+21580,ATM,BPC,GCP,BPC
+12593,Acquiring,CashFlows,Settlement/Reporting,CashFlows
+13908,Acquiring,CashFlows,eComm Acquiring,CashFlows
+14606,Acquiring,CashFlows,POS Acquiring,CashFlows
+19748,Acquiring,PayCheckout,PayCheckout,PayCheckout
+22125,Issuing,GPS,GBXP,GPS
+83317,ATM,To Allocate (base on QMR Maestro reporting - quarterly fee only),To Allocate (base on QMR Maestro reporting - quarterly fee only),CashFlows
+23268,ATM,Notemachine,NoteMachine (TRM) - UK,Notemachine
+23328,ATM,Notemachine,NoteMachine (TRM) - UK,Notemachine
+23267,ATM,Notemachine,NoteMachine (TRM) - UK,Notemachine
+23260,ATM,Chipcard,SoftFinanca,Chipcard
+23374,ATM,HPS,Loomis (France),HPS
+23375,ATM,HPS,Loomis (Belgium),HPS
+21117,ATM,Diebold NixDorf,Attijariwaffa France,Diebold NixDorf
+21116,ATM,Diebold NixDorf,Attijariwaffa Belgium,Diebold NixDorf
+81347,Acquiring,PayCheckout,PayCheckout,PayCheckout
+31389,ATM,Vocalink,The Post Office,Vocalink
+31174,ATM,Paycorp,ATM Point,Paycorp
+26376,ATM,Brinks,Brinks,Brinks
+26377,ATM,Brinks,Brinks,Brinks
+26378,ATM,Brinks,Brinks,Brinks
+26379,ATM,NoteMachine,NoteMachine,NoteMachine
+26380,ATM,Brinks,Brinks,Brinks
+32992,ATM,JetCash,JetCash,JetCash
+33322,ATM,Chipcard,MoneyGet,MoneyGet
+21064,ATM,NoteMachine,NoteMachine,NoteMachine
+82607,ATM,NoteMachine,NoteMachine,NoteMachine
+81193,ATM,NoteMachine,NoteMachine,NoteMachine
