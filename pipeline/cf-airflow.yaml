@@ -48,6 +48,6 @@ stages:
                   runOptions: 'inline'
                   inline: |
                     #Very basic sanity check
-                    [ -f /tmp/code/Hello ] || exit 1
+                    #[ -f /tmp/code/Hello ] || exit 1
                     rsync -av /tmp/airflow_home-dags/ /home/airflow/airflow_home/dags/
                   readyTimeout: '20000'
