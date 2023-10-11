@@ -4,7 +4,6 @@ parameters:
     default: test.yaml
     values:
       - test.yaml
-      - inta.yaml
       - live.yaml
       
 trigger: none
@@ -12,28 +11,17 @@ trigger: none
 pr: none
 
 variables:
-- template: ../parameters/pipeline/${{parameters.TargetPool}}
+- template: parameters/pipeline/${{parameters.TargetPool}}
 
 stages:
-  #Get Ops team to approve the run
-  # - stage: OpsApprove
-  #   displayName: Ops to approve the CustomerDemo deployment
-  #   jobs:
-  #     - deployment: Approve_DemoDeployment
-  #       displayName:  Ops to approve the CustomerDemo deployment
-  #       continueOnError: false
-  #       environment: 'ApprovalGate - Ops'
-  #       pool: $(agent_pool)
-  #       timeoutInMinutes: 120
-
   - stage: DeployCode
-    displayName: Deploy to CustomerDemo
+    displayName: Deploy to Airflow
     # dependsOn: OpsApprove
     # condition: succeeded('OpsApprove')
     jobs:
       - deployment: DeployCode
         environment: $(targetAdoEnvironment)
-        displayName: Deploy to CustomerDemo
+        displayName: Deploy to Airflow
         pool: $(agent_pool)
         strategy:
           runOnce:
@@ -41,10 +29,10 @@ stages:
               steps:
               - checkout: self
 
-              #Copy files to the Customer Demo webserver
+              #Copy files to the Airflow server
               - task: CopyFilesOverSSH@0
                 inputs:
-                  sshEndpoint: 'TEST-Airflow-01 - SSH - azuredevops'
+                  sshEndpoint: $(sshEndpoint)
                   sourceFolder: '$(System.DefaultWorkingDirectory)/code/'
                   contents: |
                     **
@@ -56,7 +44,7 @@ stages:
 
               - task: SSH@0
                 inputs:
-                  sshEndpoint: 'TEST-Airflow-01 - SSH - azuredevops'
+                  sshEndpoint: $(sshEndpoint)
                   runOptions: 'inline'
                   inline: |
                     #Very basic sanity check

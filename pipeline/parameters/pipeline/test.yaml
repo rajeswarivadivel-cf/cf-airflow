@@ -3,3 +3,4 @@ variables:
   targetADOEnvironment: TEST
   region: eu-west-1
   EnvType: test
+  sshEndpoint: SSH deployment - CF-TEST-Airflow01 - azuredevops
