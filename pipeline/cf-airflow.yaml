@@ -1,0 +1,53 @@
+parameters:
+  - name: TargetPool
+    type: string
+    default: test.yaml
+    values:
+      - test.yaml
+      - live.yaml
+      
+trigger: none
+
+pr: none
+
+variables:
+- template: parameters/pipeline/${{parameters.TargetPool}}
+
+stages:
+  - stage: DeployCode
+    displayName: Deploy to Airflow
+    # dependsOn: OpsApprove
+    # condition: succeeded('OpsApprove')
+    jobs:
+      - deployment: DeployCode
+        environment: $(targetAdoEnvironment)
+        displayName: Deploy to Airflow
+        pool: $(agent_pool)
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - checkout: self
+
+              #Copy files to the Airflow server
+              - task: CopyFilesOverSSH@0
+                inputs:
+                  sshEndpoint: $(sshEndpoint)
+                  sourceFolder: '$(System.DefaultWorkingDirectory)/code/'
+                  contents: |
+                    **
+                  targetFolder: '/tmp/airflow_home-dags/'
+                  cleanTargetFolder: true
+                  cleanHiddenFilesInTarget: true
+                  readyTimeout: '20000'
+                  failOnEmptySource: true
+
+              - task: SSH@0
+                inputs:
+                  sshEndpoint: $(sshEndpoint)
+                  runOptions: 'inline'
+                  inline: |
+                    #Very basic sanity check
+                    #[ -f /tmp/code/Hello ] || exit 1
+                    rsync -av /tmp/airflow_home-dags/ /home/airflow/airflow_home/dags/
+                  readyTimeout: '20000'
