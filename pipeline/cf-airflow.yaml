@@ -36,7 +36,7 @@ stages:
                   sourceFolder: '$(System.DefaultWorkingDirectory)/code/'
                   contents: |
                     **
-                  targetFolder: '/tmp/code/'
+                  targetFolder: '/tmp/airflow_home-dags/'
                   cleanTargetFolder: true
                   cleanHiddenFilesInTarget: true
                   readyTimeout: '20000'
@@ -49,5 +49,5 @@ stages:
                   inline: |
                     #Very basic sanity check
                     [ -f /tmp/code/Hello ] || exit 1
-                    sudo mv /tmp/code /tmp/code-2
+                    rsync -av /tmp/airflow_home-dags/ /home/airflow/airflow_home/dags/
                   readyTimeout: '20000'
