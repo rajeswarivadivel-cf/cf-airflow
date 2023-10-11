@@ -1,6 +1,5 @@
 variables:
   agent_pool: Cashflows Prod Control RHEL8 Pool
-  targetADOEnvironment: SHARED
+  targetADOEnvironment: ORC
   region: eu-west-1
-  EnvType: ORC
   sshEndpoint: SSH deployment - CF-Airflow01 - azuredevops
