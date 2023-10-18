@@ -33,7 +33,7 @@ stages:
               - task: CopyFilesOverSSH@0
                 inputs:
                   sshEndpoint: $(sshEndpoint)
-                  sourceFolder: '$(System.DefaultWorkingDirectory)/code/'
+                  sourceFolder: '$(System.DefaultWorkingDirectory)/dags/'
                   contents: |
                     **
                   targetFolder: '/tmp/airflow_home-dags/'
@@ -49,5 +49,6 @@ stages:
                   inline: |
                     #Very basic sanity check
                     #[ -f /tmp/code/Hello ] || exit 1
-                    rsync -av /tmp/airflow_home-dags/ /home/airflow/airflow_home/dags/
+                    sudo rsync -av /tmp/airflow_home-dags/ /home/airflow/airflow_home/dags/
+                    sudo chown -R airflow:airflow /home/airflow/airflow_home/dags/
                   readyTimeout: '20000'
