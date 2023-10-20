@@ -35,6 +35,8 @@ dag = DAG(
 
 bucket_name = Variable.get('s3_bucket_name')
 key = Variable.get('recap_s3_key')
+redshift_key = Variable.get('redshift_iam_key')
+
 start = EmptyOperator(task_id='start', dag=dag)
 
 @task(task_id="transfer_redshift_to_s3")
@@ -47,7 +49,7 @@ def transfer_redshift_to_s3(ds='{{ ds }}' ,**kwargs):
 	redshift_hook = RedshiftSQLHook('redshift_analytics')
 	sql_query = f"unload ('SELECT * from analytics.rpt_recap_daily_transactions WHERE transaction_date = {p_ds} ')  \
 					TO 's3://{bucket_name}/{key}/{file_name}' \
-					CREDENTIALS 'aws_iam_role=arn:aws:iam::603246680613:role/cf-redshift' \
+					CREDENTIALS 'aws_iam_role={redshift_key}' \
 					DELIMITER ',' \
 					ALLOWOVERWRITE \
 					HEADER \
