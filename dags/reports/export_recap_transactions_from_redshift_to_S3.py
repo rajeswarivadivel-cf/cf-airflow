@@ -17,6 +17,7 @@ logger.info("This is a log message")
 default_args = {
 	'owner': 'analytics',
 	'depends_on_past': False,
+	'email': ['data.analytics@cashflows.com'],
 	'email_on_failure': True,
 	'email_on_retry': False,
 	'retries': 0,
@@ -27,7 +28,7 @@ dag = DAG(
 	'export_recap_transactions_from_redshift_to_s3',
 	default_args=default_args,
 	description='It copies daily transaction data from cashflows to recap sftp (s3 bucket)',
-	start_date= datetime(2023, 10, 18, 15, 30),
+	start_date= datetime(2023, 10, 20, 13, 30),
 	schedule='30 13 * * *',
 	tags=['sftp', 'RECAP'],
 	catchup=False 
