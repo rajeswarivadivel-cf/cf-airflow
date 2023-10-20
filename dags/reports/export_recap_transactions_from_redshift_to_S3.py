@@ -28,7 +28,7 @@ dag = DAG(
 	default_args=default_args,
 	description='It copies daily transaction data from cashflows to recap sftp (s3 bucket)',
 	start_date= datetime(2023, 10, 18, 15, 30),
-	schedule='00 13 * * *',
+	schedule='30 13 * * *',
 	tags=['sftp', 'RECAP'],
 	catchup=False 
 )
