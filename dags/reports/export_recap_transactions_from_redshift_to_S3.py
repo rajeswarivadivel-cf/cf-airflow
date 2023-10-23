@@ -47,8 +47,8 @@ def transfer_redshift_to_s3(ds='{{ ds }}' ,**kwargs):
 	#p_ds = ds_add(ds, -1)
 	logger.info(f'The file will be loaded for {ds}' )
 	file_name = f'rpt_recap_transactions_{ds}.csv'
-	redshift_hook = RedshiftSQLHook('redshift_analytics')
-	sql_query = f"unload ('SELECT * from analytics.rpt_recap_daily_transactions WHERE transaction_date = {ds} ')  \
+	redshift_hook = RedshiftSQLHook('redshift_default')
+	sql_query = f"unload ('SELECT * from analytics.rpt_recap_daily_transactions WHERE transaction_date = ''{ds}'' ')  \
 					TO 's3://{bucket_name}/{key}/{file_name}' \
 					CREDENTIALS 'aws_iam_role={redshift_key}' \
 					DELIMITER ',' \
