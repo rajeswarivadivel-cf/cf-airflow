@@ -44,11 +44,11 @@ start = EmptyOperator(task_id='start', dag=dag)
 def transfer_redshift_to_s3(ds='{{ ds }}' ,**kwargs):
 	logger.info(f'The bucket name is {bucket_name} and the key name is {key}')
 	logger.info(f'The script execution date {ds}' )
-	p_ds = ds_add(ds, -1)
-	logger.info(f'The file will be loaded for {p_ds}' )
-	file_name = f'rpt_recap_transactions_{p_ds}.csv'
+	#p_ds = ds_add(ds, -1)
+	logger.info(f'The file will be loaded for {ds}' )
+	file_name = f'rpt_recap_transactions_{ds}.csv'
 	redshift_hook = RedshiftSQLHook('redshift_analytics')
-	sql_query = f"unload ('SELECT * from analytics.rpt_recap_daily_transactions WHERE transaction_date = {p_ds} ')  \
+	sql_query = f"unload ('SELECT * from analytics.rpt_recap_daily_transactions WHERE transaction_date = {ds} ')  \
 					TO 's3://{bucket_name}/{key}/{file_name}' \
 					CREDENTIALS 'aws_iam_role={redshift_key}' \
 					DELIMITER ',' \
@@ -60,8 +60,8 @@ def transfer_redshift_to_s3(ds='{{ ds }}' ,**kwargs):
 @task(task_id="rename_s3_file")
 def rename_s3_file(ds='{{ ds }}',**kwargs):
 	s3 = boto3.client('s3')
-	p_ds = ds_add(ds, -1)
-	file_name = f'rpt_recap_transactions_{p_ds}.csv'
+	#p_ds = ds_add(ds, -1)
+	file_name = f'rpt_recap_transactions_{ds}.csv'
 	copy_source = {'Bucket': bucket_name, 'Key': f'{key}/{file_name}000'}
 	s3.copy_object(Bucket=bucket_name, CopySource=copy_source , Key=f'{key}/{file_name}')
 	logger.info(f'Copied in the requested file format {file_name}')
