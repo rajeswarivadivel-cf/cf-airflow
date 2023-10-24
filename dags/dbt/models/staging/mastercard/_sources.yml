@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: analytics
+    tables:
+      - name: mastercard__scheme_fees
+      - name: mc_clearing_report_ip755120_aa

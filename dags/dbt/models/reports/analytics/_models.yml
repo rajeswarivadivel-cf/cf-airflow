@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: rpt_mastercard_interchange_reconciliation_report_mtd
+    description: >
+      This is the month-to-date Mastercard interchange reconciliation report.
+      Datalake data is matched against Mastercard invoice data and corresponding interchange and EDP amounts are calculated.
+      Notice that the ARNs for refund transactions provided in Mastercard invoice data could be the sales transaction ARNs and special handling is performed to handle this.

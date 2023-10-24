@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: analytics
+    tables:
+      - name: visa__scheme_fees
+      - name: visa__vss_110_records
+      - name: visa__vss_120_records
+      - name: visa__vss_130_records
+      - name: visa__vss_140_records

@@ -1,0 +1,123 @@
+version: 2
+
+seeds:
+  - name: bin_map
+    description: Provided by Debra.
+    docs:
+      show: true
+    config:
+      column_types:
+        invoice_account: varchar
+        bin: varchar
+        product_accounting: varchar
+        processor_accounting: varchar
+        iad_accounting: varchar
+        product_actual: varchar
+        processor_actual: varchar
+        iad_actual: varchar
+        settlement_entity: varchar
+      columns:
+        - name: invoice_account
+          tests:
+            - not_null
+        - name: bin
+          tests:
+            - not_null
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - invoice_account
+            - bin
+  - name: currency_codes
+    description: ISO 4217 data obtained from [Wikipedia](https://en.wikipedia.org/wiki/ISO_4217).
+    docs:
+      show: true
+    config:
+      column_types:
+        alphabetic_code: varchar
+        numeric_code: varchar
+        minor_unit: int
+        currency: varchar
+        entity: varchar(max)
+    columns:
+      - name: alphabetic_code
+        tests:
+          - unique
+          - not_null
+      - name: numeric_code
+        tests:
+          - unique
+          - not_null
+  - name: detail_billing_ids
+    description: Provided by Debra.
+    docs:
+      show: true
+    config:
+      column_types:
+        scheme: varchar
+        event_id: varchar
+        visa_fee_schedule: varchar
+        cf_fee_id: varchar
+        description: varchar
+        billing_cycle: varchar
+        uom: varchar
+        recovery: varchar
+        product: varchar
+        rate_currency: varchar
+        rate: varchar
+        old_invoice_type: varchar
+        old_service_code_id_or_vi_billing_level: varchar
+        old_service_code_description_or_vi_billing_level: varchar
+        comment_or_actions: varchar
+        edit_table: varchar
+        new_fee_guide_type: varchar
+        new_section_name_level_1: varchar
+        new_subsection_name_level_2: varchar
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+  - name: rpt_mastercard_qmr_to_product_ids
+    docs:
+      show: true
+    config:
+      column_types:
+        product_id: varchar
+        consumer_or_commercial: varchar
+        debit_or_credit: varchar
+        is_maestro: boolean
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+  - name: rpt_visa_qmr_to_countries
+    docs:
+      show: true
+    config:
+      column_types:
+        country: varchar
+        jurisdiction: varchar
+        is_micro_state: boolean
+    columns:
+      - name: country
+        tests:
+          - unique
+          - not_null
+  - name: scheme_fee_jurisdictions
+    description: Copy from analytics_dev.dwc.tblsfjurisdictions.
+    docs:
+      show: true
+    config:
+      column_types:
+        id: int
+        country_name: varchar
+        eea: boolean
+        eu: boolean
+        sepa: boolean
+        territory_of: int
+        mc: boolean
+        visa: boolean
+        microstate: boolean
+        acc_countries_id: int

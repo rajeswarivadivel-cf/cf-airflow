@@ -1,0 +1,125 @@
+﻿invoice_account,bin,product_accounting,processor_accounting,iad_accounting,product_actual,processor_actual,iad_actual,settlement_entity
+10067784-826-0,469869,ACQ,CashFlows,CashFlows,ACQ,CashFlows,CashFlows,CashFlows
+10067784-826-0,450187,ACQ,CashFlows,CashFlows,ACQ,CashFlows,CashFlows,CashFlows
+10067784-826-0,456975,ACQ,CashFlows,CashFlows,ACQ,CashFlows,CashFlows,CashFlows
+10067784-826-0,476246,ATM Net settled,ATM Net settled,ATM Net settled,ACQ,Diebold NixDorf,Volksbank,Diebold NixDorf
+10067784-826-0,416580,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,The Post Office,The Post Office
+10067784-826-0,434767,ATM,Evry,IN2ATM,ATM,Evry,IN2ATM,IN2ATM
+10067784-826-0,416591,ATM,Fintrax,Fintrax,ATM,Fintrax,Fintrax,Fintrax
+10067784-826-0,416576,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Diebold NixDorf,Diebold NixDorf,Diebold NixDorf
+10067784-826-0,403175,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,MoneyCorp,MoneyCorp
+10067784-826-0,470383,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,BankMachine,BankMachine
+10067784-826-0,459844,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,YourCash,YourCash
+10067784-826-0,416344,ATM,Vocalink,YourCash,ATM,Vocalink,YourCash,YourCash
+10067784-826-0,416345,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,YourCash,YourCash
+10067784-826-0,416346,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,YourCash,YourCash
+10067784-826-0,417180,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,Cardtronics,Cardtronics
+10067784-826-0,417177,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,Cardtronics,Cardtronics
+10067784-826-0,438305,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Vocalink,DC Payments/Infocash,DC Payments/Infocash
+10067784-826-0,434859,ATM Net settled,ATM Net settled,ATM Net settled,ATM,PayCorp,PayCorp,PayCorp
+10067784-826-0,434746,ATM,CompassPlus,CompassPlus,ATM,CompassPlus,CompassPlus,CompassPlus
+10067784-826-0,434745,ATM,CompassPlus,CompassPlus,ATM,CompassPlus,CompassPlus,CompassPlus
+10067784-826-0,456952,ATM Net settled,ATM Net settled,ATM Net settled,ATM,YourCash,EasyCash,YourCash
+10067784-826-0,456953,ATM Net settled,ATM Net settled,ATM Net settled,ATM,YourCash,YourCash,YourCash
+10067784-826-0,401058,ATM Net settled,ATM Net settled,ATM Net settled,ATM,YourCash,YourCash,YourCash
+10067784-826-0,401059,ATM Net settled,ATM Net settled,ATM Net settled,ATM,YourCash,YourCash,YourCash
+10067784-826-0,402228,ATM,JetCash,JetCash,ATM,JetCash,JetCash,CashFlows
+10067784-826-0,434828,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Guavapay,Guavapay - UK,Guavapay
+10067784-826-0,434751,ATM Net settled,ATM Net settled,ATM Net settled,ATM,Guavapay,Guavapay - UK,Guavapay
+10067784-826-0,417178,ATM,CashFlows,TBC,ATM,Vocalink,TBC,CashFlows
+10067784-826-0,417179,ATM,CashFlows,TBC,ATM,Vocalink,TBC,CashFlows
+10067784-826-0,417181,ATM,CashFlows,TBC,ATM,Vocalink,TBC,CashFlows
+10067784-826-0,416531,BIN Net settled,BIN Net settled,BIN Net settled,BIN,GPS,Entropay,GPS
+10067784-826-0,416532,BIN Net settled,BIN Net settled,BIN Net settled,BIN,GPS,Entropay,GPS
+10067784-826-0,416530,BIN Net settled,BIN Net settled,BIN Net settled,BIN,GPS,Entropay,GPS
+10067784-826-0,459652,BIN,GPS,Mayzus,BIN,GPS,Mayzus,GPS
+10067784-826-0,476247,BIN Net settled,FIS,FIS,BIN,FIS,CashFlows,FIS
+10067784-826-0,434932,BIN Net settled,BIN Net settled,BIN Net settled,BIN,GPS,Intercash,GPS
+10067784-826-0,434933,BIN Net settled,BIN Net settled,BIN Net settled,BIN,GPS,Intercash,GPS
+10067784-826-0,476255,BIN Net settled,BIN Net settled,BIN Net settled,BIN,FIS,Transact 24,TBC
+10067784-826-0,459651,BIN,FIS,FIS,BIN,FIS,CashFlows,FIS
+10067784-826-0,476382,BIN,FIS,Mayzus,BIN,FIS,Mayzus,FIS
+10067784-826-0,476245,ATM Net settled,Diebold NixDorf,Diebold NixDorf,BIN,Diebold NixDorf,Diebold NixDorf,Diebold NixDorf
+10067784-826-0,434905,BIN Net settled,BIN Net settled,BIN Net settled,BIN,Marqeta,Marqeta,Marqeta
+10067784-826-0,434929,BIN Net settled,BIN Net settled,BIN Net settled,BIN,Marqeta,Marqeta,Marqeta
+10067784-826-0,456979,BIN Net settled,BIN Net settled,BIN Net settled,BIN,Marqeta,Parity,Marqeta
+10067784-826-0,456981,BIN Net settled,BIN Net settled,BIN Net settled,BIN,Marqeta,Marqeta,Marqeta
+10067784-826-0,478519,BIN Net settled,BIN Net settled,BIN Net settled,BIN,Marqeta,Marqeta,Marqeta
+10067784-826-0,478520,BIN Net settled,BIN Net settled,BIN Net settled,BIN,Marqeta,Marqeta,Marqeta
+10067784-826-0,459665,BIN Net settled,BIN Net settled,BIN Net settled,BIN,Paymentology,Paymentology,Paymentology
+10067784-826-0,435551,BIN Net settled,BIN Net settled,BIN Net settled,BIN,Enfuce,Bynk,Enfuce
+10067784-826-0,487136,BIN,i2c,DCR,BIN,i2c,DCR,i2c
+10067784-826-0,487137,BIN,i2c,DCR,BIN,i2c,DCR,i2c
+10067784-826-0,435550,BIN,Enfuce,tbc,BIN,Enfuce,tbc,Enfuce
+10067784-826-0,487168,ATM,BPC,GPC,ATM,BPC,GPC,BPC
+10067784-826-0,487169,ATM,CashFlows,CashFlows,ATM,Chipcard,Bancomat,CashFlows
+10067784-826-0,487170,ATM,Chipcard,Bancomat,ATM,Chipcard,Bancomat,Chipcard
+10067784-826-0,487190,BIN,Paymentology,Unified Finance,BIN,Paymentology,Unified Finance,Paymentology
+10067784-826-0,487191,BIN,Paymentology,Unified Finance,BIN,Paymentology,Unified Finance,Paymentology
+10067784-826-0,487192,BIN,Paymentology,Unified Finance,BIN,Paymentology,Unified Finance,Paymentology
+10067784-826-0,497188,BIN,Paymentology,Unified Finance,BIN,Paymentology,Unified Finance,Paymentology
+10067784-826-0,497189,BIN,Paymentology,Unified Finance,BIN,Paymentology,Unified Finance,Paymentology
+10067784-826-0,471547,BIN,Enfuce,Mynt,BIN,Enfuce,Mynt,Enfuce
+10067784-826-0,10067784826,ACQ,Cashflows,CashFlows,To Allocate,To Allocate,To Allocate,Cashflows
+10067784-826-0,439755,ACQ,Visa Direct,CashFlows,ACQ,Visa Direct,CashFlows,CashFlows
+10067784-826-0,439595,BIN,Yalamanchili,CardBlue,BIN,Yalamanchili,CardBlue,Yalamanchili
+10067784-826-0,463332,BIN,Enfuce,Mynt,BIN,Enfuce,Mynt,Enfuce
+10067784-826-0,463360,BIN,Chipcard,SoftFinanca,BIN,Chipcard,SoftFinanca,Cashflows
+10067784-826-0,463399,ATM,HPS,Loomis,ATM,HPS,Loomis,CashFlows
+10067784-826-0,480998,ATM,HPS,Loomis,ATM,HPS,Loomis,CashFlows
+10067784-826-0,481073,ATM,Diebold NixDorf,Attijarawaffa BE,ATM,Diebold NixDorf,Attijarawaffa BE,CashFlows
+10067784-826-0,481074,ATM,Diebold NixDorf,Attijarawaffa FR,ATM,Diebold NixDorf,Attijarawaffa FR,CashFlows
+10067784-826-0,439560,BIN,Yalamanchili,CardBlue,BIN,Yalamanchili,CardBlue,CashFlows
+10067784-826-0,3002046179,To Allocate,CashFlows,CashFlows,To Allocate,CashFlows,CashFlows,CashFlows
+10067784-826-0,409023,ATM,Brinks,Brinks,ATM,Brinks,Brinks,CashFlows
+10067784-826-0,3931320217,To Allocate,To Allocate,To Allocate,To Allocate,To Allocate,To Allocate,CashFlows
+10067784-826-0,435005,ATM,NoteMachine,NoteMachine,ATM,NoteMachine,NoteMachine,CashFlows
+10067784-826-0,487182,ATM,NoteMachine,NoteMachine,ATM,NoteMachine,NoteMachine,CashFlows
+10067784-826-0,3605689029,To Allocate,To Allocate,To Allocate,To Allocate,To Allocate,To Allocate,CashFlows
+10067784-826-0,1000638765,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,1000638769,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,1000638773,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,1000696554,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,1000696555,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,1000696564,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,1000696565,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3149833767,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3191517597,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3198200269,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3201793929,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3309435175,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3412920841,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3579253664,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3586744038,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3653948646,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3688217679,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3697770661,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3743670139,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,3785221801,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,9000469975,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,9000469976,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,9000469977,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,9000469978,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,9000469979,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,9000469980,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,9000524984,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10067784-826-0,9000524985,ACQ,Cashflows,Cashflows,ACQ,Cashflows,Cashflows,Cashflows
+10079833-528-0,481064,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,10079833,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,10079833528,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702426,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,9000564884,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702428,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702430,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702440,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702442,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702444,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702447,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702449,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,1000702452,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,9000564879,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,9000564880,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,9000564881,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,9000564882,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,9000564883,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout
+10079833-528-0,9000564891,ACQ,PayCheckout,PayCheckout,ACQ,Paycheckout,Paycheckout,Paycheckout

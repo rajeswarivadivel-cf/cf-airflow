@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: analytics
+    tables:
+      - name: bin_table
+      - name: crr_manual_adjustments
+      - name: crr_non_sales_scheme_fees_by_period_by_merchant
+      - name: currency_codes
+      - name: mssql_table_stats
+      - name: mssql_table_record_counts
+      - name: notemachine_raw_test
+      - name: pca_buyrates
+      - name: pca_buyrates_staging
+      - name: recovery_categories
+      - name: scheme_fee_jurisdictions
+      - name: tbldatalake_editcriteria_and_charge

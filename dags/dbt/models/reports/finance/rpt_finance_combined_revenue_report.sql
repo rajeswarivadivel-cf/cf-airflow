@@ -1,0 +1,100 @@
+with
+grouped as (
+    select
+        period_start_date,
+        business_id,
+        business_name,
+        channel,
+        channel_2,
+        partner_name,
+        existing_or_new,
+        comment,
+        merchant_account_manager,
+        partner_account_manager,
+        mcc,
+        description,
+        first_transaction_date,
+        is_first_trading_month,
+        legal_entity,
+        sum(transaction_count) as transaction_count,
+        sum(total_turnover_gbp) as purchase_turnover_gbp,
+        sum(acq_revenue_gbp) as acq_revenue_gbp,
+        sum(gateway_revenue_gbp) as gateway_revenue_gbp,
+        sum(pci_revenue_gbp) as gateway_pci_revenue_gbp,
+        sum(account_updater_total_revenue_gbp) as account_updater_revenue_gbp,
+        sum(fx_total_revenue_gbp) as fx_revenue_gbp,
+        sum(manual_early_settlement_gbp) as manual_early_settlement_revenue_gbp,
+        sum(
+            auto_early_settlement_revenue_gbp
+        ) as auto_early_settlement_revenue_gbp,
+        sum("3ds_revenue_gbp") as "3ds_revenue_gbp",
+        sum(remittance_fee_revenue_gbp) as remittance_fee_revenue_gbp,
+        sum(manual_adjusted_revenue_gbp) as manual_adjusted_revenue_gbp,
+        sum(total_revenue_gbp) as total_revenue_gbp,
+        sum(interchange_fee) as interchange_fee,
+        sum(scheme_fee) as scheme_fee,
+        sum(manual_adjusted_cos_gbp) as manual_adjusted_cos_gbp,
+        sum(fx_cost_gbp) as fx_cost_gbp,
+        sum(net_revenue) as net_revenue,
+        sum(remittance_fee_cost_gbp) as remittance_fee_cost_gbp,
+        sum(partner_commission) as partner_commission,
+        sum(third_party_gateway_cost) as third_party_gateway_cost,
+        sum("3ds_cost_gbp") as "3ds_cost_gbp",
+        sum(gross_profit) as gross_profit,
+        sum(value_allocated_interchange) as value_allocated_interchange,
+        sum(value_allocated_scheme_fee) as value_allocated_scheme_fee,
+        sum(adjusted_gross_profit) as adjusted_gross_profit
+    from
+        {{ ref('rpt_finance_combined_revenue_report_details') }}
+    {{ dbt_utils.group_by(n=15) }}
+),
+
+columns_reordered as (
+    select
+        period_start_date,
+        business_id,
+        business_name,
+        channel,
+        channel_2,
+        partner_name,
+        existing_or_new,
+        transaction_count,
+        purchase_turnover_gbp,
+        acq_revenue_gbp,
+        gateway_revenue_gbp,
+        gateway_pci_revenue_gbp,
+        account_updater_revenue_gbp,
+        fx_revenue_gbp,
+        manual_early_settlement_revenue_gbp,
+        auto_early_settlement_revenue_gbp,
+        "3ds_revenue_gbp",
+        remittance_fee_revenue_gbp,
+        manual_adjusted_revenue_gbp,
+        total_revenue_gbp,
+        interchange_fee,
+        scheme_fee,
+        manual_adjusted_cos_gbp,
+        fx_cost_gbp,
+        net_revenue,
+        remittance_fee_cost_gbp,
+        partner_commission,
+        third_party_gateway_cost,
+        "3ds_cost_gbp",
+        gross_profit,
+        value_allocated_interchange,
+        value_allocated_scheme_fee,
+        adjusted_gross_profit,
+        comment,
+        merchant_account_manager,
+        partner_account_manager,
+        mcc,
+        description,
+        first_transaction_date,
+        is_first_trading_month,
+        legal_entity
+    from grouped
+)
+
+select *
+from
+    columns_reordered

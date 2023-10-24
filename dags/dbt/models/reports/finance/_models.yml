@@ -1,0 +1,214 @@
+version: 2
+
+models:
+  - name: rpt_finance_combined_revenue_report
+    description: >
+      This is the combined revenue report.
+      Records are aggregated.
+    columns:
+      - name: period_start_date
+        description: 'Period start date.'
+        tests:
+          - not_null
+
+      - name: business_id
+        description: 'Business ID.'
+        tests:
+          - not_null
+
+      - name: business_name
+        description: 'Business name.'
+        tests:
+          - not_null
+
+      - name: channel
+        description: 'Channel.'
+        tests:
+          - not_null
+
+      - name: channel_2
+        description: 'Channel 2.'
+        tests:
+          - not_null
+
+      - name: partner_name
+        description: 'Partner name.'
+        tests:
+          - not_null
+
+      - name: comment
+        description: 'Comment.'
+        tests:
+          - not_null
+
+      - name: merchant_account_manager
+        description: 'Merchant account manager.'
+        tests:
+          - not_null
+
+      - name: partner_account_manager
+        description: 'Partner account manager.'
+        tests:
+          - not_null
+
+      - name: mcc
+        description: 'MCC'
+
+      - name: description
+        description: 'Description'
+        tests:
+          - not_null
+
+      - name: first_transaction_date
+        description: 'First transaction date.'
+
+      - name: is_first_trading_month
+        description: 'Whether it is the first trading month of the business.'
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Yes', 'No']
+
+      - name: legal_entity
+        description: 'Legal entity.'
+        tests:
+          - not_null
+
+      - name: existing_or_new
+        description: 'Whether the business is a new business, meaning it has no greater than zero turnover transactions before current year.'
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Existing', 'New', 'Unknown']
+
+      - name: transaction_count
+        description: 'Transaction count.'
+        tests:
+          - not_null
+
+      - name: purchase_turnover_gbp
+        description: 'Purchase turnover in GBP.'
+        tests:
+          - not_null
+
+      - name: acq_revenue_gbp
+        description: 'Acquired revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: gateway_revenue_gbp
+        description: 'Gateway revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: gateway_pci_revenue_gbp
+        description: 'Gateway PCI revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: account_updater_revenue_gbp
+        description: 'Account updater revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: fx_revenue_gbp
+        description: 'FX revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: manual_early_settlement_revenue_gbp
+        description: 'Manual early settlement revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: auto_early_settlement_revenue_gbp
+        description: 'Auto early settlement revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: 3ds_revenue_gbp
+        description: '3DS revenue in GBP.'
+        quote: true
+        tests:
+          - not_null
+
+      - name: remittance_fee_revenue_gbp
+        description: 'Remittance fee revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: manual_adjusted_revenue_gbp
+        description: 'Manual adjusted revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: total_revenue_gbp
+        description: 'Total revenue in GBP.'
+        tests:
+          - not_null
+
+      - name: interchange_fee
+        description: 'Interchange fee.'
+        tests:
+          - not_null
+
+      - name: scheme_fee
+        description: 'Scheme fee.'
+        tests:
+          - not_null
+
+      - name: manual_adjusted_cos_gbp
+        description: 'Manual adjusted cost of sales in GBP'
+        tests:
+          - not_null
+
+      - name: fx_cost_gbp
+        description: 'FX cost in GBP.'
+        tests:
+          - not_null
+
+      - name: net_revenue
+        description: 'Net revenue.'
+        tests:
+          - not_null
+
+      - name: remittance_fee_cost_gbp
+        description: 'Remittance fee cost in GBP.'
+        tests:
+          - not_null
+
+      - name: partner_commission
+        description: 'Partner commission.'
+        tests:
+          - not_null
+
+      - name: third_party_gateway_cost
+        description: 'Third party gateway cost.'
+        tests:
+          - not_null
+
+      - name: 3ds_cost_gbp
+        description: '3DS cost in GBP'
+        quote: true
+        tests:
+          - not_null
+
+      - name: gross_profit
+        description: 'Gross profit.'
+        tests:
+          - not_null
+
+      - name: value_allocated_interchange
+        description: 'Value allocated interchange.'
+        tests:
+          - not_null
+
+      - name: value_allocated_scheme_fee
+        description: 'Value allocated scheme fee.'
+        tests:
+          - not_null
+
+      - name: adjusted_gross_profit
+        description: 'Adjusted gross profit.'
+        tests:
+          - not_null

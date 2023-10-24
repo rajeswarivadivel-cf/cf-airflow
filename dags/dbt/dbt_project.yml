@@ -1,0 +1,83 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'cashflows_dbt'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'cashflows_dbt'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  cashflows_dbt:
+    # Config indicated by + and applies to all files under models/example/
+    +materialized: view
+
+seeds:
+  cashflows_dbt:
+    bin_table:
+      +column_types:
+        category: varchar(max)
+        scheme: varchar(max)
+        ica: int8
+        bin: int8
+        project_id: varchar(max)
+        mcm_id: varchar(max)
+        country_of_registration: varchar(max)
+        currency: varchar(max)
+        product_code: varchar(max)
+        product_type: varchar(max)
+        processor: varchar(max)
+        processor_msp_bid: varchar(max)
+        client: varchar(max)
+        client_msp_bid: varchar(max)
+        bin_live_date: varchar(max)
+        product_status: varchar(max)
+        product_go_live_date: varchar(max)
+        gsi_pcr: varchar(max)
+        processing_ica_cib: varchar(max)
+        endpoint: varchar(max)
+        ehi: varchar(max)
+        independent_emoney: varchar(max)
+        rpp_pif: varchar(max)
+        co_brands: varchar(max)
+        mastercom_rid: varchar(max)
+        dcc: varchar(max)
+        invoice_company: varchar(max)
+        invoice_contact: varchar(max)
+        project_manger: varchar(max)
+        comments: varchar(max)
+        bin_closure_date: varchar(max)
+        number_ica: int8
+        number_bin: int8
+    recovery_categories:
+      +column_types:
+        scheme: varchar(256)
+        billing_line: varchar(256)
+        description: varchar(256)
+        recovery_2020: varchar(256)
+        recovery_2021: varchar(256)
+        recovery_2023: varchar(256)
+        last_seen: date
+        is_acquiring: boolean

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_mastercard__clearing_report_ip755120_aa
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: 'currencycode = transactioncurrencycode'
+    columns:
+      - name: feeprocessingcode
+        tests:
+          - accepted_values:
+              values: [19, 29]
+      - name: amount
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+      - name: e_interchangeamountfee
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0

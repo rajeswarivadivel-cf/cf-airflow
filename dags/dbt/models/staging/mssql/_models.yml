@@ -1,0 +1,153 @@
+version: 2
+
+models:
+  - name: stg_mssql__accounts_dbo_acc_accounts
+    columns:
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_acc_acquiring_fees
+    columns:
+      - name: fee_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_acc_acquiring_fees_blended
+    columns:
+      - name: acq_fee_blended_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_acc_sale_details
+    columns:
+      - name: transaction_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_acc_transaction_costs
+    columns:
+      - name: transaction_cost_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_acc_transfers
+    columns:
+      - name: transfer_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_tbltransaction
+    columns:
+      - name: principalid
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_tbltransaction3dsecure
+    columns:
+      - name: principalid
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_tbltransactioncapture
+    columns:
+      - name: transactioncaptureid
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_tbltransactioncharge
+    columns:
+      - name: transactioncaptureid
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_tbltransactionchargeschemefee
+    columns:
+      - name: tcschemefeeid
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_tbltransactioneditcriteria
+    columns:
+      - name: principalid
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__accounts_dbo_tbltransactionsearch
+    columns:
+      - name: transactionsearchid
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_captured_refunds
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_captured_representments
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_captured_sales
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_cleared_refunds
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_cleared_representments
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_cleared_sales
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_clearing_files
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_refund_auth_responses
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_refunds
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_refundvoid_auth_responses
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_representment_auth_responses
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: stg_mssql__core_dbo_representments
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null

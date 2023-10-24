@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: analytics
+    tables:
+      - name: atm_billing
+      - name: atm_customer_to_transaction_class
+      - name: atm_customers
+      - name: atm_datafiles
+      - name: atm_diebold
+      - name: atm_dieboldtransaw
+      - name: atm_dieboldtransdn
+      - name: atm_ep747_totals
+      - name: atm_ep747_totals_paycorp
+      - name: atm_euronet
+      - name: atm_loomis_balance_inquiry
+      - name: atm_loomis_confirmed_daily_tr_raw
+      - name: atm_loomis_confirmed_daily_trx
+      - name: atm_loomis_interchange_fees_raw
+      - name: atm_loomis_nonfinancial_raw
+      - name: atm_notemachine_raw
+      - name: atm_paycorp
+      - name: atm_price_model_names
+      - name: atm_price_models
+      - name: atm_price_names
+      - name: atm_prices
+      - name: atm_processors
+      - name: atm_source_compare
+      - name: atm_tbl_log
+      - name: atm_transaction_classes
+      - name: atm_vss130
