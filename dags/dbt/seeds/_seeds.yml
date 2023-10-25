@@ -28,6 +28,8 @@ seeds:
           combination_of_columns:
             - invoice_account
             - bin
+  - name: card_types
+    description: Copy of analytics.dbo.card_type_lookup.
   - name: currency_codes
     description: ISO 4217 data obtained from [Wikipedia](https://en.wikipedia.org/wiki/ISO_4217).
     docs:

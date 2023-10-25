@@ -42,6 +42,7 @@ sources:
       - name: mssql__analytics_dbo_tblearlysettlementcommission
       - name: mssql__analytics_dbo_tblfinancialreport
       - name: mssql__analytics_dbo_tblfirsttransactiondate
+      - name: mssql__analytics_dbo_tbllegalentity_by_bid_history
       - name: mssql__analytics_dbo_vw_bidbysalesperson_15thcutoff
       - name: mssql__analytics_dbo_vw_bidbysalesperson_secondary_15thcutoff
       - name: mssql__analytics_dbo_vw_combinedrevenuereport
