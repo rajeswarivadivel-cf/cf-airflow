@@ -152,7 +152,7 @@ joined as (
     from
         transactions as t
     left join
-        {{ ref('stg_tbldatalake_editcriteria_and_charge') }} as dl_supp
+        {{ ref('stg_mssql__analytics_dev_dwc_tbldatalake_editcriteria_and_charge') }} as dl_supp
         on t.transactionid = dl_supp.transactionid
     left join {{ ref('stg_mssql__core_dbo_sales') }} as s
         on t.transactionid = s.reference
