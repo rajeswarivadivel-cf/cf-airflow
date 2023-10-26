@@ -48,17 +48,17 @@ def execute_multiple_sql_email(hook, business, frequency, merchant_id, to, cc, l
     subject = f"{business} {frequency} Dispute, Collaboration and Chargeback Report {from_date} to {to_date}"
     html_content = f"Attached is the report for all dispute,collaboration and chargebacks for '{business}' from {from_date} to {to_date}"
     query_folder = "/home/airflow/airflow_home/dags/scripts"
-    query_map = {"{business}_allocation_report" :  "allocation",
-                    "{business}_chargeback_report" : "chargeback",
-                    "{business}_collaboration_report" : "collaboration"}
+    query_map = {f"{business}_allocation_report" :  "send_chargeback_dispute_to_allocation",
+                    f"{business}_chargeback_report" : "send_chargeback_dispute_to_chargeback",
+                    f"{business}_collaboration_report" : "send_chargeback_dispute_to_collaboration"}
     all_files_name = []
-    for query_file in query_map.values():
+    for key,query_file in query_map.items():
         query_path = os.path.join(query_folder, 'sql', query_file) + ".sql"
         with open(query_path, 'r') as f:
             logging.info("Executing -> {}".format(f))
             query = f.read().format(merchant_id=merchant_id,start_date=to_date)
         df = sql_hook.get_pandas_df(query,index_col=None)
-        output_file = f'{business}_{query_file}_{to_date}'
+        output_file = f'{key}_{to_date}'
         df.to_excel(os.path.join(query_folder, 'sql_output', f'{output_file}.xlsx'), index = False)
         result = os.path.join(query_folder,'sql_output', f'{output_file}.xlsx')
         all_files_name.append(result)
