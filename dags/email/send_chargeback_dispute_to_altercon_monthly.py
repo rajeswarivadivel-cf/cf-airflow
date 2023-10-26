@@ -38,13 +38,15 @@ dag= DAG(
 
 
 
-def execute_multiple_sql_email(hook, business, frequency, merchant_id, exec_date, to, cc, logical_date, **kwargs):
+def execute_multiple_sql_email(hook, business, frequency, merchant_id, to, cc, logical_date,data_interval_end):
     # Establish SQL Server connection
-    logging.info('execution_date is ', exec_date)
-    start_date = logical_date.replace(month=1, day=1).strftime("%Y-%m-%d")
+    logging.info(f'execution_date is  {logical_date}')
+    from_date = logical_date.replace(month=1, day=1).strftime("%Y-%m-%d")
+    logging.info(f'The script is  exected on {data_interval_end}')
+    to_date = (data_interval_end-timedelta(1)).strftime("%Y-%m-%d")
     sql_hook = MsSqlHook(mssql_conn_id=hook)
-    subject = f"{business} {frequency} Dispute, Collaboration and Chargeback Report {start_date} to {exec_date}"
-    html_content = f"Attached is the report for all dispute,collaboration and chargebacks for '{business}' from {start_date} to {exec_date}"
+    subject = f"{business} {frequency} Dispute, Collaboration and Chargeback Report {from_date} to {to_date}"
+    html_content = f"Attached is the report for all dispute,collaboration and chargebacks for '{business}' from {from_date} to {to_date}"
     query_folder = "/home/airflow/airflow_home/dags/scripts"
     query_map = {"{business}_allocation_report" :  "allocation",
                     "{business}_chargeback_report" : "chargeback",
@@ -54,9 +56,9 @@ def execute_multiple_sql_email(hook, business, frequency, merchant_id, exec_date
         query_path = os.path.join(query_folder, 'sql', query_file) + ".sql"
         with open(query_path, 'r') as f:
             logging.info("Executing -> {}".format(f))
-            query = f.read().format(merchant_id=merchant_id,start_date=start_date)
+            query = f.read().format(merchant_id=merchant_id,start_date=to_date)
         df = sql_hook.get_pandas_df(query,index_col=None)
-        output_file = f'{business}_{query_file}_{exec_date}'
+        output_file = f'{business}_{query_file}_{to_date}'
         df.to_excel(os.path.join(query_folder, 'sql_output', f'{output_file}.xlsx'), index = False)
         result = os.path.join(query_folder,'sql_output', f'{output_file}.xlsx')
         all_files_name.append(result)
@@ -82,7 +84,8 @@ altercon_monthly_chargeback_dispute_report = PythonOperator(task_id="altercon_mo
                            'merchant_id' : '5951788',
                            'exec_date' : '{{ ds }}',
                            'to':   'Irina.a@rockalab.com', 
-                           'cc' : ['illia.hr@rockalab.com', 'malgorzata.karbal@cashflows.com']},
+                           'cc' :  ['illia.hr@rockalab.com', 'malgorzata.karbal@cashflows.com']
+                           },
                            provide_context=True,
                            dag=dag)
 
