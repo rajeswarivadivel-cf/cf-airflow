@@ -2,10 +2,11 @@ import logging
 import re
 from pathlib import Path
 from tempfile import NamedTemporaryFile
-from typing import Callable
+from typing import Callable, Optional
 
 from airflow import DAG
 from airflow.models import BaseOperator
+from airflow.models.baseoperator import chain
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.amazon.aws.transfers.s3_to_redshift import S3ToRedshiftOperator
 
@@ -34,7 +35,8 @@ class S3FilesTransformOperator(BaseOperator):
 
     def execute(self, context):
         s3_hook = S3Hook()
-        keys = [key for key in s3_hook.list_keys(bucket_name=self.source_bucket, prefix=self.source_prefix)]
+        keys = [key for key in s3_hook.list_keys(bucket_name=self.source_bucket, prefix=self.source_prefix) if
+                not key.endswith('/')]
         if self.wildcard_key:
             keys = [key for key in keys if re.match(self.wildcard_key, key)]
         context['task_instance'].xcom_push(key='source_bucket', value=self.source_bucket)
@@ -101,14 +103,16 @@ def s3_to_redshift_pipeline(
         s3_prefix: str,
         redshift_schema: str,
         redshift_table: str,
-        transform_func: Callable
+        transform_func: Callable,
+        pre_operator: Optional[Callable] = None,
+        wildcard_key: Optional[str] = r'.*\.xlsx'
 ):
     transform = S3FilesTransformOperator(
         dag=dag,
         task_id=TRANSFORM_TASK_ID,
         source_bucket=s3_bucket,
         source_prefix=f'{s3_prefix}/staging',
-        wildcard_key=r'.*\.xlsx',
+        wildcard_key=wildcard_key,
         dest_bucket=s3_bucket,
         dest_prefix=f'{s3_prefix}/tmp/{redshift_table}',
         transform_func=transform_func
@@ -138,4 +142,9 @@ def s3_to_redshift_pipeline(
         archive_prefix=f'{s3_prefix}/archive'
     )
 
-    return transform >> s3_to_redshift >> remove_temp_files >> archive
+    tasks = [transform, s3_to_redshift, remove_temp_files, archive]
+
+    if pre_operator:
+        tasks = [pre_operator()] + tasks
+
+    chain(*tasks)
