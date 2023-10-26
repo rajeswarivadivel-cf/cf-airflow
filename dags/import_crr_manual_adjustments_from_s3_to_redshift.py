@@ -3,7 +3,7 @@ from datetime import datetime
 from airflow import DAG
 from airflow.models import Variable
 
-from custom_operators.s3_to_redshift_pipeline import s3_to_redshift_pipeline
+from common.s3_to_redshift import s3_to_redshift_pipeline
 
 
 def transform_func(f_source_name: str, f_dest_name: str, source_key: str):

@@ -14,7 +14,7 @@ from airflow.models.taskinstance import TaskInstance
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.amazon.aws.transfers.s3_to_redshift import S3ToRedshiftOperator
 
-from custom_operators.outlook_operators import FetchMessagesOperator
+from common.outlook import FetchMessagesOperator
 
 logger = logging.getLogger(__name__)
 

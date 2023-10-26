@@ -6,7 +6,7 @@ from typing import Optional
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.microsoft.mssql.hooks.mssql import MsSqlHook
 
-from custom_operators.mssql import get_mssql_query_as_df
+from common.mssql import get_mssql_query_as_df
 
 logger = logging.getLogger(__name__)
 

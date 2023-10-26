@@ -8,8 +8,8 @@ from airflow.models import Variable
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.microsoft.mssql.hooks.mssql import MsSqlHook
 
-from custom_operators.mssql_to_redshift import extract_mssql_data_to_s3
-from custom_operators.s3_to_redshift_pipeline import s3_to_redshift_pipeline
+from common.mssql_to_s3 import extract_mssql_data_to_s3
+from common.s3_to_redshift import s3_to_redshift_pipeline
 
 logger = logging.getLogger(__name__)
 

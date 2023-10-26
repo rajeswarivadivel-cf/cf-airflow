@@ -13,8 +13,8 @@ from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.microsoft.mssql.hooks.mssql import MsSqlHook
 from airflow.utils.decorators import apply_defaults
 
-from custom_operators.mssql import get_base_table_from_mssql_query, get_mssql_query_as_df
-from custom_operators.mssql_to_redshift import extract_mssql_data_to_s3
+from common.mssql import get_base_table_from_mssql_query, get_mssql_query_as_df
+from common.mssql_to_s3 import extract_mssql_data_to_s3
 
 logger = logging.getLogger(__name__)
 
