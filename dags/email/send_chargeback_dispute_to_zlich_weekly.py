@@ -36,10 +36,10 @@ dag = DAG(
 )
 
 
-def execute_multiple_sql_email(hook, business, frequency, merchant_id, exec_date, to, cc, logical_date, **kwargs):
+def execute_multiple_sql_email(hook, business, frequency, merchant_id, exec_date, to, cc, logical_date,**kwargs):
     # Establish SQL Server connection
     logging.info('execution_date is ', exec_date)
-    start_date = logical_date.replace(month=1, day=1).strftime("%Y-%m-%d")
+    start_date =logical_date.replace(month=1, day=1).strftime("%Y-%m-%d")
     sql_hook = MsSqlHook(mssql_conn_id=hook)
     subject = f"{business} {frequency} Dispute, Collaboration and Chargeback Report {start_date} to {exec_date}"
     html_content = f"Attached is the report for all dispute,collaboration and chargebacks for '{business}' from {start_date} to {exec_date}"
@@ -66,7 +66,8 @@ def execute_multiple_sql_email(hook, business, frequency, merchant_id, exec_date
          subject,
          html_content,
          files=all_files_name,
-         cc= cc)
+         cc= cc,
+         conn_id='smtp_default')
     for file in all_files_name:     
         os.remove(file)
         logger.info(f"{file} has been removed successfully ")
