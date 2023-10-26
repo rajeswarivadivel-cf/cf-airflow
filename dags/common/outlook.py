@@ -10,8 +10,8 @@ logger = logging.getLogger(__name__)
 
 
 def get_access_token() -> str:
-    http = HttpHook(http_conn_id='microsoft_token', method='POST')
-    response = http.run(
+    http_hook = HttpHook(http_conn_id='microsoft_token', method='POST')
+    response = http_hook.run(
         endpoint='/',
         headers={
             'Content-Type': 'application/x-www-form-urlencoded'
@@ -47,15 +47,15 @@ class FetchMessagesOperator(BaseOperator):
         self.aws_conn_id = aws_conn_id
 
     def execute(self, context):
-        self.s3 = S3Hook(aws_conn_id=self.aws_conn_id)
-        self.http = HttpHook('GET', http_conn_id='microsoft_graph')
+        self.s3_hook = S3Hook(aws_conn_id=self.aws_conn_id)
+        self.http_hook = HttpHook('GET', http_conn_id='microsoft_graph')
         self.access_token = get_access_token()
         self._fetch(
             endpoint=f"/users/{self.user_id}/mailfolders(\'{self.mail_folder_id}\')/messages?$search=\"received:{context['ds']}\"")
 
     def _fetch(self, endpoint: str):
         # Fetch data.
-        response = self.http.run(endpoint=endpoint, headers={'Authorization': f'Bearer {self.access_token}'})
+        response = self.http_hook.run(endpoint=endpoint, headers={'Authorization': f'Bearer {self.access_token}'})
         logger.info(f'Get {response.url}')
         assert response.status_code == 200
 
@@ -65,7 +65,7 @@ class FetchMessagesOperator(BaseOperator):
         new_messages_data = []
         for message_data in messages_data:
             key = f'{self.s3_prefix}/{message_data["subject"]}_{message_data["id"]}.txt'
-            self.s3.load_string(
+            self.s3_hook.load_string(
                 string_data=message_data['body']['content'].replace('\r\n', '\n'),
                 bucket_name=self.s3_bucket,
                 key=key
@@ -76,5 +76,5 @@ class FetchMessagesOperator(BaseOperator):
         # Fetch next page.
         if '@odata.nextLink' in response.json():
             url = response.json()['@odata.nextLink']
-            assert url.startswith(self.http.base_url)
-            self._fetch(endpoint=url.replace(self.http.base_url, ''))
+            assert url.startswith(self.http_hook.base_url)
+            self._fetch(endpoint=url.replace(self.http_hook.base_url, ''))
