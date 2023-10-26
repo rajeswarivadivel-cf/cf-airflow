@@ -27,7 +27,7 @@ def transform_func(f_source_name: str, f_dest_name: str, source_key: str):
             'bid_type',
             'partner_manager_name_secondary'
         ]]
-        df.to_csv(f_dest, sep='|', header=False, index=False, escapechar='\\')
+        df.to_csv(f_dest, index=False)
 
 
 with DAG(

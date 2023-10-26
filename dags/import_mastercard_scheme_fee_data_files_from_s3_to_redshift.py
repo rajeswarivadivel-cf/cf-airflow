@@ -20,7 +20,7 @@ def transform_func(f_source_name: str, f_dest_name: str, source_key: str):
             'TAX CHARGE': float,
             'VAT RATE': float
         }, parse_dates=['BILLING CYCLE DATE']).assign(filename=Path(source_key).name)
-        df.to_csv(f_dest, sep='|', header=False, index=False, escapechar='\\')
+        df.to_csv(f_dest, index=False)
 
 
 with DAG(

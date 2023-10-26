@@ -108,7 +108,10 @@ def s3_to_redshift_pipeline(
         table=redshift_table,
         s3_bucket=s3_bucket,
         s3_key=f'{s3_prefix}/tmp/{redshift_table}/',
-        copy_options=['REMOVEQUOTES']
+        copy_options=[
+            'format as csv',
+            'ignoreheader as 1'
+        ]
     )
 
     remove_tmp = S3DeleteObjectsOperator(

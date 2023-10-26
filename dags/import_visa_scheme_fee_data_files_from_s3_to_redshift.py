@@ -19,7 +19,7 @@ def transform_func(f_source_name: str, f_dest_name: str, source_key: str):
             'Mapping': str,
             'Settlement ID': str
         }, parse_dates=['Invoice Date']).assign(filename=Path(source_key).name)
-        df.to_csv(f_dest, sep='|', header=False, index=False, escapechar='\\')
+        df.to_csv(f_dest, index=False)
 
 
 with DAG(
