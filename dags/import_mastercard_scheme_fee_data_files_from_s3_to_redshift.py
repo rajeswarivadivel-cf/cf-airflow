@@ -34,6 +34,7 @@ with DAG(
         dag=dag,
         s3_bucket=Variable.get('s3_bucket_name'),
         s3_prefix='AIRFLOW/mastercard_scheme_fee',
+        wildcard_key=r'.*\.xlsx',
         redshift_schema='analytics',
         redshift_table='mastercard__scheme_fees',
         transform_func=transform_func

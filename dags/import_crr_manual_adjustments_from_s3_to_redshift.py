@@ -30,6 +30,7 @@ with DAG(
         dag=dag,
         s3_bucket=Variable.get('s3_bucket_name'),
         s3_prefix='AIRFLOW/crr_manual_adjustments',
+        wildcard_key=r'.*\.xlsx',
         redshift_schema='analytics',
         redshift_table='crr_manual_adjustments',
         transform_func=transform_func

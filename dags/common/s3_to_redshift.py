@@ -20,10 +20,10 @@ class S3FilesTransformOperator(BaseOperator):
             self,
             source_bucket: str,
             source_prefix: str,
+            wildcard_key: Optional[str],
             dest_bucket: str,
             dest_prefix: str,
             transform_func: Callable,
-            wildcard_key: str = None,
             *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.source_bucket = source_bucket
@@ -105,7 +105,7 @@ def s3_to_redshift_pipeline(
         redshift_table: str,
         transform_func: Callable,
         pre_operator: Optional[Callable] = None,
-        wildcard_key: Optional[str] = r'.*\.xlsx'
+        wildcard_key: Optional[str] = None
 ):
     transform = S3FilesTransformOperator(
         dag=dag,

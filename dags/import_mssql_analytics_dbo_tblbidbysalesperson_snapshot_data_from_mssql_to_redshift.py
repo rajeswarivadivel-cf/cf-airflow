@@ -56,7 +56,6 @@ with DAG(
         dag=dag,
         s3_bucket=s3_bucket,
         s3_prefix=s3_prefix,
-        wildcard_key=None,
         redshift_schema='analytics',
         redshift_table='mssql__analytics_dbo_tblbidbysalesperson_snapshots',
         transform_func=transform_func,

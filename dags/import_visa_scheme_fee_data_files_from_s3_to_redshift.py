@@ -33,6 +33,7 @@ with DAG(
         dag=dag,
         s3_bucket=Variable.get('s3_bucket_name'),
         s3_prefix='AIRFLOW/visa_scheme_fee',
+        wildcard_key=r'.*\.xlsx',
         redshift_schema='analytics',
         redshift_table='visa__scheme_fees',
         transform_func=transform_func
