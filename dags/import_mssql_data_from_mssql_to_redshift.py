@@ -105,7 +105,6 @@ class OperatorBase(BaseOperator):
     def pre_execute(self, context):
         if self.is_skipped_task(context=context):
             raise AirflowSkipException
-        self.reload = bool(context['dag_run'].conf and context['dag_run'].conf.get('reload', False))
         self.mssql_hook = MsSqlHook()
         self.rs_hook = RedshiftSQLHook()
         self.s3_hook = S3Hook()
@@ -147,7 +146,7 @@ class OperatorBase(BaseOperator):
         return bool(self.s3_tmp_files_keys)
 
     def extract_mssql_data_to_s3(self, mssql_query: str):
-        df = self.get_mssql_query_as_df(mssql_query=mssql_query)
+        df = get_mssql_query_as_df(mssql=self.mssql_hook, mssql_query=mssql_query)
         if df.empty:
             return
         with NamedTemporaryFile(mode='wb') as f:
@@ -156,9 +155,6 @@ class OperatorBase(BaseOperator):
             key = f'{self.s3_tmp_files_prefix}/{Path(f.name).name}.csv'
             self.s3_hook.load_file(filename=f.name, bucket_name=self.s3_bucket, key=key)
             logger.info(f'Loaded data file to {key}.')
-
-    def get_mssql_query_as_df(self, mssql_query: str) -> 'pd.DataFrame':
-        return get_mssql_query_as_df(mssql=self.mssql_hook, mssql_query=mssql_query)
 
     def pre_s3_to_redshift(self):
         pass
@@ -389,27 +385,14 @@ class IncrementalLoadByIdOperator(OperatorBase):
         sql = f'select min({self.id_column}), max({self.id_column}) from {self.redshift_schema}.{self.redshift_table}'
         self.rs_min, self.rs_max = self.rs_hook.get_first(sql=sql)
 
-        if self.reload:
-            self.id_from, self.id_to = self.mssql_min, self.mssql_max
-        else:
-            self.id_to = self.id_to or self.mssql_max
-            self.id_from = self.id_from or self.rs_max or self.id_to - self.batch_size + 1
+        self.id_to = self.id_to or self.mssql_max
+        self.id_from = self.id_from or self.rs_max or self.id_to - self.batch_size + 1
 
         for n, id_ in enumerate(range(self.id_from, self.id_to, self.batch_size), start=1):
             start, end = id_, min(id_ + self.batch_size - 1, self.id_to)
             logger.info(f'Running batch {n} of {math.ceil((self.id_to - self.id_from) / self.batch_size)}.')
             sql = f'select * from {self.mssql_table} where {self.id_column} between {start} and {end}'
-            if self.reload:
-                df = self.get_mssql_query_as_df(mssql_query=sql)
-                if df.empty:
-                    continue
-                with NamedTemporaryFile(mode='w', encoding='utf8') as f:
-                    df.to_csv(f, delimiter='|', escapechar='\\')
-                    fn = f'{self.redshift_table}_{start}_{end}.csv'
-                    self.s3_hook.load_file(filename=f.name, bucket_name=self.s3_bucket,
-                                           key=f'{self.s3_prefix}/reload/{self.redshift_table}/{fn}')
-            else:
-                self.extract_mssql_data_to_s3(mssql_query=sql)
+            self.extract_mssql_data_to_s3(mssql_query=sql)
 
     def pre_s3_to_redshift(self):
         self.rs_hook.run(
