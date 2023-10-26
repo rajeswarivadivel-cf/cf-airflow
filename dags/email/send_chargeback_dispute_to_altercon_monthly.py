@@ -28,7 +28,7 @@ default_args = {
 dag= DAG(
 	'send_chargeback_dispute_to_altercon_monthly',
 	default_args=default_args,
-	description='It sends out weekly chargeback and dispute report to Altercon',
+	description='It sends out monthly chargeback and dispute report to Altercon',
 	start_date= datetime(2023, 10, 1),
 	schedule='30 11 1 * *',
 	tags=['email', 'ALTERCON'],
@@ -42,7 +42,7 @@ def execute_multiple_sql_email(hook, business, frequency, merchant_id, to, cc, l
     # Establish SQL Server connection
     logging.info(f'execution_date is  {logical_date}')
     from_date = logical_date.replace(month=1, day=1).strftime("%Y-%m-%d")
-    logging.info(f'The script is  exected on {data_interval_end}')
+    logging.info(f'The script is  executed on {data_interval_end}')
     to_date = (data_interval_end-timedelta(1)).strftime("%Y-%m-%d")
     sql_hook = MsSqlHook(mssql_conn_id=hook)
     subject = f"{business} {frequency} Dispute, Collaboration and Chargeback Report {from_date} to {to_date}"
