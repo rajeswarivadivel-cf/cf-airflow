@@ -5,7 +5,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from time import sleep
-from typing import NoReturn, List
+from typing import NoReturn, List, Optional
 
 from airflow import DAG
 from airflow.exceptions import AirflowSkipException, AirflowFailException
@@ -21,6 +21,25 @@ logger = logging.getLogger(__name__)
 def get_base_table_from_mssql_query(mssql_query: str) -> str:
     # Assume first found table is base table.
     return re.findall('[a-zA-Z0-9_]+\.[a-zA-Z0-9_]+\.[a-zA-Z0-9_]+', mssql_query)[0]
+
+
+def extract_mssql_data_to_s3(
+        mssql_hook: MsSqlHook,
+        mssql_query: str,
+        s3_hook: S3Hook,
+        s3_bucket: str,
+        s3_prefix: str
+) -> Optional[str]:
+    df = get_mssql_query_as_df(mssql=mssql_hook, mssql_query=mssql_query)
+    if df.empty:
+        return
+    with NamedTemporaryFile(mode='wb') as f:
+        df.to_csv(f, index=False)
+        f.flush()
+        key = f'{s3_prefix}/{Path(f.name).name}.csv'
+        s3_hook.load_file(filename=f.name, bucket_name=s3_bucket, key=key)
+        logger.info(f'Loaded data file to {key}.')
+    return key
 
 
 def get_mssql_query_as_df(mssql: MsSqlHook, mssql_query: str) -> 'pd.DataFrame':
@@ -145,16 +164,14 @@ class OperatorBase(BaseOperator):
     def has_s3_tmp_files(self) -> bool:
         return bool(self.s3_tmp_files_keys)
 
-    def extract_mssql_data_to_s3(self, mssql_query: str):
-        df = get_mssql_query_as_df(mssql=self.mssql_hook, mssql_query=mssql_query)
-        if df.empty:
-            return
-        with NamedTemporaryFile(mode='wb') as f:
-            df.to_csv(f, index=False)
-            f.flush()
-            key = f'{self.s3_tmp_files_prefix}/{Path(f.name).name}.csv'
-            self.s3_hook.load_file(filename=f.name, bucket_name=self.s3_bucket, key=key)
-            logger.info(f'Loaded data file to {key}.')
+    def extract_mssql_data_to_s3(self, mssql_query: str) -> Optional[str]:
+        return extract_mssql_data_to_s3(
+            mssql_hook=self.mssql_hook,
+            mssql_query=mssql_query,
+            s3_hook=self.s3_hook,
+            s3_bucket=self.s3_bucket,
+            s3_prefix=self.s3_tmp_files_prefix
+        )
 
     def pre_s3_to_redshift(self):
         pass
