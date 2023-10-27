@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 def get_access_token() -> str:
-    http_hook = HttpHook(http_conn_id='http_microsoft_token', method='POST')
+    http_hook = HttpHook(http_conn_id='microsoft_token', method='POST')
     response = http_hook.run(
         endpoint='/',
         headers={
@@ -48,7 +48,7 @@ class FetchMessagesOperator(BaseOperator):
 
     def execute(self, context):
         self.s3_hook = S3Hook(aws_conn_id=self.aws_conn_id)
-        self.http_hook = HttpHook('GET', http_conn_id='http_microsoft_graph')
+        self.http_hook = HttpHook('GET', http_conn_id='microsoft_graph')
         self.access_token = get_access_token()
         self._fetch(
             endpoint=f"/users/{self.user_id}/mailfolders(\'{self.mail_folder_id}\')/messages?$search=\"received:{context['ds']}\"")
