@@ -33,6 +33,7 @@ latest_mssql_record_counts as (
 ),
 
 redshift_record_counts as (
+{% if mssql_tables|length > 0 %}
 {% for mssql_table in mssql_tables %}
 {% set table_name %}mssql__{{ mssql_table|replace(".", "_") }}{% endset %}
 {% set relation = source('analytics', table_name) %}
@@ -46,6 +47,12 @@ redshift_record_counts as (
     union distinct
 {% endif %}
 {% endfor %}
+{% else %}
+    select
+        null::varchar as mssql_table,
+        null::varchar as redshift_table,
+        null::int as redshift_count
+{% endif %}
 ),
 
 latest_record_counts as (
