@@ -1,5 +1,5 @@
-/*This aims to replace analytics.core.sp_maintain_bidbysalesperson_history which generates history of sales person in
-analytics.core.tblbidbysalesperson_history and analytics.core.tblbidbysalesperson_secondary_history.*/
+/*This aims to replace analytics.core.sp_maintain_bidbysalesperson_history which generates history of sales person.
+Noted that since historical snapshots are not available, this is not a complete history.*/
 with source as (
     select
         id,
