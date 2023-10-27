@@ -2,7 +2,7 @@ with
 
 invoices as (
     select *
-    from analytics.mastercard__scheme_fees
+    from {{ ref('stg_mastercard__scheme_fees') }}
 ),
 
 joined as (
@@ -32,11 +32,11 @@ joined as (
             else 'Others'
         end as settlement_summary
     from invoices as inv
-    left join analytics.mastercard_ica_map as i
+    left join {{ ref('mastercard_ica_map') }} as i
         on inv.invoice_ica = i.ica
-    left join analytics.mastercard_detail_billing_map as d
+    left join {{ ref('mastercard_detail_billing_map') }} as d
         on inv.event_id = d.line_id_event_id
-    left join analytics.mssql__accounts_dbo_fx_rates as to_gbp_rate
+    left join {{ ref('stg_mssql__accounts_dbo_fx_rates') }} as to_gbp_rate
         on
             inv.billing_cycle_date = date(to_gbp_rate.rate_date)
             and lower(inv.currency) = lower(to_gbp_rate.from_currency)
