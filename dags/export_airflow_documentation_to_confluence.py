@@ -58,21 +58,21 @@ with DAG(
 ) as dag:
     fetch_dags = SimpleHttpOperator(
         task_id='fetch_dags',
-        http_conn_id='airflow_api',
+        http_conn_id='http_airflow_api',
         endpoint='dags',
         method='GET'
     )
 
     fetch_page = SimpleHttpOperator(
         task_id='fetch_page',
-        http_conn_id='confluence_api',
+        http_conn_id='http_confluence_api',
         endpoint="pages/{{ var.value.get('confluence_airflow_dags_page_id') }}?body-format=storage",
         method='GET'
     )
 
     upload_page = SimpleHttpOperator(
         task_id='upload_page',
-        http_conn_id='confluence_api',
+        http_conn_id='http_confluence_api',
         endpoint="pages/{{ var.value.get('confluence_airflow_dags_page_id') }}",
         method='PUT',
         data="{{ ti.xcom_pull(task_ids='make_content') }}"
