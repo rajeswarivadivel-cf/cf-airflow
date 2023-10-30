@@ -33,7 +33,7 @@ joined as (
         end as settlement_summary
     from invoices as inv
     left join {{ ref('mastercard_ica_map') }} as i
-        on inv.invoice_ica = i.ica
+        on inv.activity_ica = i.ica
     left join {{ ref('mastercard_detail_billing_map') }} as d
         on inv.event_id = d.line_id_event_id
     left join {{ ref('stg_mssql__accounts_dbo_fx_rates') }} as to_gbp_rate
