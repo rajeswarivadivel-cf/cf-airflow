@@ -1,0 +1,9 @@
+models:
+  - name: rpt_mastercard_invoice_analysis_details
+    config:
+      grants:
+        select: ['"debra.hardy"']
+  - name: rpt_visa_invoice_analysis_details
+    config:
+      grants:
+        select: ['"debra.hardy"']
