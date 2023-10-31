@@ -9,7 +9,7 @@ from airflow.providers.amazon.aws.hooks.redshift_sql import RedshiftSQLHook
 from airflow.providers.amazon.aws.transfers.s3_to_redshift import S3ToRedshiftOperator
 from airflow.operators.empty import EmptyOperator
 from airflow.utils.email import send_email
-from airflow.macros import ds_format
+from airflow.macros import ds_format,ds_add
 
 import logging
 import sys
@@ -76,8 +76,8 @@ def task_failure_alert(context):
 	'import_crif_from_s3_to_redshift',
 	default_args=default_args,
 	description='It copies daily CRIF fast onboarding data from  SFTP (S3 bucket) to redshift',
-	start_date= datetime(2023, 10, 31, 15, 00),
-	schedule=00 6 * * *,
+	start_date= datetime(2023, 10, 31, 6, 00),
+	schedule='00 6 * * *',
 	tags=['s3', 'CRIF'],
 	catchup=False ,
 	on_failure_callback=task_failure_alert,
@@ -86,9 +86,10 @@ def taskflow():
 	start = EmptyOperator(task_id='start')
 
 	@task(task_id="read_transform_crif_source_file")
-	def read_transform_crif_source_file(ds='{{ ds_nodash }}',ti: TaskInstance = None,**kwargs):
+	def read_transform_crif_source_file(ds='{{ ds }}',ti: TaskInstance = None,**kwargs):
 		print(ds)
-		file_date = ds_format( ds, "%Y-%m-%d", "%d%m%Y")
+		exec_date = ds_add(ds,1)
+		file_date = ds_format( exec_date, "%Y-%m-%d", "%d%m%Y")
 		print(file_date)
 		source_keys = wr.s3.list_objects(f's3://{source_bucket}/{source_prefix}/*{file_date}*')
 		logger.info(source_keys)
