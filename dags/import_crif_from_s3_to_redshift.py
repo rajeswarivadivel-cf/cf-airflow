@@ -75,9 +75,9 @@ def task_failure_alert(context):
 @dag(
 	'import_crif_from_s3_to_redshift',
 	default_args=default_args,
-	description='It copies daily CRIF fast onboaeding data from  SFTP (S3 bucket) to redshift',
+	description='It copies daily CRIF fast onboarding data from  SFTP (S3 bucket) to redshift',
 	start_date= datetime(2023, 10, 31, 15, 00),
-	schedule=None,
+	schedule=00 6 * * *,
 	tags=['s3', 'CRIF'],
 	catchup=False ,
 	on_failure_callback=task_failure_alert,
