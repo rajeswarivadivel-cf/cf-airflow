@@ -41,7 +41,8 @@ Here are the sources and destinations we are using.
 |mssql|SQL Server PROD|
 |outlook_mail|[Outlook mail API](https://learn.microsoft.com/en-us/graph/outlook-mail-concept-overview)|
 |redshift|Analytics team's AWS Redshift|
-|s3|AWS S3|
+|s3|AWS Orchestration (ORC)|
+|s3_shared|AWS CF Shared (SHARED)|
 
 |Destination|Description|
 |--------|--------|

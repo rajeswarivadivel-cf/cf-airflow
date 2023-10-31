@@ -9,16 +9,8 @@ from pathlib import Path
 from tempfile import NamedTemporaryFile
 from typing import Union, List, Optional, Tuple, Callable
 
-from airflow import DAG
-from airflow.decorators import task, task_group
-from airflow.exceptions import AirflowException
-from airflow.models import TaskInstance
-from airflow.models import Variable
+from airflow.decorators import task
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
-from airflow.providers.amazon.aws.operators.s3 import S3DeleteObjectsOperator
-from airflow.providers.amazon.aws.transfers.s3_to_redshift import S3ToRedshiftOperator
-
-from common.s3_to_redshift import ArchiveOperator
 
 logger = logging.getLogger(__name__)
 
@@ -430,14 +422,16 @@ metas = [
 
 
 @task(task_id='transform')
-def transform_func(source_bucket: str, source_prefix: str, dest_bucket: str, dest_prefix: str, ti: TaskInstance = None):
+def transform_func(
+        source_bucket: str,
+        source_prefix: str,
+        dest_bucket: str,
+        dest_prefix: str,
+        s3_key_to_filename_func: Callable
+):
     s3_hook = S3Hook()
-    if s3_hook.check_for_prefix(bucket_name=source_bucket, prefix=f'{source_prefix}/tmp', delimiter='/'):
-        raise AirflowException('Unloaded tmp files found.')
     s3_keys = s3_hook.list_keys(bucket_name=source_bucket, prefix=source_prefix)
     s3_keys = [key for key in s3_keys if not key.endswith('/')]  # Skip folders.
-    ti.xcom_push(key='source_bucket', value=source_bucket)
-    ti.xcom_push(key='source_keys', value=s3_keys)
     logger.info(f'Found {len(s3_keys)} keys.')
     for s3_key in s3_keys:
         logger.info(f'Processing \'{s3_key}\'.')
@@ -451,7 +445,7 @@ def transform_func(source_bucket: str, source_prefix: str, dest_bucket: str, des
             for meta in metas:
                 records = [{
                     'created_at': created_at,
-                    'filename': Path(s3_key).name,
+                    'filename': s3_key_to_filename_func(source_bucket, s3_key),
                     **r
                 } for r in meta.parse_func(lines=lines)]
                 if not records:
@@ -465,52 +459,3 @@ def transform_func(source_bucket: str, source_prefix: str, dest_bucket: str, des
                     dest_fn = path.name.replace(path.suffix, '.csv')
                     s3_hook.load_file(filename=f_dest.name, bucket_name=dest_bucket,
                                       key=f"{dest_prefix}/{meta.redshift_table}/{dest_fn}")
-
-
-with DAG(
-        dag_id='import_visa_ep747_data_files_from_s3_to_redshift',
-        description='Import Visa EP747 data files from S3 to Redshift',
-        schedule_interval=None,
-        start_date=datetime(2023, 1, 1),
-        catchup=False
-) as dag:
-    s3_bucket = Variable.get('s3_bucket_name')
-    s3_prefix = 'AIRFLOW/visa_ep747'
-
-    transform = transform_func(
-        source_bucket=s3_bucket,
-        source_prefix=s3_prefix,
-        dest_bucket=s3_bucket,
-        dest_prefix=f'{s3_prefix}/tmp'
-    )
-
-
-    @task_group()
-    def s3_to_redshift():
-        [S3ToRedshiftOperator(
-            task_id=meta.redshift_table,
-            s3_bucket=s3_bucket,
-            s3_key=f'{s3_prefix}/tmp/{meta.redshift_table}/',
-            schema='analytics',
-            table=meta.redshift_table,
-            copy_options=[
-                'format as csv',
-                'ignoreheader as 1'
-            ]
-        ) for meta in metas]
-
-
-    remove_tmp = S3DeleteObjectsOperator(
-        dag=dag,
-        task_id='remove_tmp',
-        bucket=s3_bucket,
-        prefix=f'{s3_prefix}/tmp'
-    )
-
-    archive = ArchiveOperator(
-        task_id='archive',
-        archive_bucket=s3_bucket,
-        archive_prefix=f"{s3_prefix}/archive"
-    )
-
-    transform >> s3_to_redshift() >> remove_tmp >> archive
