@@ -87,8 +87,9 @@ def taskflow():
 
 	@task(task_id="read_transform_crif_source_file")
 	def read_transform_crif_source_file(ds='{{ ds }}',ti: TaskInstance = None,**kwargs):
-		print(ds)
+		logger.info(f'the execution date is {ds}')
 		exec_date = ds_add(ds,1)
+		logger.info(f'The file will be processed for {file_date}')
 		file_date = ds_format( exec_date, "%Y-%m-%d", "%d%m%Y")
 		print(file_date)
 		source_keys = wr.s3.list_objects(f's3://{source_bucket}/{source_prefix}/*{file_date}*')
